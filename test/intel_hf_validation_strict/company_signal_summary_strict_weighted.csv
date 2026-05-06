@@ -1,0 +1,1650 @@
+source_company,source_company_name,target_signal,target_business_node,total_weight,raw_weight,mention_count,first_date,last_date
+MU,"Micron Technology, Inc.",margin_pressure,Intel_Margin,265.0,106,32,2024-07-02 08:26:08,2024-12-19 01:43:36
+HPQ,HP Inc.,pc_demand,Intel_CCG,261.0,87,17,2024-11-27 00:44:10,2024-11-27 00:44:10
+CSCO,"Cisco Systems, Inc.",cloud_capacity,Intel_DCAI,224.0,112,28,2024-11-14 01:27:08,2024-12-12 22:39:08
+MU,"Micron Technology, Inc.",supply_pressure,Intel_CCG_or_DCAI,197.5,79,44,2024-07-02 08:26:08,2024-12-19 01:43:36
+DELL,Dell Technologies Inc.,margin_pressure,Intel_Margin,195.0,65,22,2024-11-27 00:15:26,2024-12-04 01:26:50
+HPQ,HP Inc.,margin_pressure,Intel_Margin,186.0,62,18,2024-11-27 00:44:10,2024-11-27 00:44:10
+AMAT,"Applied Materials, Inc.",foundry_manufacturing,Intel_Foundry,175.0,70,38,2024-11-15 01:16:38,2024-12-04 23:18:23
+MU,"Micron Technology, Inc.",cloud_capacity,Intel_DCAI,172.5,69,16,2024-07-02 08:26:08,2024-12-19 01:43:36
+ORCL,Oracle Corporation,cloud_capacity,Intel_DCAI,152.0,76,11,2024-12-10 01:35:38,2024-12-10 01:35:38
+STX,Seagate Technology Holdings plc,cloud_capacity,Intel_DCAI,142.2,79,21,2024-12-04 00:28:32,2024-12-11 19:20:30
+LRCX,Lam Research Corporation,foundry_manufacturing,Intel_Foundry,140.0,56,32,2024-12-04 05:52:29,2024-12-11 18:56:23
+DELL,Dell Technologies Inc.,server_cpu_demand,Intel_DCAI,135.0,45,6,2024-11-27 00:15:26,2024-12-04 01:26:50
+HPE,Hewlett Packard Enterprise Company,cloud_capacity,Intel_DCAI,132.5,53,14,2024-12-06 00:38:14,2024-12-12 23:28:10
+LITE,Lumentum Holdings Inc.,cloud_capacity,Intel_DCAI,122.4,68,15,2024-11-08 03:17:02,2024-11-08 03:17:02
+CIEN,Ciena Corporation,cloud_capacity,Intel_DCAI,118.80000000000001,66,12,2024-12-12 17:19:09,2024-12-12 17:19:09
+AMAT,"Applied Materials, Inc.",margin_pressure,Intel_Margin,117.5,47,14,2024-11-15 01:16:38,2024-12-04 23:18:23
+HPE,Hewlett Packard Enterprise Company,margin_pressure,Intel_Margin,115.0,46,14,2024-12-06 00:38:14,2024-12-06 00:38:14
+KLAC,KLA Corporation,foundry_manufacturing,Intel_Foundry,107.5,43,26,2024-12-04 00:10:37,2024-12-05 02:11:55
+AMAT,"Applied Materials, Inc.",supply_pressure,Intel_CCG_or_DCAI,105.0,42,25,2024-11-15 01:16:38,2024-12-04 23:18:23
+NVDA,NVIDIA Corporation,cloud_capacity,Intel_DCAI,102.0,51,11,2024-11-21 01:35:47,2024-12-03 17:21:42
+NVDA,NVIDIA Corporation,margin_pressure,Intel_Margin,96.0,48,12,2024-11-21 01:35:47,2024-12-03 17:21:42
+TKC,Turkcell Iletisim Hizmetleri A.S.,cloud_capacity,Intel_DCAI,94.0,94,11,2024-11-07 23:32:12,2024-11-07 23:32:12
+MU,"Micron Technology, Inc.",pc_demand,Intel_CCG,92.5,37,7,2024-07-02 08:26:08,2024-12-19 01:43:36
+AMD,"Advanced Micro Devices, Inc.",pc_demand,Intel_CCG,88.0,44,6,2024-12-12 21:51:05,2024-12-12 21:51:05
+KLAC,KLA Corporation,supply_pressure,Intel_CCG_or_DCAI,85.0,34,10,2024-12-04 00:10:37,2024-12-05 02:11:55
+NVDA,NVIDIA Corporation,server_cpu_demand,Intel_DCAI,82.0,41,13,2024-11-21 01:35:47,2024-12-03 17:21:42
+CSCO,"Cisco Systems, Inc.",margin_pressure,Intel_Margin,82.0,41,12,2024-11-14 01:27:08,2024-12-10 17:23:06
+HUT,Hut 8 Corp.,cloud_capacity,Intel_DCAI,78.0,78,16,2024-11-13 16:19:45,2024-11-13 16:19:45
+HPE,Hewlett Packard Enterprise Company,server_cpu_demand,Intel_DCAI,77.5,31,6,2024-12-06 00:38:14,2024-12-12 23:28:10
+NTAP,"NetApp, Inc.",cloud_capacity,Intel_DCAI,75.60000000000001,42,12,2024-11-22 04:37:35,2024-11-22 04:37:35
+MU,"Micron Technology, Inc.",foundry_manufacturing,Intel_Foundry,75.0,30,16,2024-07-02 08:26:08,2024-12-19 01:43:36
+JBL,Jabil Inc.,cloud_capacity,Intel_DCAI,71.0,71,19,2024-12-18 17:09:10,2024-12-18 17:09:10
+DELL,Dell Technologies Inc.,pc_demand,Intel_CCG,69.0,23,9,2024-11-27 00:15:26,2024-11-27 00:15:26
+IREN,IREN Limited,cloud_capacity,Intel_DCAI,65.0,65,15,2024-11-28 02:45:26,2024-11-28 02:45:26
+LRCX,Lam Research Corporation,supply_pressure,Intel_CCG_or_DCAI,65.0,26,17,2024-12-04 05:52:29,2024-12-11 18:56:23
+BTDR,Bitdeer Technologies Group,cloud_capacity,Intel_DCAI,63.0,63,12,2024-11-18 16:57:35,2024-11-18 16:57:35
+AMD,"Advanced Micro Devices, Inc.",server_cpu_demand,Intel_DCAI,60.0,30,6,2024-12-03 21:12:08,2024-12-12 21:51:05
+SKYT,"SkyWater Technology, Inc.",foundry_manufacturing,Intel_Foundry,58.0,58,17,2024-11-10 06:10:39,2024-11-10 06:10:39
+AMD,"Advanced Micro Devices, Inc.",margin_pressure,Intel_Margin,58.0,29,4,2024-12-12 21:51:05,2024-12-12 21:51:05
+FTNT,"Fortinet, Inc.",margin_pressure,Intel_Margin,56.0,56,15,2024-11-08 02:48:06,2024-12-12 06:09:10
+KLAC,KLA Corporation,margin_pressure,Intel_Margin,55.0,22,9,2024-12-04 00:10:37,2024-12-05 02:11:55
+DELL,Dell Technologies Inc.,supply_pressure,Intel_CCG_or_DCAI,54.0,18,18,2024-11-27 00:15:26,2024-12-04 01:26:50
+BABA,Alibaba Group Holding Limited,cloud_capacity,Intel_DCAI,54.0,54,11,2024-11-15 17:13:21,2024-11-15 17:13:21
+NVDA,NVIDIA Corporation,supply_pressure,Intel_CCG_or_DCAI,52.0,26,13,2024-11-21 01:35:47,2024-12-03 17:21:42
+PHI,PLDT Inc.,cloud_capacity,Intel_DCAI,51.0,51,8,2024-11-12 14:30:00,2024-11-12 20:00:00
+DDOG,"Datadog, Inc.",cloud_capacity,Intel_DCAI,51.0,51,15,2024-11-19 17:17:08,2024-12-11 20:03:07
+WDC,Western Digital Corporation,foundry_manufacturing,Intel_Foundry,48.6,27,16,2024-12-04 03:31:46,2024-12-12 18:47:09
+QUIK,QuickLogic Corporation,foundry_manufacturing,Intel_Foundry,47.0,47,18,2024-11-12 01:50:27,2024-11-12 01:50:27
+BIDU,"Baidu, Inc.",cloud_capacity,Intel_DCAI,45.0,45,8,2024-11-21 16:25:28,2024-11-21 16:25:28
+WDC,Western Digital Corporation,pc_demand,Intel_CCG,43.2,24,8,2024-12-04 03:31:46,2024-12-12 18:47:09
+VNET,"VNET Group, Inc.",cloud_capacity,Intel_DCAI,43.0,43,9,2024-11-21 11:58:05,2024-11-21 11:58:05
+AMAT,"Applied Materials, Inc.",cloud_capacity,Intel_DCAI,42.5,17,7,2024-11-15 01:16:38,2024-12-04 23:18:23
+CCOI,"Cogent Communications Holdings, Inc.",cloud_capacity,Intel_DCAI,42.0,42,13,2024-11-07 22:02:29,2024-11-07 22:02:29
+HUT,Hut 8 Corp.,server_cpu_demand,Intel_DCAI,42.0,42,7,2024-11-13 16:19:45,2024-11-13 16:19:45
+PENG,"Penguin Solutions, Inc.",supply_pressure,Intel_CCG_or_DCAI,42.0,42,15,2024-07-09 23:59:09,2024-07-09 23:59:09
+AMBA,"Ambarella, Inc.",margin_pressure,Intel_Margin,40.0,40,8,2024-11-27 01:50:27,2024-11-27 01:50:27
+MU,"Micron Technology, Inc.",server_cpu_demand,Intel_DCAI,40.0,16,3,2024-07-02 08:26:08,2024-12-19 01:35:47
+CIEN,Ciena Corporation,margin_pressure,Intel_Margin,39.6,22,8,2024-12-12 17:19:09,2024-12-12 17:19:09
+PENG,"Penguin Solutions, Inc.",margin_pressure,Intel_Margin,39.0,39,11,2024-07-09 23:59:09,2024-07-09 23:59:09
+SMTC,Semtech Corporation,cloud_capacity,Intel_DCAI,38.0,38,13,2024-11-26 02:09:24,2024-11-26 02:09:24
+SYNA,Synaptics Incorporated,margin_pressure,Intel_Margin,38.0,38,15,2024-11-08 02:55:25,2024-11-08 02:55:25
+WDC,Western Digital Corporation,cloud_capacity,Intel_DCAI,37.800000000000004,21,7,2024-12-04 03:31:46,2024-12-12 18:47:09
+AAON,"AAON, Inc.",cloud_capacity,Intel_DCAI,37.0,37,9,2024-11-10 01:55:28,2024-11-10 01:55:28
+RXT,"Rackspace Technology, Inc.",cloud_capacity,Intel_DCAI,37.0,37,7,2024-11-12 22:57:27,2024-11-12 22:57:27
+PDFS,"PDF Solutions, Inc.",foundry_manufacturing,Intel_Foundry,36.0,36,16,2024-11-09 00:26:03,2024-11-09 00:26:03
+WDC,Western Digital Corporation,supply_pressure,Intel_CCG_or_DCAI,36.0,20,13,2024-12-04 03:31:46,2024-12-12 18:47:09
+SSSS,SuRo Capital Corp.,cloud_capacity,Intel_DCAI,36.0,36,5,2024-11-08 04:10:09,2024-11-08 04:10:09
+KLIC,"Kulicke and Soffa Industries, Inc.",foundry_manufacturing,Intel_Foundry,36.0,36,14,2024-11-14 15:50:28,2024-11-14 15:50:28
+IRM,Iron Mountain Incorporated,cloud_capacity,Intel_DCAI,35.0,35,11,2024-11-15 20:02:09,2024-12-11 18:07:14
+AAOI,"Applied Optoelectronics, Inc.",margin_pressure,Intel_Margin,35.0,35,11,2024-11-08 01:33:03,2024-11-08 01:33:03
+HUT,Hut 8 Corp.,margin_pressure,Intel_Margin,35.0,35,13,2024-11-13 16:19:45,2024-11-13 16:19:45
+CRM,"Salesforce, Inc.",cloud_capacity,Intel_DCAI,34.5,23,8,2024-12-04 00:56:13,2024-12-12 22:19:01
+LITE,Lumentum Holdings Inc.,supply_pressure,Intel_CCG_or_DCAI,34.2,19,11,2024-11-08 03:17:02,2024-11-08 03:17:02
+PSTG,"Pure Storage, Inc.",cloud_capacity,Intel_DCAI,34.0,34,10,2024-12-04 01:04:35,2024-12-04 01:04:35
+AMD,"Advanced Micro Devices, Inc.",supply_pressure,Intel_CCG_or_DCAI,34.0,17,8,2024-12-03 21:12:08,2024-12-12 21:51:05
+IPWR,Ideal Power Inc.,foundry_manufacturing,Intel_Foundry,34.0,34,9,2024-11-15 03:18:34,2024-11-15 03:18:34
+GDS,GDS Holdings Limited,cloud_capacity,Intel_DCAI,33.0,33,8,2024-11-19 15:45:40,2024-11-19 15:45:40
+MODV,ModivCare Inc.,margin_pressure,Intel_Margin,33.0,33,10,2024-11-09 14:38:11,2024-11-09 14:38:11
+HPQ,HP Inc.,supply_pressure,Intel_CCG_or_DCAI,33.0,11,8,2024-11-27 00:44:10,2024-11-27 00:44:10
+NTNX,"Nutanix, Inc.",cloud_capacity,Intel_DCAI,33.0,33,5,2024-11-27 01:29:35,2024-11-27 01:29:35
+DELL,Dell Technologies Inc.,cloud_capacity,Intel_DCAI,33.0,11,5,2024-11-27 00:15:26,2024-11-27 00:15:26
+CRWD,"CrowdStrike Holdings, Inc.",cloud_capacity,Intel_DCAI,33.0,33,7,2024-11-27 02:02:32,2024-11-27 02:02:32
+LRCX,Lam Research Corporation,margin_pressure,Intel_Margin,32.5,13,2,2024-12-04 05:52:29,2024-12-04 05:52:29
+CIEN,Ciena Corporation,supply_pressure,Intel_CCG_or_DCAI,32.4,18,9,2024-12-12 17:19:09,2024-12-12 17:19:09
+AAOI,"Applied Optoelectronics, Inc.",cloud_capacity,Intel_DCAI,32.0,32,7,2024-11-08 01:33:03,2024-11-08 01:33:03
+INGM,Ingram Micro Holding Corporation,cloud_capacity,Intel_DCAI,32.0,32,7,2024-11-13 00:45:25,2024-11-13 00:45:25
+DTST,Data Storage Corporation,cloud_capacity,Intel_DCAI,32.0,32,6,2024-11-14 17:43:19,2024-11-14 17:43:19
+FTNT,"Fortinet, Inc.",cloud_capacity,Intel_DCAI,31.0,31,9,2024-11-08 02:48:06,2024-12-12 06:09:10
+MASS,908 Devices Inc.,pc_demand,Intel_CCG,31.0,31,16,2024-11-12 21:21:03,2024-11-12 21:21:03
+CCOI,"Cogent Communications Holdings, Inc.",margin_pressure,Intel_Margin,31.0,31,14,2024-11-07 22:02:29,2024-11-07 22:02:29
+TSEM,Tower Semiconductor Ltd.,foundry_manufacturing,Intel_Foundry,30.0,30,14,2024-11-13 19:49:06,2024-11-13 19:49:06
+AKAM,"Akamai Technologies, Inc.",cloud_capacity,Intel_DCAI,30.0,30,7,2024-11-08 01:07:03,2024-11-08 01:07:03
+CSCO,"Cisco Systems, Inc.",supply_pressure,Intel_CCG_or_DCAI,30.0,15,11,2024-11-14 01:27:08,2024-12-12 22:39:08
+WDFC,WD-40 Company,margin_pressure,Intel_Margin,30.0,30,2,2024-07-11 07:38:25,2024-07-11 07:38:25
+ADSK,"Autodesk, Inc.",cloud_capacity,Intel_DCAI,30.0,30,9,2024-11-27 01:27:04,2024-12-11 20:19:50
+LRCX,Lam Research Corporation,server_cpu_demand,Intel_DCAI,30.0,12,3,2024-12-11 18:56:23,2024-12-11 18:56:23
+BE,Bloom Energy Corporation,margin_pressure,Intel_Margin,29.0,29,10,2024-11-08 02:13:09,2024-11-08 02:13:09
+SWKS,"Skyworks Solutions, Inc.",cloud_capacity,Intel_DCAI,28.0,28,5,2024-11-13 02:05:27,2024-11-13 02:05:27
+VRNT,Verint Systems Inc.,cloud_capacity,Intel_DCAI,28.0,28,5,2024-12-05 00:09:09,2024-12-05 00:09:09
+INTU,Intuit Inc.,pc_demand,Intel_CCG,28.0,28,11,2024-11-22 01:13:20,2024-12-11 23:24:49
+MRVL,"Marvell Technology, Inc.",cloud_capacity,Intel_DCAI,28.0,28,7,2024-12-04 01:08:56,2024-12-04 01:08:56
+DOX,Amdocs Limited,cloud_capacity,Intel_DCAI,28.0,28,6,2024-11-13 02:18:48,2024-11-13 02:18:48
+DUOT,"Duos Technologies Group, Inc.",cloud_capacity,Intel_DCAI,28.0,28,7,2024-11-20 23:27:18,2024-11-20 23:27:18
+HPE,Hewlett Packard Enterprise Company,foundry_manufacturing,Intel_Foundry,27.5,11,8,2024-12-06 00:38:14,2024-12-12 23:28:10
+TGEN,Tecogen Inc.,cloud_capacity,Intel_DCAI,27.0,27,4,2024-11-14 17:37:05,2024-11-14 17:37:05
+KOP,Koppers Holdings Inc.,margin_pressure,Intel_Margin,27.0,27,7,2024-11-08 20:14:59,2024-11-08 20:14:59
+LITE,Lumentum Holdings Inc.,margin_pressure,Intel_Margin,27.0,15,4,2024-11-08 03:17:02,2024-11-08 03:17:02
+BLZE,"Backblaze, Inc.",margin_pressure,Intel_Margin,27.0,27,4,2024-11-09 17:17:08,2024-11-09 17:17:08
+IREN,IREN Limited,margin_pressure,Intel_Margin,26.0,26,10,2024-11-28 02:45:26,2024-11-28 02:45:26
+AMD,"Advanced Micro Devices, Inc.",cloud_capacity,Intel_DCAI,26.0,13,4,2024-12-03 21:12:08,2024-12-12 21:51:05
+WWD,"Woodward, Inc.",margin_pressure,Intel_Margin,26.0,26,6,2024-11-26 01:50:51,2024-11-26 01:50:51
+BTBT,"Bit Digital, Inc.",cloud_capacity,Intel_DCAI,26.0,26,7,2024-11-18 22:24:52,2024-11-18 22:24:52
+FSLY,"Fastly, Inc.",server_cpu_demand,Intel_DCAI,25.0,25,5,2024-11-19 18:03:07,2024-12-04 21:10:50
+EAF,GrafTech International Ltd.,margin_pressure,Intel_Margin,25.0,25,3,2024-11-12 21:27:31,2024-11-12 21:27:31
+MARA,"MARA Holdings, Inc.",cloud_capacity,Intel_DCAI,25.0,25,3,2024-11-13 01:13:07,2024-11-13 01:13:07
+PCYO,Pure Cycle Corporation,supply_pressure,Intel_CCG_or_DCAI,25.0,25,17,2024-07-11 20:17:08,2024-11-14 17:50:26
+RBRK,"Rubrik, Inc.",cloud_capacity,Intel_DCAI,25.0,25,5,2024-12-06 01:42:20,2024-12-06 01:42:20
+JBL,Jabil Inc.,margin_pressure,Intel_Margin,24.0,24,7,2024-12-18 17:09:10,2024-12-18 17:09:10
+LB,LandBridge Company LLC,cloud_capacity,Intel_DCAI,24.0,24,3,2024-11-09 00:57:16,2024-11-09 00:57:16
+EH,EHang Holdings Limited,margin_pressure,Intel_Margin,24.0,24,4,2024-11-18 16:07:34,2024-11-18 16:07:34
+TXN,Texas Instruments Incorporated,foundry_manufacturing,Intel_Foundry,24.0,24,6,2024-12-03 18:08:53,2024-12-03 18:08:53
+LITE,Lumentum Holdings Inc.,foundry_manufacturing,Intel_Foundry,23.4,13,4,2024-11-08 03:17:02,2024-11-08 03:17:02
+CL,Colgate-Palmolive Company,margin_pressure,Intel_Margin,23.0,23,5,2024-12-03 19:18:53,2024-12-03 19:18:53
+PLUG,Plug Power Inc.,margin_pressure,Intel_Margin,23.0,23,4,2024-11-12 18:28:10,2024-12-04 22:09:08
+MRVL,"Marvell Technology, Inc.",margin_pressure,Intel_Margin,23.0,23,6,2024-12-04 01:08:56,2024-12-04 01:08:56
+BKH,Black Hills Corporation,cloud_capacity,Intel_DCAI,22.0,22,5,2024-11-07 21:03:36,2024-11-07 21:03:36
+BLK,"BlackRock, Inc.",cloud_capacity,Intel_DCAI,22.0,22,2,2024-07-15 15:47:06,2024-07-15 15:47:06
+ANET,Arista Networks Inc,supply_pressure,Intel_CCG_or_DCAI,22.0,11,5,2024-11-08 02:27:08,2024-11-08 02:27:08
+XOS,"Xos, Inc.",supply_pressure,Intel_CCG_or_DCAI,22.0,22,4,2024-11-14 01:36:21,2024-11-14 01:36:21
+SMTC,Semtech Corporation,margin_pressure,Intel_Margin,22.0,22,10,2024-11-26 02:09:24,2024-11-26 02:09:24
+DLO,DLocal Limited,margin_pressure,Intel_Margin,21.0,21,7,2024-11-14 04:17:13,2024-11-14 04:17:13
+ECX,ECARX Holdings Inc.,margin_pressure,Intel_Margin,21.0,21,4,2024-11-09 04:09:29,2024-11-09 04:09:29
+AAON,"AAON, Inc.",margin_pressure,Intel_Margin,21.0,21,7,2024-11-10 01:55:28,2024-11-10 01:55:28
+XPEV,XPeng Inc.,margin_pressure,Intel_Margin,21.0,21,3,2024-11-19 17:19:54,2024-11-19 17:19:54
+COST,Costco Wholesale Corporation,margin_pressure,Intel_Margin,20.0,20,5,2024-12-13 01:50:26,2024-12-13 01:50:26
+AVGO,Broadcom Inc.,margin_pressure,Intel_Margin,20.0,20,5,2024-12-13 00:37:58,2024-12-13 00:37:58
+FTEK,"Fuel Tech, Inc.",margin_pressure,Intel_Margin,20.0,20,2,2024-11-07 20:53:03,2024-11-07 20:53:03
+CSCO,"Cisco Systems, Inc.",foundry_manufacturing,Intel_Foundry,20.0,10,5,2024-11-14 01:27:08,2024-12-03 22:46:19
+BTBT,"Bit Digital, Inc.",margin_pressure,Intel_Margin,20.0,20,7,2024-11-18 22:24:52,2024-11-18 22:24:52
+OTEX,Open Text Corporation,cloud_capacity,Intel_DCAI,20.0,20,4,2024-12-12 23:30:25,2024-12-12 23:30:25
+NVDA,NVIDIA Corporation,pc_demand,Intel_CCG,20.0,10,3,2024-11-21 01:35:47,2024-11-21 01:35:47
+STX,Seagate Technology Holdings plc,margin_pressure,Intel_Margin,19.8,11,3,2024-12-04 00:28:32,2024-12-11 19:20:30
+NTIC,Northern Technologies International Corporation,margin_pressure,Intel_Margin,19.0,19,1,2024-11-20 01:03:34,2024-11-20 01:03:34
+PDFS,"PDF Solutions, Inc.",supply_pressure,Intel_CCG_or_DCAI,19.0,19,11,2024-11-09 00:26:03,2024-11-09 00:26:03
+PHI,PLDT Inc.,margin_pressure,Intel_Margin,19.0,19,8,2024-11-12 14:30:00,2024-11-12 20:00:00
+PXLW,"Pixelworks, Inc.",margin_pressure,Intel_Margin,19.0,19,9,2024-11-13 03:52:58,2024-11-13 03:52:58
+NET,"Cloudflare, Inc.",cloud_capacity,Intel_DCAI,19.0,19,5,2024-11-08 01:33:36,2024-11-08 01:33:36
+BLMN,"Bloomin' Brands, Inc.",margin_pressure,Intel_Margin,19.0,19,6,2024-11-08 21:13:07,2024-11-08 21:13:07
+LOW,"Lowe's Companies, Inc.",margin_pressure,Intel_Margin,19.0,19,3,2024-11-19 17:02:06,2024-11-19 17:02:06
+BITF,Bitfarms Ltd.,cloud_capacity,Intel_DCAI,19.0,19,6,2024-11-13 19:16:15,2024-11-13 19:16:15
+DGXX,Digi Power X Inc.,cloud_capacity,Intel_DCAI,19.0,19,4,2024-11-15 15:29:12,2024-11-15 15:29:12
+KIRK,"Kirkland's, Inc.",margin_pressure,Intel_Margin,19.0,19,4,2024-12-06 16:07:12,2024-12-06 16:07:12
+AVGO,Broadcom Inc.,cloud_capacity,Intel_DCAI,19.0,19,4,2024-12-13 00:37:58,2024-12-13 00:37:58
+MRVI,"Maravai LifeSciences Holdings, Inc.",margin_pressure,Intel_Margin,18.0,18,3,2024-11-09 23:45:06,2024-11-09 23:45:06
+IHS,IHS Holding Limited,margin_pressure,Intel_Margin,18.0,18,4,2024-11-12 22:28:57,2024-11-12 22:28:57
+MRVL,"Marvell Technology, Inc.",server_cpu_demand,Intel_DCAI,18.0,18,5,2024-12-04 01:08:56,2024-12-04 01:08:56
+CDNS,"Cadence Design Systems, Inc.",cloud_capacity,Intel_DCAI,18.0,18,5,2024-12-10 16:10:22,2024-12-10 16:10:22
+IBM,International Business Machines Corporation,server_cpu_demand,Intel_DCAI,18.0,18,2,2024-11-19 23:20:00,2024-11-19 23:20:00
+MDB,"MongoDB, Inc.",cloud_capacity,Intel_DCAI,18.0,18,4,2024-12-10 01:26:34,2024-12-10 01:26:34
+BTDR,Bitdeer Technologies Group,margin_pressure,Intel_Margin,18.0,18,9,2024-11-18 16:57:35,2024-11-18 16:57:35
+AMAT,"Applied Materials, Inc.",server_cpu_demand,Intel_DCAI,17.5,7,3,2024-11-15 01:16:38,2024-12-04 23:18:23
+LEN,Lennar Corporation,supply_pressure,Intel_CCG_or_DCAI,17.5,7,3,2024-12-19 19:57:09,2024-12-19 19:57:09
+ACN,Accenture plc,cloud_capacity,Intel_DCAI,17.0,17,4,2024-12-19 16:28:33,2024-12-19 16:28:33
+ZEPP,Zepp Health Corporation,margin_pressure,Intel_Margin,17.0,17,2,2024-11-19 14:32:08,2024-11-19 14:32:08
+CXAI,CXApp Inc.,cloud_capacity,Intel_DCAI,17.0,17,4,2024-11-13 00:05:43,2024-11-13 00:05:43
+BKH,Black Hills Corporation,margin_pressure,Intel_Margin,17.0,17,5,2024-11-07 21:03:36,2024-11-07 21:03:36
+TKC,Turkcell Iletisim Hizmetleri A.S.,margin_pressure,Intel_Margin,17.0,17,4,2024-11-07 23:32:12,2024-11-07 23:32:12
+SAP,SAP SE,cloud_capacity,Intel_DCAI,17.0,17,4,2024-11-20 16:42:06,2024-12-03 21:38:31
+PPSI,"Pioneer Power Solutions, Inc.",margin_pressure,Intel_Margin,17.0,17,4,2024-11-19 01:22:03,2024-11-19 01:22:03
+SEE,Sealed Air Corporation,margin_pressure,Intel_Margin,17.0,17,2,2024-11-07 21:32:10,2024-11-07 21:32:10
+AMT,American Tower Corporation,cloud_capacity,Intel_DCAI,17.0,17,5,2024-12-10 20:35:28,2024-12-10 20:35:28
+WDC,Western Digital Corporation,margin_pressure,Intel_Margin,16.2,9,6,2024-12-04 03:31:46,2024-12-12 18:47:09
+EQIX,"Equinix, Inc.",margin_pressure,Intel_Margin,16.2,9,2,2024-12-12 06:09:13,2024-12-12 06:09:13
+KLIC,"Kulicke and Soffa Industries, Inc.",supply_pressure,Intel_CCG_or_DCAI,16.0,16,8,2024-11-14 15:50:28,2024-11-14 15:50:28
+AXGN,"Axogen, Inc.",margin_pressure,Intel_Margin,16.0,16,3,2024-11-09 14:53:02,2024-11-09 14:53:02
+ZS,"Zscaler, Inc.",margin_pressure,Intel_Margin,16.0,16,3,2024-12-03 01:46:13,2024-12-03 01:46:13
+BOSC,B.O.S. Better Online Solutions Ltd.,supply_pressure,Intel_CCG_or_DCAI,16.0,16,2,2024-11-27 15:14:37,2024-11-27 15:14:37
+DIOD,Diodes Incorporated,supply_pressure,Intel_CCG_or_DCAI,16.0,16,8,2024-11-09 07:55:41,2024-11-09 07:55:41
+BWMN,Bowman Consulting Group Ltd.,cloud_capacity,Intel_DCAI,16.0,16,2,2024-11-09 00:39:43,2024-11-09 00:39:43
+PANW,"Palo Alto Networks, Inc.",cloud_capacity,Intel_DCAI,16.0,16,4,2024-11-21 01:18:22,2024-12-03 22:11:41
+SLNG,"Stabilis Solutions, Inc.",cloud_capacity,Intel_DCAI,16.0,16,3,2024-11-09 00:23:26,2024-11-09 00:23:26
+PENG,"Penguin Solutions, Inc.",cloud_capacity,Intel_DCAI,16.0,16,7,2024-07-09 23:59:09,2024-07-09 23:59:09
+SJM,The J. M. Smucker Company,margin_pressure,Intel_Margin,15.0,15,4,2024-11-26 16:40:00,2024-11-26 16:40:00
+TUYA,Tuya Inc.,margin_pressure,Intel_Margin,15.0,15,2,2024-11-19 14:27:09,2024-11-19 14:27:09
+XOS,"Xos, Inc.",margin_pressure,Intel_Margin,15.0,15,3,2024-11-14 01:36:21,2024-11-14 01:36:21
+TXN,Texas Instruments Incorporated,supply_pressure,Intel_CCG_or_DCAI,15.0,15,7,2024-12-03 18:08:53,2024-12-03 18:08:53
+RGTI,"Rigetti Computing, Inc.",server_cpu_demand,Intel_DCAI,15.0,15,4,2024-11-12 18:33:06,2024-11-12 18:33:06
+PCT,"PureCycle Technologies, Inc.",margin_pressure,Intel_Margin,15.0,15,4,2024-11-09 19:31:39,2024-11-09 19:31:39
+ON,ON Semiconductor Corporation,foundry_manufacturing,Intel_Foundry,15.0,15,10,2024-11-21 00:33:24,2024-12-10 21:40:28
+ENS,EnerSys,cloud_capacity,Intel_DCAI,15.0,15,4,2024-11-08 01:40:33,2024-11-08 01:40:33
+KRUS,"Kura Sushi USA, Inc.",margin_pressure,Intel_Margin,15.0,15,2,2024-11-09 11:10:28,2024-11-09 11:10:28
+ATKR,Atkore Inc.,margin_pressure,Intel_Margin,15.0,15,4,2024-11-21 15:49:45,2024-11-21 15:49:45
+ASYS,"Amtech Systems, Inc.",foundry_manufacturing,Intel_Foundry,15.0,15,7,2024-12-10 00:24:09,2024-12-10 00:24:09
+ON,ON Semiconductor Corporation,margin_pressure,Intel_Margin,15.0,15,8,2024-11-21 00:33:24,2024-12-10 21:40:28
+NNDM,Nano Dimension Ltd.,pc_demand,Intel_CCG,15.0,15,11,2024-11-20 16:32:09,2024-11-20 16:32:09
+ASYS,"Amtech Systems, Inc.",margin_pressure,Intel_Margin,15.0,15,5,2024-12-10 00:24:09,2024-12-10 00:24:09
+DBX,"Dropbox, Inc.",cloud_capacity,Intel_DCAI,15.0,15,5,2024-11-08 00:20:49,2024-11-08 00:20:49
+MARA,"MARA Holdings, Inc.",server_cpu_demand,Intel_DCAI,14.0,14,3,2024-11-13 01:13:07,2024-11-13 01:13:07
+FTNT,"Fortinet, Inc.",supply_pressure,Intel_CCG_or_DCAI,14.0,14,6,2024-11-08 02:48:06,2024-12-12 06:09:10
+HOV,"Hovnanian Enterprises, Inc.",margin_pressure,Intel_Margin,14.0,14,3,2024-12-05 19:09:32,2024-12-05 19:09:32
+MARA,"MARA Holdings, Inc.",margin_pressure,Intel_Margin,14.0,14,6,2024-11-13 01:13:07,2024-11-13 01:13:07
+CAMT,Camtek Ltd.,foundry_manufacturing,Intel_Foundry,14.0,14,8,2024-11-12 20:37:35,2024-11-12 20:37:35
+GGR,Gogoro Inc.,margin_pressure,Intel_Margin,14.0,14,2,2024-11-14 15:05:21,2024-11-14 15:05:21
+PSTG,"Pure Storage, Inc.",margin_pressure,Intel_Margin,14.0,14,6,2024-12-04 01:04:35,2024-12-04 01:04:35
+ADI,"Analog Devices, Inc.",foundry_manufacturing,Intel_Foundry,14.0,14,8,2024-11-26 17:32:07,2024-12-03 19:38:58
+WPRT,Westport Fuel Systems Inc.,margin_pressure,Intel_Margin,14.0,14,1,2024-11-13 18:30:27,2024-11-13 18:30:27
+NIO,NIO Inc.,margin_pressure,Intel_Margin,14.0,14,2,2024-11-20 16:27:26,2024-11-20 16:27:26
+SNOW,Snowflake Inc.,margin_pressure,Intel_Margin,14.0,14,3,2024-11-21 00:49:52,2024-11-21 00:49:52
+WULF,TeraWulf Inc.,server_cpu_demand,Intel_DCAI,13.0,13,5,2024-11-13 04:05:25,2024-11-13 04:05:25
+SWKS,"Skyworks Solutions, Inc.",supply_pressure,Intel_CCG_or_DCAI,13.0,13,5,2024-11-13 02:05:27,2024-11-13 02:05:27
+SYNA,Synaptics Incorporated,pc_demand,Intel_CCG,13.0,13,3,2024-11-08 02:55:25,2024-11-08 02:55:25
+ON,ON Semiconductor Corporation,supply_pressure,Intel_CCG_or_DCAI,13.0,13,10,2024-11-21 00:33:24,2024-12-10 21:40:28
+OOMA,"Ooma, Inc.",margin_pressure,Intel_Margin,13.0,13,1,2024-12-05 01:25:45,2024-12-05 01:25:45
+SMR,NuScale Power Corporation,cloud_capacity,Intel_DCAI,13.0,13,3,2024-11-08 01:40:42,2024-11-08 01:40:42
+WSM,"Williams-Sonoma, Inc.",supply_pressure,Intel_CCG_or_DCAI,13.0,13,6,2024-11-20 17:19:07,2024-11-20 17:19:07
+ADI,"Analog Devices, Inc.",server_cpu_demand,Intel_DCAI,13.0,13,3,2024-11-26 17:32:07,2024-11-26 17:32:07
+TGEN,Tecogen Inc.,margin_pressure,Intel_Margin,13.0,13,6,2024-11-14 17:37:05,2024-11-14 17:37:05
+MTSI,"MACOM Technology Solutions Holdings, Inc.",foundry_manufacturing,Intel_Foundry,13.0,13,4,2024-11-07 20:50:36,2024-11-07 20:50:36
+MTSI,"MACOM Technology Solutions Holdings, Inc.",cloud_capacity,Intel_DCAI,13.0,13,5,2024-11-07 20:50:36,2024-11-07 20:50:36
+HIVE,HIVE Digital Technologies Ltd.,margin_pressure,Intel_Margin,13.0,13,4,2024-11-13 16:42:18,2024-11-13 16:42:18
+JD,"JD.com, Inc.",margin_pressure,Intel_Margin,13.0,13,2,2024-11-14 16:49:09,2024-11-14 16:49:09
+IRM,Iron Mountain Incorporated,server_cpu_demand,Intel_DCAI,13.0,13,2,2024-12-11 18:07:14,2024-12-11 18:07:14
+DLTH,Duluth Holdings Inc.,margin_pressure,Intel_Margin,13.0,13,5,2024-12-05 16:38:07,2024-12-05 16:38:07
+DDD,3D Systems Corporation,server_cpu_demand,Intel_DCAI,13.0,13,2,2024-11-27 16:40:23,2024-11-27 16:40:23
+DBX,"Dropbox, Inc.",margin_pressure,Intel_Margin,13.0,13,4,2024-11-08 00:20:49,2024-11-08 00:20:49
+FGI,FGI Industries Ltd.,margin_pressure,Intel_Margin,13.0,13,3,2024-11-15 17:05:05,2024-11-15 17:05:05
+BZ,Kanzhun Limited,margin_pressure,Intel_Margin,13.0,13,2,2024-12-11 20:39:25,2024-12-11 20:39:25
+EQIX,"Equinix, Inc.",foundry_manufacturing,Intel_Foundry,12.6,7,4,2024-12-12 06:09:13,2024-12-12 06:09:13
+PKOH,Park-Ohio Holdings Corp.,margin_pressure,Intel_Margin,12.0,12,2,2024-11-09 02:28:01,2024-11-09 02:28:01
+ADI,"Analog Devices, Inc.",cloud_capacity,Intel_DCAI,12.0,12,4,2024-11-26 17:32:07,2024-11-26 17:32:07
+ON,ON Semiconductor Corporation,server_cpu_demand,Intel_DCAI,12.0,12,4,2024-11-21 00:33:24,2024-11-21 00:33:24
+ULBI,Ultralife Corporation,supply_pressure,Intel_CCG_or_DCAI,12.0,12,5,2024-11-08 19:06:15,2024-11-08 19:06:15
+DXC,DXC Technology Company,margin_pressure,Intel_Margin,12.0,12,3,2024-11-08 01:33:12,2024-11-08 01:33:12
+INGN,"Inogen, Inc.",margin_pressure,Intel_Margin,12.0,12,1,2024-11-10 02:55:32,2024-11-10 02:55:32
+ABEO,Abeona Therapeutics Inc.,margin_pressure,Intel_Margin,12.0,12,2,2024-11-14 20:30:00,2024-11-14 20:30:00
+BX,Blackstone Inc.,cloud_capacity,Intel_DCAI,12.0,12,3,2024-12-11 19:40:30,2024-12-11 19:40:30
+RYN,Rayonier Inc.,margin_pressure,Intel_Margin,12.0,12,3,2024-11-07 19:24:28,2024-11-07 19:24:28
+VIK,Viking Holdings Ltd,margin_pressure,Intel_Margin,12.0,12,3,2024-11-19 17:13:37,2024-11-19 17:13:37
+AEE,Ameren Corporation,cloud_capacity,Intel_DCAI,12.0,12,4,2024-11-08 02:07:09,2024-11-08 02:07:09
+MDB,"MongoDB, Inc.",supply_pressure,Intel_CCG_or_DCAI,12.0,12,10,2024-12-10 01:26:34,2024-12-11 19:32:00
+LPTH,"LightPath Technologies, Inc.",supply_pressure,Intel_CCG_or_DCAI,12.0,12,4,2024-11-09 14:34:13,2024-11-09 14:34:13
+MTSI,"MACOM Technology Solutions Holdings, Inc.",margin_pressure,Intel_Margin,12.0,12,6,2024-11-07 20:50:36,2024-11-07 20:50:36
+QRVO,"Qorvo, Inc.",foundry_manufacturing,Intel_Foundry,12.0,12,8,2024-12-12 20:00:10,2024-12-12 20:00:10
+KC,Kingsoft Cloud Holdings Limited,cloud_capacity,Intel_DCAI,12.0,12,3,2024-11-19 15:34:08,2024-11-19 15:34:08
+JOUT,Johnson Outdoors Inc.,margin_pressure,Intel_Margin,12.0,12,2,2024-12-10 17:53:08,2024-12-10 17:53:08
+IOVA,"Iovance Biotherapeutics, Inc.",margin_pressure,Intel_Margin,11.0,11,2,2024-11-08 01:55:53,2024-11-08 01:55:53
+BE,Bloom Energy Corporation,cloud_capacity,Intel_DCAI,11.0,11,4,2024-11-08 02:13:09,2024-11-08 02:13:09
+DGII,Digi International Inc.,margin_pressure,Intel_Margin,11.0,11,1,2024-11-13 23:34:25,2024-11-13 23:34:25
+IREN,IREN Limited,server_cpu_demand,Intel_DCAI,11.0,11,3,2024-11-28 02:45:26,2024-11-28 02:45:26
+IPW,iPower Inc.,supply_pressure,Intel_CCG_or_DCAI,11.0,11,3,2024-11-15 00:23:09,2024-11-15 00:23:09
+KEYS,"Keysight Technologies, Inc.",foundry_manufacturing,Intel_Foundry,11.0,11,5,2024-11-20 00:40:25,2024-11-20 00:40:25
+USB,U.S. Bancorp,supply_pressure,Intel_CCG_or_DCAI,11.0,11,7,2024-11-09 19:44:11,2024-12-11 17:39:30
+BLMN,"Bloomin' Brands, Inc.",supply_pressure,Intel_CCG_or_DCAI,11.0,11,9,2024-11-08 21:13:07,2024-11-08 21:13:07
+XAIR,"Beyond Air, Inc.",margin_pressure,Intel_Margin,11.0,11,2,2024-11-12 00:56:53,2024-11-12 00:56:53
+BLZE,"Backblaze, Inc.",cloud_capacity,Intel_DCAI,11.0,11,4,2024-11-09 17:17:08,2024-11-09 17:17:08
+CSIQ,Canadian Solar Inc.,cloud_capacity,Intel_DCAI,11.0,11,2,2024-12-05 16:26:38,2024-12-05 16:26:38
+PODD,Insulet Corporation,margin_pressure,Intel_Margin,11.0,11,1,2024-11-08 03:54:39,2024-11-08 03:54:39
+RENT,"Rent the Runway, Inc.",supply_pressure,Intel_CCG_or_DCAI,11.0,11,1,2024-12-09 15:22:34,2024-12-09 15:22:34
+QRVO,"Qorvo, Inc.",margin_pressure,Intel_Margin,11.0,11,1,2024-12-12 20:00:10,2024-12-12 20:00:10
+BITF,Bitfarms Ltd.,margin_pressure,Intel_Margin,11.0,11,8,2024-11-13 19:16:15,2024-11-13 19:16:15
+DDD,3D Systems Corporation,cloud_capacity,Intel_DCAI,11.0,11,3,2024-11-27 16:40:23,2024-11-27 16:40:23
+WULF,TeraWulf Inc.,margin_pressure,Intel_Margin,11.0,11,4,2024-11-13 04:05:25,2024-11-13 04:05:25
+HSAI,Hesai Group,margin_pressure,Intel_Margin,11.0,11,3,2024-11-26 15:21:02,2024-11-26 15:21:02
+TLS,Telos Corporation,margin_pressure,Intel_Margin,11.0,11,2,2024-11-12 19:09:08,2024-11-12 19:09:08
+ICAD,"iCAD, Inc.",cloud_capacity,Intel_DCAI,11.0,11,2,2024-11-13 23:53:07,2024-11-13 23:53:07
+INGM,Ingram Micro Holding Corporation,pc_demand,Intel_CCG,11.0,11,6,2024-11-13 00:45:25,2024-11-13 00:45:25
+WWD,"Woodward, Inc.",supply_pressure,Intel_CCG_or_DCAI,11.0,11,6,2024-11-26 01:50:51,2024-11-26 01:50:51
+KGS,"Kodiak Gas Services, Inc.",margin_pressure,Intel_Margin,11.0,11,2,2024-11-09 18:23:03,2024-11-09 18:23:03
+PD,"PagerDuty, Inc.",cloud_capacity,Intel_DCAI,11.0,11,3,2024-11-27 21:28:20,2024-11-27 21:28:20
+ELTK,Eltek Ltd.,margin_pressure,Intel_Margin,11.0,11,3,2024-11-19 20:48:08,2024-11-19 20:48:08
+TSSI,"TSS, Inc.",margin_pressure,Intel_Margin,11.0,11,2,2024-11-15 03:36:25,2024-11-15 03:36:25
+LITE,Lumentum Holdings Inc.,server_cpu_demand,Intel_DCAI,10.8,6,2,2024-11-08 03:17:02,2024-11-08 03:17:02
+BLBD,Blue Bird Corporation,margin_pressure,Intel_Margin,10.0,10,2,2024-11-26 01:55:24,2024-11-26 01:55:24
+INTU,Intuit Inc.,margin_pressure,Intel_Margin,10.0,10,3,2024-11-22 01:13:20,2024-12-10 15:05:07
+NXGL,"NEXGEL, Inc.",margin_pressure,Intel_Margin,10.0,10,1,2024-11-14 03:56:03,2024-11-14 03:56:03
+INO,"Inovio Pharmaceuticals, Inc.",supply_pressure,Intel_CCG_or_DCAI,10.0,10,9,2024-11-15 00:53:10,2024-11-15 00:53:10
+OKLO,Oklo Inc.,supply_pressure,Intel_CCG_or_DCAI,10.0,10,4,2024-11-15 04:37:47,2024-11-15 04:37:47
+BOX,"Box, Inc.",margin_pressure,Intel_Margin,10.0,10,2,2024-12-04 00:56:17,2024-12-04 00:56:17
+TLN,Talen Energy Corporation,cloud_capacity,Intel_DCAI,10.0,10,2,2024-11-14 18:40:23,2024-11-14 18:40:23
+NGG,National Grid plc,cloud_capacity,Intel_DCAI,10.0,10,2,2024-11-08 03:52:13,2024-11-08 03:52:13
+SHOP,Shopify Inc.,supply_pressure,Intel_CCG_or_DCAI,10.0,10,5,2024-11-12 17:23:27,2024-11-12 17:23:27
+NICE,NICE Ltd.,cloud_capacity,Intel_DCAI,10.0,10,2,2024-11-14 18:02:08,2024-11-14 18:02:08
+MODV,ModivCare Inc.,supply_pressure,Intel_CCG_or_DCAI,10.0,10,7,2024-11-09 14:38:11,2024-11-09 14:38:11
+CSX,CSX Corporation,margin_pressure,Intel_Margin,10.0,10,2,2024-11-19 21:06:50,2024-11-19 21:06:50
+LEN,Lennar Corporation,margin_pressure,Intel_Margin,10.0,4,1,2024-12-19 19:57:09,2024-12-19 19:57:09
+KLAC,KLA Corporation,server_cpu_demand,Intel_DCAI,10.0,4,2,2024-12-04 00:10:37,2024-12-05 02:11:55
+IRM,Iron Mountain Incorporated,margin_pressure,Intel_Margin,10.0,10,6,2024-11-15 20:02:09,2024-12-11 18:07:14
+DIOD,Diodes Incorporated,pc_demand,Intel_CCG,10.0,10,2,2024-11-09 07:55:41,2024-11-09 07:55:41
+IPW,iPower Inc.,margin_pressure,Intel_Margin,10.0,10,3,2024-11-15 00:23:09,2024-11-15 00:23:09
+CULP,"Culp, Inc.",foundry_manufacturing,Intel_Foundry,10.0,10,3,2024-12-06 07:53:14,2024-12-06 07:53:14
+NRG,"NRG Energy, Inc.",margin_pressure,Intel_Margin,10.0,10,4,2024-11-08 16:23:06,2024-11-08 16:23:06
+JJSF,J&J Snack Foods Corp.,margin_pressure,Intel_Margin,10.0,10,2,2024-11-15 01:45:55,2024-11-15 01:45:55
+TUYA,Tuya Inc.,supply_pressure,Intel_CCG_or_DCAI,10.0,10,3,2024-11-19 14:27:09,2024-11-19 14:27:09
+HSDT,"Helius Medical Technologies, Inc.",margin_pressure,Intel_Margin,10.0,10,2,2024-11-18 21:00:00,2024-11-18 21:00:00
+EVRG,"Evergy, Inc.",cloud_capacity,Intel_DCAI,10.0,10,3,2024-11-07 22:16:05,2024-11-07 22:16:05
+SPB,"Spectrum Brands Holdings, Inc.",pc_demand,Intel_CCG,10.0,10,3,2024-11-15 17:23:17,2024-11-15 17:23:17
+KULR,"KULR Technology Group, Inc.",margin_pressure,Intel_Margin,10.0,10,6,2024-11-14 01:44:05,2024-11-14 01:44:05
+LESL,"Leslie's, Inc.",margin_pressure,Intel_Margin,10.0,10,1,2024-11-26 01:13:00,2024-11-26 01:13:00
+AAP,"Advance Auto Parts, Inc.",margin_pressure,Intel_Margin,10.0,10,2,2024-11-14 18:44:54,2024-11-14 18:44:54
+HPE,Hewlett Packard Enterprise Company,supply_pressure,Intel_CCG_or_DCAI,10.0,4,3,2024-12-06 00:38:14,2024-12-06 00:38:14
+Z,"Zillow Group, Inc.",margin_pressure,Intel_Margin,9.0,9,2,2024-11-19 17:41:39,2024-11-19 17:41:39
+BNGO,"Bionano Genomics, Inc.",margin_pressure,Intel_Margin,9.0,9,2,2024-11-14 00:11:52,2024-11-14 00:11:52
+ALNT,Allient Inc.,margin_pressure,Intel_Margin,9.0,9,4,2024-11-10 10:45:22,2024-11-10 10:45:22
+PCYO,Pure Cycle Corporation,margin_pressure,Intel_Margin,9.0,9,4,2024-07-11 20:17:08,2024-11-14 17:50:26
+GWRE,"Guidewire Software, Inc.",cloud_capacity,Intel_DCAI,9.0,9,2,2024-12-06 01:33:08,2024-12-06 01:33:08
+GWRE,"Guidewire Software, Inc.",margin_pressure,Intel_Margin,9.0,9,2,2024-12-06 01:33:08,2024-12-06 01:33:08
+HEI,HEICO Corporation,margin_pressure,Intel_Margin,9.0,9,2,2024-12-18 19:20:27,2024-12-18 19:20:27
+TPL,Texas Pacific Land Corporation,server_cpu_demand,Intel_DCAI,9.0,9,2,2024-11-07 19:47:14,2024-11-07 19:47:14
+AGRO,Adecoagro S.A.,margin_pressure,Intel_Margin,9.0,9,2,2024-11-14 22:04:52,2024-11-14 22:04:52
+SONO,"Sonos, Inc.",supply_pressure,Intel_CCG_or_DCAI,9.0,9,2,2024-11-14 07:02:56,2024-11-14 07:02:56
+B,Barrick Mining Corporation,margin_pressure,Intel_Margin,9.0,9,4,2024-11-07 20:25:23,2024-11-07 20:25:23
+ICCC,ImmuCell Corporation,margin_pressure,Intel_Margin,9.0,9,1,2024-11-14 16:09:10,2024-11-14 16:09:10
+TSSI,"TSS, Inc.",cloud_capacity,Intel_DCAI,9.0,9,2,2024-11-15 03:36:25,2024-11-15 03:36:25
+PSMT,"PriceSmart, Inc.",margin_pressure,Intel_Margin,9.0,9,3,2024-07-11 18:15:07,2024-07-11 18:15:07
+ERJ,Embraer S.A.,supply_pressure,Intel_CCG_or_DCAI,9.0,9,2,2024-11-09 00:15:29,2024-11-09 00:15:29
+SPB,"Spectrum Brands Holdings, Inc.",margin_pressure,Intel_Margin,9.0,9,3,2024-11-15 17:23:17,2024-11-15 17:23:17
+TTEC,"TTEC Holdings, Inc.",cloud_capacity,Intel_DCAI,9.0,9,3,2024-11-09 17:58:02,2024-11-09 17:58:02
+FCEL,"FuelCell Energy, Inc.",cloud_capacity,Intel_DCAI,9.0,9,3,2024-12-19 16:53:57,2024-12-19 16:53:57
+FCEL,"FuelCell Energy, Inc.",margin_pressure,Intel_Margin,9.0,9,3,2024-12-19 16:53:57,2024-12-19 16:53:57
+FLR,Fluor Corporation,cloud_capacity,Intel_DCAI,9.0,9,2,2024-11-08 17:41:16,2024-11-08 17:41:16
+HIVE,HIVE Digital Technologies Ltd.,cloud_capacity,Intel_DCAI,9.0,9,3,2024-11-13 16:42:18,2024-11-13 16:42:18
+AIRG,"Airgain, Inc.",supply_pressure,Intel_CCG_or_DCAI,9.0,9,6,2024-11-16 02:49:10,2024-11-16 02:49:10
+NTAP,"NetApp, Inc.",supply_pressure,Intel_CCG_or_DCAI,9.0,5,3,2024-11-22 04:37:35,2024-11-22 04:37:35
+SNT,Senstar Technologies Corporation,margin_pressure,Intel_Margin,9.0,9,1,2024-11-13 02:33:53,2024-11-13 02:33:53
+JAMF,Jamf Holding Corp.,pc_demand,Intel_CCG,9.0,9,3,2024-11-10 10:58:06,2024-11-10 10:58:06
+KO,The Coca-Cola Company,margin_pressure,Intel_Margin,9.0,9,3,2024-12-03 18:04:07,2024-12-03 18:04:07
+NPWR,NET Power Inc.,cloud_capacity,Intel_DCAI,9.0,9,3,2024-11-12 19:04:34,2024-11-12 19:04:34
+NRG,"NRG Energy, Inc.",supply_pressure,Intel_CCG_or_DCAI,9.0,9,5,2024-11-08 16:23:06,2024-11-08 16:23:06
+ATKR,Atkore Inc.,cloud_capacity,Intel_DCAI,9.0,9,2,2024-11-21 15:49:45,2024-11-21 15:49:45
+KMB,Kimberly-Clark Corporation,margin_pressure,Intel_Margin,9.0,9,1,2024-12-03 21:15:25,2024-12-03 21:15:25
+INUV,"Inuvo, Inc.",supply_pressure,Intel_CCG_or_DCAI,9.0,9,7,2024-11-08 16:13:08,2024-11-08 16:13:08
+REVG,"REV Group, Inc.",supply_pressure,Intel_CCG_or_DCAI,9.0,9,3,2024-12-11 18:09:08,2024-12-11 18:09:08
+LCII,LCI Industries,margin_pressure,Intel_Margin,9.0,9,3,2024-11-09 22:50:28,2024-11-09 22:50:28
+NKE,"NIKE, Inc.",margin_pressure,Intel_Margin,9.0,9,3,2024-12-20 00:49:09,2024-12-20 00:49:09
+NDSN,Nordson Corporation,supply_pressure,Intel_CCG_or_DCAI,9.0,9,3,2024-12-12 16:08:04,2024-12-12 16:08:04
+CRNT,Ceragon Networks Ltd.,supply_pressure,Intel_CCG_or_DCAI,9.0,9,2,2024-11-13 16:35:30,2024-11-13 16:35:30
+ARBE,Arbe Robotics Ltd.,margin_pressure,Intel_Margin,9.0,9,1,2024-11-27 14:50:28,2024-11-27 14:50:28
+BASE,"Couchbase, Inc.",cloud_capacity,Intel_DCAI,9.0,9,2,2024-12-04 04:16:20,2024-12-04 04:16:20
+ZETA,Zeta Global Holdings Corp.,margin_pressure,Intel_Margin,9.0,9,4,2024-11-12 01:34:28,2024-11-12 01:34:28
+ZS,"Zscaler, Inc.",cloud_capacity,Intel_DCAI,9.0,9,3,2024-12-03 01:46:13,2024-12-03 01:46:13
+BNGO,"Bionano Genomics, Inc.",supply_pressure,Intel_CCG_or_DCAI,9.0,9,4,2024-11-14 00:11:52,2024-11-14 00:11:52
+Z,"Zillow Group, Inc.",supply_pressure,Intel_CCG_or_DCAI,8.0,8,4,2024-11-19 17:41:39,2024-11-19 17:41:39
+XPEV,XPeng Inc.,supply_pressure,Intel_CCG_or_DCAI,8.0,8,3,2024-11-19 17:19:54,2024-11-19 17:19:54
+MSI,"Motorola Solutions, Inc.",cloud_capacity,Intel_DCAI,8.0,8,3,2024-11-08 01:02:09,2024-11-08 01:02:09
+AKYA,"Akoya Biosciences, Inc.",margin_pressure,Intel_Margin,8.0,8,2,2024-11-15 02:43:08,2024-11-15 02:43:08
+BMY,Bristol-Myers Squibb Company,supply_pressure,Intel_CCG_or_DCAI,8.0,8,4,2024-11-11 21:08:04,2024-11-11 21:08:04
+BTDR,Bitdeer Technologies Group,supply_pressure,Intel_CCG_or_DCAI,8.0,8,6,2024-11-18 16:57:35,2024-11-18 16:57:35
+BRSL,Brightstar Lottery PLC,margin_pressure,Intel_Margin,8.0,8,3,2024-11-12 21:05:29,2024-11-12 21:05:29
+BSY,"Bentley Systems, Incorporated",cloud_capacity,Intel_DCAI,8.0,8,2,2024-11-09 11:22:37,2024-11-09 11:22:37
+HIVE,HIVE Digital Technologies Ltd.,server_cpu_demand,Intel_DCAI,8.0,8,3,2024-11-13 16:42:18,2024-11-13 16:42:18
+GCT,GigaCloud Technology Inc.,margin_pressure,Intel_Margin,8.0,8,3,2024-11-08 04:34:09,2024-11-08 04:34:09
+MTSI,"MACOM Technology Solutions Holdings, Inc.",server_cpu_demand,Intel_DCAI,8.0,8,2,2024-11-07 20:50:36,2024-11-07 20:50:36
+SPWH,"Sportsman's Warehouse Holdings, Inc.",margin_pressure,Intel_Margin,8.0,8,3,2024-12-11 02:05:34,2024-12-11 02:05:34
+MARA,"MARA Holdings, Inc.",supply_pressure,Intel_CCG_or_DCAI,8.0,8,3,2024-11-13 01:13:07,2024-11-13 01:13:07
+SHLS,"Shoals Technologies Group, Inc.",margin_pressure,Intel_Margin,8.0,8,2,2024-11-12 19:54:27,2024-11-12 19:54:27
+HUYA,HUYA Inc.,margin_pressure,Intel_Margin,8.0,8,1,2024-11-12 15:04:09,2024-11-12 15:04:09
+CAG,"Conagra Brands, Inc.",margin_pressure,Intel_Margin,8.0,8,1,2024-07-11 14:26:04,2024-07-11 14:26:04
+CAMT,Camtek Ltd.,supply_pressure,Intel_CCG_or_DCAI,8.0,8,4,2024-11-12 20:37:35,2024-11-12 20:37:35
+ARLO,"Arlo Technologies, Inc.",margin_pressure,Intel_Margin,8.0,8,1,2024-11-08 03:50:52,2024-11-08 03:50:52
+FEIM,"Frequency Electronics, Inc.",margin_pressure,Intel_Margin,8.0,8,1,2024-12-11 01:59:35,2024-12-11 01:59:35
+ANET,Arista Networks Inc,margin_pressure,Intel_Margin,8.0,4,3,2024-11-08 02:27:08,2024-12-10 22:15:27
+DEC,Diversified Energy Company PLC,margin_pressure,Intel_Margin,8.0,8,4,2024-11-13 19:49:11,2024-11-15 18:52:08
+ANET,Arista Networks Inc,foundry_manufacturing,Intel_Foundry,8.0,4,3,2024-11-08 02:27:08,2024-11-08 02:27:08
+SMTC,Semtech Corporation,server_cpu_demand,Intel_DCAI,8.0,8,3,2024-11-26 02:09:24,2024-11-26 02:09:24
+KC,Kingsoft Cloud Holdings Limited,margin_pressure,Intel_Margin,8.0,8,2,2024-11-19 15:34:08,2024-11-19 15:34:08
+REVG,"REV Group, Inc.",margin_pressure,Intel_Margin,8.0,8,3,2024-12-11 18:09:08,2024-12-11 18:09:08
+KMX,"CarMax, Inc.",margin_pressure,Intel_Margin,8.0,8,2,2024-12-19 16:46:03,2024-12-19 16:46:03
+ANET,Arista Networks Inc,cloud_capacity,Intel_DCAI,8.0,4,2,2024-12-10 22:15:27,2024-12-10 22:15:27
+NRG,"NRG Energy, Inc.",cloud_capacity,Intel_DCAI,8.0,8,2,2024-11-08 16:23:06,2024-11-08 16:23:06
+PACB,"Pacific Biosciences of California, Inc.",cloud_capacity,Intel_DCAI,8.0,8,2,2024-11-08 02:04:53,2024-11-08 02:04:53
+PCYO,Pure Cycle Corporation,cloud_capacity,Intel_DCAI,8.0,8,2,2024-11-14 17:50:26,2024-11-14 17:50:26
+POWL,"Powell Industries, Inc.",margin_pressure,Intel_Margin,8.0,8,2,2024-11-20 18:14:14,2024-11-20 18:14:14
+VIST,"Vista Energy, S.A.B. de C.V.",margin_pressure,Intel_Margin,8.0,8,1,2024-07-12 16:33:06,2024-07-12 16:33:06
+IPWR,Ideal Power Inc.,margin_pressure,Intel_Margin,8.0,8,4,2024-11-15 03:18:34,2024-11-15 03:18:34
+BEPC,Brookfield Renewable Corporation,cloud_capacity,Intel_DCAI,8.0,8,2,2024-11-08 19:06:30,2024-11-08 19:06:30
+TXN,Texas Instruments Incorporated,margin_pressure,Intel_Margin,8.0,8,3,2024-12-03 18:08:53,2024-12-03 18:08:53
+RC,Ready Capital Corporation,supply_pressure,Intel_CCG_or_DCAI,8.0,8,4,2024-11-08 16:43:45,2024-11-08 16:43:45
+LFMD,"LifeMD, Inc.",margin_pressure,Intel_Margin,8.0,8,1,2024-11-09 14:58:18,2024-11-09 14:58:18
+WDFC,WD-40 Company,cloud_capacity,Intel_DCAI,8.0,8,1,2024-07-11 07:38:25,2024-07-11 07:38:25
+ADI,"Analog Devices, Inc.",supply_pressure,Intel_CCG_or_DCAI,8.0,8,6,2024-11-26 17:32:07,2024-12-03 19:38:58
+IPM,Intelligent Protection Management Corp.,cloud_capacity,Intel_DCAI,8.0,8,3,2024-11-13 00:30:25,2024-11-13 00:30:25
+BKNG,Booking Holdings Inc.,supply_pressure,Intel_CCG_or_DCAI,8.0,8,3,2024-12-11 22:33:41,2024-12-11 22:33:41
+SONO,"Sonos, Inc.",margin_pressure,Intel_Margin,8.0,8,2,2024-11-14 07:02:56,2024-11-14 07:02:56
+VVV,Valvoline Inc.,cloud_capacity,Intel_DCAI,8.0,8,2,2024-11-19 19:12:43,2024-11-19 19:12:43
+OKLO,Oklo Inc.,foundry_manufacturing,Intel_Foundry,8.0,8,4,2024-11-15 04:37:47,2024-11-15 04:37:47
+INGM,Ingram Micro Holding Corporation,margin_pressure,Intel_Margin,8.0,8,3,2024-11-13 00:45:25,2024-11-13 00:45:25
+OKLO,Oklo Inc.,margin_pressure,Intel_Margin,8.0,8,3,2024-11-15 04:37:47,2024-11-15 04:37:47
+DY,"Dycom Industries, Inc.",cloud_capacity,Intel_DCAI,8.0,8,2,2024-11-20 21:42:47,2024-11-20 21:42:47
+AXL,"American Axle & Manufacturing Holdings, Inc.",supply_pressure,Intel_CCG_or_DCAI,8.0,8,4,2024-11-09 00:02:35,2024-11-09 00:02:35
+SOUN,"SoundHound AI, Inc.",margin_pressure,Intel_Margin,8.0,8,1,2024-11-13 02:11:21,2024-11-13 02:11:21
+MDU,"MDU Resources Group, Inc.",cloud_capacity,Intel_DCAI,8.0,8,2,2024-11-07 23:28:20,2024-11-07 23:28:20
+GPRK,GeoPark Limited,supply_pressure,Intel_CCG_or_DCAI,8.0,8,6,2024-11-09 19:50:25,2024-11-09 19:50:25
+FROG,JFrog Ltd.,cloud_capacity,Intel_DCAI,8.0,8,3,2024-11-08 02:15:33,2024-11-08 02:15:33
+JYNT,The Joint Corp.,margin_pressure,Intel_Margin,8.0,8,1,2024-11-09 00:22:09,2024-11-09 00:22:09
+BBY,"Best Buy Co., Inc.",pc_demand,Intel_CCG,8.0,8,3,2024-11-26 17:03:14,2024-11-26 17:03:14
+BEP,Brookfield Renewable Partners L.P. Limited Partnership Units,cloud_capacity,Intel_DCAI,8.0,8,2,2024-11-08 15:23:18,2024-11-08 15:23:18
+AMAT,"Applied Materials, Inc.",pc_demand,Intel_CCG,7.5,3,1,2024-11-15 01:16:38,2024-11-15 01:16:38
+STX,Seagate Technology Holdings plc,supply_pressure,Intel_CCG_or_DCAI,7.2,4,4,2024-12-04 00:28:32,2024-12-11 19:20:30
+TSEM,Tower Semiconductor Ltd.,supply_pressure,Intel_CCG_or_DCAI,7.0,7,3,2024-11-13 19:49:06,2024-11-13 19:49:06
+AMBA,"Ambarella, Inc.",server_cpu_demand,Intel_DCAI,7.0,7,2,2024-11-27 01:50:27,2024-11-27 01:50:27
+ENS,EnerSys,margin_pressure,Intel_Margin,7.0,7,4,2024-11-08 01:40:33,2024-11-08 01:40:33
+HWM,Howmet Aerospace Inc.,cloud_capacity,Intel_DCAI,7.0,7,1,2024-11-13 22:57:07,2024-11-13 22:57:07
+HOV,"Hovnanian Enterprises, Inc.",supply_pressure,Intel_CCG_or_DCAI,7.0,7,3,2024-12-05 19:09:32,2024-12-05 19:09:32
+FLO,"Flowers Foods, Inc.",margin_pressure,Intel_Margin,7.0,7,2,2024-11-09 20:04:49,2024-11-09 20:04:49
+HOOD,"Robinhood Markets, Inc.",margin_pressure,Intel_Margin,7.0,7,3,2024-11-13 19:33:09,2024-11-13 19:33:09
+SPT,"Sprout Social, Inc.",cloud_capacity,Intel_DCAI,7.0,7,2,2024-11-09 16:34:24,2024-11-09 16:34:24
+SPB,"Spectrum Brands Holdings, Inc.",supply_pressure,Intel_CCG_or_DCAI,7.0,7,5,2024-11-15 17:23:17,2024-11-15 17:23:17
+MASS,908 Devices Inc.,margin_pressure,Intel_Margin,7.0,7,1,2024-11-12 21:21:03,2024-11-12 21:21:03
+NGG,National Grid plc,margin_pressure,Intel_Margin,7.0,7,4,2024-11-08 03:52:13,2024-11-08 03:52:13
+AREC,American Resources Corporation,supply_pressure,Intel_CCG_or_DCAI,7.0,7,5,2024-11-15 04:19:37,2024-11-15 04:19:37
+SAIC,Science Applications International Corporation,margin_pressure,Intel_Margin,7.0,7,1,2024-12-05 22:11:46,2024-12-05 22:11:46
+RVYL,Ryvyl Inc.,margin_pressure,Intel_Margin,7.0,7,2,2024-11-15 00:43:02,2024-11-15 00:43:02
+RY,Royal Bank of Canada,supply_pressure,Intel_CCG_or_DCAI,7.0,7,5,2024-12-04 17:41:56,2024-12-04 17:41:56
+MRNA,"Moderna, Inc.",supply_pressure,Intel_CCG_or_DCAI,7.0,7,7,2024-11-14 03:16:54,2024-12-05 19:39:09
+HEI,HEICO Corporation,supply_pressure,Intel_CCG_or_DCAI,7.0,7,4,2024-12-18 19:20:27,2024-12-18 19:20:27
+GAU,Galiano Gold Inc.,margin_pressure,Intel_Margin,7.0,7,1,2024-11-08 19:46:11,2024-11-08 19:46:11
+PLAB,"Photronics, Inc.",supply_pressure,Intel_CCG_or_DCAI,7.0,7,4,2024-12-11 14:55:27,2024-12-11 14:55:27
+PRSO,Peraso Inc.,supply_pressure,Intel_CCG_or_DCAI,7.0,7,5,2024-11-12 23:14:32,2024-11-12 23:14:32
+AAP,"Advance Auto Parts, Inc.",supply_pressure,Intel_CCG_or_DCAI,7.0,7,5,2024-11-14 18:44:54,2024-11-14 18:44:54
+VRTX,Vertex Pharmaceuticals Incorporated,supply_pressure,Intel_CCG_or_DCAI,7.0,7,5,2024-11-15 19:28:07,2024-11-15 19:28:07
+PRSO,Peraso Inc.,margin_pressure,Intel_Margin,7.0,7,3,2024-11-12 23:14:32,2024-11-12 23:14:32
+WULF,TeraWulf Inc.,cloud_capacity,Intel_DCAI,7.0,7,2,2024-11-13 04:05:25,2024-11-13 04:05:25
+HUBC,HUB Cyber Security Ltd.,foundry_manufacturing,Intel_Foundry,7.0,7,4,2024-12-02 15:13:38,2024-12-02 15:13:38
+SDGR,"Schrödinger, Inc.",supply_pressure,Intel_CCG_or_DCAI,7.0,7,4,2024-11-12 15:51:41,2024-11-12 15:51:41
+LYTS,LSI Industries Inc.,margin_pressure,Intel_Margin,7.0,7,1,2024-11-09 02:39:13,2024-11-09 02:39:13
+SHCO,Soho House & Co Inc.,cloud_capacity,Intel_DCAI,7.0,7,2,2024-12-19 18:12:06,2024-12-19 18:12:06
+LPTH,"LightPath Technologies, Inc.",margin_pressure,Intel_Margin,7.0,7,3,2024-11-09 14:34:13,2024-11-09 14:34:13
+TSSI,"TSS, Inc.",server_cpu_demand,Intel_DCAI,7.0,7,2,2024-11-15 03:36:25,2024-11-15 03:36:25
+TWST,Twist Bioscience Corporation,margin_pressure,Intel_Margin,7.0,7,1,2024-11-18 16:31:36,2024-11-18 16:31:36
+LCII,LCI Industries,supply_pressure,Intel_CCG_or_DCAI,7.0,7,4,2024-11-09 22:50:28,2024-11-09 22:50:28
+KOPN,Kopin Corporation,foundry_manufacturing,Intel_Foundry,7.0,7,4,2024-11-12 18:57:44,2024-11-12 18:57:44
+NKE,"NIKE, Inc.",supply_pressure,Intel_CCG_or_DCAI,7.0,7,3,2024-12-20 00:49:09,2024-12-20 00:49:09
+INUV,"Inuvo, Inc.",margin_pressure,Intel_Margin,7.0,7,2,2024-11-08 16:13:08,2024-11-08 16:13:08
+CIVI,"Civitas Resources, Inc.",supply_pressure,Intel_CCG_or_DCAI,7.0,7,4,2024-11-08 17:11:19,2024-11-08 17:11:19
+CL,Colgate-Palmolive Company,supply_pressure,Intel_CCG_or_DCAI,7.0,7,6,2024-12-03 19:18:53,2024-12-03 19:18:53
+NX,Quanex Building Products Corporation,margin_pressure,Intel_Margin,7.0,7,1,2024-12-13 18:43:33,2024-12-13 18:43:33
+SOL,Emeren Group Ltd,margin_pressure,Intel_Margin,7.0,7,3,2024-11-15 00:19:44,2024-11-15 00:19:44
+BLIN,"Bridgeline Digital, Inc.",margin_pressure,Intel_Margin,7.0,7,1,2024-12-24 00:01:47,2024-12-24 00:01:47
+B,Barrick Mining Corporation,supply_pressure,Intel_CCG_or_DCAI,7.0,7,4,2024-11-07 20:25:23,2024-11-07 20:25:23
+IPA,ImmunoPrecise Antibodies Ltd.,margin_pressure,Intel_Margin,7.0,7,3,2024-12-10 22:33:09,2024-12-10 22:33:09
+NATL,NCR Atleos Corporation,margin_pressure,Intel_Margin,7.0,7,1,2024-11-13 17:13:07,2024-11-13 17:13:07
+NSYS,Nortech Systems Incorporated,margin_pressure,Intel_Margin,7.0,7,1,2024-11-09 13:20:26,2024-11-09 13:20:26
+NTES,"NetEase, Inc.",pc_demand,Intel_CCG,7.0,7,3,2024-11-14 16:47:08,2024-11-14 16:47:08
+QGEN,Qiagen N.V.,margin_pressure,Intel_Margin,7.0,7,1,2024-11-07 20:58:05,2024-11-07 20:58:05
+DOCU,"DocuSign, Inc.",cloud_capacity,Intel_DCAI,7.0,7,2,2024-12-06 00:49:44,2024-12-06 00:49:44
+DAKT,"Daktronics, Inc.",margin_pressure,Intel_Margin,7.0,7,2,2024-12-04 18:29:01,2024-12-04 18:29:01
+VEEE,Twin Vee Powercats Co.,supply_pressure,Intel_CCG_or_DCAI,7.0,7,2,2024-11-14 19:04:07,2024-11-14 19:04:07
+GM,General Motors Company,supply_pressure,Intel_CCG_or_DCAI,7.0,7,4,2024-11-20 21:27:11,2024-11-20 21:27:11
+WRBY,Warby Parker Inc.,margin_pressure,Intel_Margin,7.0,7,3,2024-11-09 00:18:01,2024-11-09 00:18:01
+CCL,Carnival Corporation & plc,margin_pressure,Intel_Margin,7.0,7,1,2024-12-20 19:11:02,2024-12-20 19:11:02
+CBRL,"Cracker Barrel Old Country Store, Inc.",margin_pressure,Intel_Margin,7.0,7,3,2024-12-04 19:29:01,2024-12-04 19:29:01
+WSM,"Williams-Sonoma, Inc.",margin_pressure,Intel_Margin,7.0,7,5,2024-11-20 17:19:07,2024-11-20 17:19:07
+BB,BlackBerry Limited,supply_pressure,Intel_CCG_or_DCAI,7.0,7,3,2024-11-19 22:50:29,2024-12-20 02:25:27
+TBCH,Turtle Beach Corporation,margin_pressure,Intel_Margin,7.0,7,2,2024-11-08 01:59:16,2024-11-08 01:59:16
+PR,Permian Resources Corporation,cloud_capacity,Intel_DCAI,7.0,7,3,2024-11-07 20:48:08,2024-11-07 20:48:08
+AMD,"Advanced Micro Devices, Inc.",foundry_manufacturing,Intel_Foundry,6.0,3,3,2024-12-03 21:12:08,2024-12-03 21:12:08
+TFC,Truist Financial Corporation,supply_pressure,Intel_CCG_or_DCAI,6.0,6,4,2024-12-10 17:57:21,2024-12-10 17:57:21
+GOCO,"GoHealth, Inc.",margin_pressure,Intel_Margin,6.0,6,1,2024-11-09 09:37:50,2024-11-09 09:37:50
+AKAM,"Akamai Technologies, Inc.",server_cpu_demand,Intel_DCAI,6.0,6,2,2024-11-08 01:07:03,2024-11-08 01:07:03
+ADBE,Adobe Inc.,cloud_capacity,Intel_DCAI,6.0,6,1,2024-12-12 06:09:16,2024-12-12 06:09:16
+SWK,"Stanley Black & Decker, Inc.",supply_pressure,Intel_CCG_or_DCAI,6.0,6,4,2024-11-15 19:32:09,2024-12-04 17:53:07
+SWK,"Stanley Black & Decker, Inc.",margin_pressure,Intel_Margin,6.0,6,3,2024-11-15 19:32:09,2024-12-04 17:53:07
+GMS,GMS Inc.,margin_pressure,Intel_Margin,6.0,6,3,2024-12-05 20:24:10,2024-12-05 20:24:10
+IRM,Iron Mountain Incorporated,supply_pressure,Intel_CCG_or_DCAI,6.0,6,6,2024-12-11 18:07:14,2024-12-11 18:07:14
+DDD,3D Systems Corporation,margin_pressure,Intel_Margin,6.0,6,2,2024-11-27 16:40:23,2024-11-27 16:40:23
+SNT,Senstar Technologies Corporation,foundry_manufacturing,Intel_Foundry,6.0,6,4,2024-11-13 02:33:53,2024-11-13 02:33:53
+KO,The Coca-Cola Company,supply_pressure,Intel_CCG_or_DCAI,6.0,6,5,2024-12-03 18:04:07,2024-12-03 18:04:07
+SOFI,"SoFi Technologies, Inc.",margin_pressure,Intel_Margin,6.0,6,1,2024-12-04 04:17:44,2024-12-04 04:17:44
+CHPT,"ChargePoint Holdings, Inc.",margin_pressure,Intel_Margin,6.0,6,1,2024-12-05 00:22:06,2024-12-05 00:22:06
+WKSP,Worksport Ltd.,margin_pressure,Intel_Margin,6.0,6,1,2024-11-14 01:44:44,2024-11-14 01:44:44
+ULBI,Ultralife Corporation,margin_pressure,Intel_Margin,6.0,6,1,2024-11-08 19:06:15,2024-11-08 19:06:15
+DDD,3D Systems Corporation,supply_pressure,Intel_CCG_or_DCAI,6.0,6,5,2024-11-27 16:40:23,2024-11-27 16:40:23
+LCUT,"Lifetime Brands, Inc.",supply_pressure,Intel_CCG_or_DCAI,6.0,6,2,2024-11-08 17:47:55,2024-11-08 17:47:55
+DELL,Dell Technologies Inc.,foundry_manufacturing,Intel_Foundry,6.0,2,2,2024-12-04 01:26:50,2024-12-04 01:26:50
+KIRK,"Kirkland's, Inc.",supply_pressure,Intel_CCG_or_DCAI,6.0,6,3,2024-12-06 16:07:12,2024-12-06 16:07:12
+KEYS,"Keysight Technologies, Inc.",supply_pressure,Intel_CCG_or_DCAI,6.0,6,4,2024-11-20 00:40:25,2024-11-20 00:40:25
+NVAX,"Novavax, Inc.",margin_pressure,Intel_Margin,6.0,6,2,2024-11-12 16:52:24,2024-11-12 16:52:24
+J,Jacobs Solutions Inc.,cloud_capacity,Intel_DCAI,6.0,6,1,2024-11-20 02:13:51,2024-11-20 02:13:51
+AHR,"American Healthcare REIT, Inc.",supply_pressure,Intel_CCG_or_DCAI,6.0,6,4,2024-11-13 22:17:09,2024-11-13 22:17:09
+VUZI,Vuzix Corporation,margin_pressure,Intel_Margin,6.0,6,3,2024-11-14 23:00:26,2024-11-14 23:00:26
+RXO,"RXO, Inc.",supply_pressure,Intel_CCG_or_DCAI,6.0,6,2,2024-11-10 09:36:05,2024-11-10 09:36:05
+MCK,McKesson Corporation,supply_pressure,Intel_CCG_or_DCAI,6.0,6,3,2024-12-04 16:03:09,2024-12-04 16:03:09
+AMBC,"Ambac Financial Group, Inc.",supply_pressure,Intel_CCG_or_DCAI,6.0,6,3,2024-11-13 17:01:04,2024-11-13 17:01:04
+FIGS,"FIGS, Inc.",supply_pressure,Intel_CCG_or_DCAI,6.0,6,2,2024-11-09 13:34:28,2024-11-09 13:34:28
+HNRG,Hallador Energy Company,cloud_capacity,Intel_DCAI,6.0,6,1,2024-11-13 01:54:09,2024-11-13 01:54:09
+HTZ,"Hertz Global Holdings, Inc.",supply_pressure,Intel_CCG_or_DCAI,6.0,6,3,2024-11-12 18:39:43,2024-11-12 18:39:43
+BN,Brookfield Corporation,cloud_capacity,Intel_DCAI,6.0,6,1,2024-11-14 19:20:48,2024-11-14 19:20:48
+ABM,ABM Industries Incorporated,margin_pressure,Intel_Margin,6.0,6,3,2024-12-18 17:08:10,2024-12-18 17:08:10
+PLAY,"Dave & Buster's Entertainment, Inc.",margin_pressure,Intel_Margin,6.0,6,2,2024-12-11 01:32:30,2024-12-11 01:32:30
+ABEO,Abeona Therapeutics Inc.,pc_demand,Intel_CCG,6.0,6,2,2024-11-14 20:30:00,2024-11-14 20:30:00
+CRWD,"CrowdStrike Holdings, Inc.",margin_pressure,Intel_Margin,6.0,6,2,2024-11-27 02:02:32,2024-11-27 02:02:32
+MRVL,"Marvell Technology, Inc.",supply_pressure,Intel_CCG_or_DCAI,6.0,6,6,2024-12-04 01:08:56,2024-12-04 01:08:56
+SKYH,Sky Harbour Group Corporation,margin_pressure,Intel_Margin,6.0,6,2,2024-11-13 20:05:06,2024-11-13 20:05:06
+PUBM,"PubMatic, Inc.",supply_pressure,Intel_CCG_or_DCAI,6.0,6,2,2024-11-13 05:53:09,2024-11-13 05:53:09
+ANGI,Angi Inc.,supply_pressure,Intel_CCG_or_DCAI,6.0,6,3,2024-11-12 19:23:34,2024-11-12 19:23:34
+ILMN,"Illumina, Inc.",supply_pressure,Intel_CCG_or_DCAI,6.0,6,3,2024-11-20 19:09:50,2024-12-03 21:41:50
+IHS,IHS Holding Limited,supply_pressure,Intel_CCG_or_DCAI,6.0,6,4,2024-11-12 22:28:57,2024-11-12 22:28:57
+ICG,Intchains Group Limited,margin_pressure,Intel_Margin,6.0,6,1,2024-11-21 12:01:05,2024-11-21 12:01:05
+CSIQ,Canadian Solar Inc.,margin_pressure,Intel_Margin,6.0,6,2,2024-12-05 16:26:38,2024-12-05 16:26:38
+LYTS,LSI Industries Inc.,cloud_capacity,Intel_DCAI,6.0,6,2,2024-11-09 02:39:13,2024-11-09 02:39:13
+MDT,Medtronic plc,margin_pressure,Intel_Margin,6.0,6,1,2024-11-19 16:04:22,2024-11-19 16:04:22
+SONY,Sony Group Corporation,margin_pressure,Intel_Margin,6.0,6,4,2024-11-11 14:34:09,2024-11-11 14:34:09
+QBTS,D-Wave Quantum Inc.,margin_pressure,Intel_Margin,6.0,6,3,2024-11-14 16:44:52,2024-11-14 16:44:52
+LAZR,"Luminar Technologies, Inc.",cloud_capacity,Intel_DCAI,6.0,6,2,2024-11-12 00:37:23,2024-11-12 00:37:23
+MWA,"Mueller Water Products, Inc.",foundry_manufacturing,Intel_Foundry,6.0,6,5,2024-11-10 05:47:15,2024-11-10 05:47:15
+RGTI,"Rigetti Computing, Inc.",margin_pressure,Intel_Margin,6.0,6,1,2024-11-12 18:33:06,2024-11-12 18:33:06
+AROC,"Archrock, Inc.",margin_pressure,Intel_Margin,6.0,6,3,2024-11-12 16:35:29,2024-11-12 16:35:29
+IBM,International Business Machines Corporation,cloud_capacity,Intel_DCAI,6.0,6,2,2024-11-19 23:20:00,2024-11-19 23:20:00
+TSEM,Tower Semiconductor Ltd.,cloud_capacity,Intel_DCAI,6.0,6,3,2024-11-13 19:49:06,2024-11-13 19:49:06
+ERIC,Telefonaktiebolaget LM Ericsson (publ),cloud_capacity,Intel_DCAI,6.0,6,2,2024-07-12 17:23:03,2024-07-12 17:23:03
+SPWH,"Sportsman's Warehouse Holdings, Inc.",supply_pressure,Intel_CCG_or_DCAI,6.0,6,4,2024-12-11 02:05:34,2024-12-11 02:05:34
+OPRX,OptimizeRx Corporation,margin_pressure,Intel_Margin,6.0,6,2,2024-11-14 03:58:34,2024-11-14 03:58:34
+OPAL,OPAL Fuels Inc.,margin_pressure,Intel_Margin,6.0,6,1,2024-11-08 20:25:09,2024-11-08 20:25:09
+CARR,Carrier Global Corporation,cloud_capacity,Intel_DCAI,6.0,6,1,2024-11-15 21:09:05,2024-11-15 21:09:05
+HSAI,Hesai Group,supply_pressure,Intel_CCG_or_DCAI,6.0,6,3,2024-11-26 15:21:02,2024-11-26 15:21:02
+RKLB,Rocket Lab Corporation,margin_pressure,Intel_Margin,6.0,6,1,2024-11-13 02:13:57,2024-11-13 02:13:57
+MTSI,"MACOM Technology Solutions Holdings, Inc.",supply_pressure,Intel_CCG_or_DCAI,6.0,6,5,2024-11-07 20:50:36,2024-11-07 20:50:36
+CIEN,Ciena Corporation,server_cpu_demand,Intel_DCAI,5.4,3,1,2024-12-12 17:19:09,2024-12-12 17:19:09
+TBCH,Turtle Beach Corporation,pc_demand,Intel_CCG,5.0,5,3,2024-11-08 01:59:16,2024-11-08 01:59:16
+PCT,"PureCycle Technologies, Inc.",pc_demand,Intel_CCG,5.0,5,3,2024-11-09 19:31:39,2024-11-09 19:31:39
+PCT,"PureCycle Technologies, Inc.",supply_pressure,Intel_CCG_or_DCAI,5.0,5,4,2024-11-09 19:31:39,2024-11-09 19:31:39
+POST,"Post Holdings, Inc.",margin_pressure,Intel_Margin,5.0,5,2,2024-11-15 16:13:30,2024-11-15 16:13:30
+PANW,"Palo Alto Networks, Inc.",supply_pressure,Intel_CCG_or_DCAI,5.0,5,4,2024-11-21 01:18:22,2024-12-03 22:11:41
+TIGO,Millicom International Cellular S.A.,margin_pressure,Intel_Margin,5.0,5,2,2024-11-09 17:28:09,2024-11-09 17:28:09
+GP,GreenPower Motor Company Inc.,supply_pressure,Intel_CCG_or_DCAI,5.0,5,2,2024-07-01 15:46:03,2024-07-01 15:46:03
+GPRK,GeoPark Limited,margin_pressure,Intel_Margin,5.0,5,3,2024-11-09 19:50:25,2024-11-09 19:50:25
+JD,"JD.com, Inc.",supply_pressure,Intel_CCG_or_DCAI,5.0,5,3,2024-11-14 16:49:09,2024-11-14 16:49:09
+BRFS,BRF S.A.,foundry_manufacturing,Intel_Foundry,5.0,5,4,2024-11-15 00:56:13,2024-11-15 00:56:13
+SU,Suncor Energy Inc.,margin_pressure,Intel_Margin,5.0,5,1,2024-11-13 17:34:15,2024-11-13 17:34:15
+GDS,GDS Holdings Limited,margin_pressure,Intel_Margin,5.0,5,2,2024-11-19 15:45:40,2024-11-19 15:45:40
+AKBA,"Akebia Therapeutics, Inc.",margin_pressure,Intel_Margin,5.0,5,1,2024-11-07 18:59:54,2024-11-07 18:59:54
+FTCI,"FTC Solar, Inc.",margin_pressure,Intel_Margin,5.0,5,2,2024-11-12 17:15:27,2024-11-12 17:15:27
+LB,LandBridge Company LLC,margin_pressure,Intel_Margin,5.0,5,2,2024-11-09 00:57:16,2024-11-09 00:57:16
+DLB,"Dolby Laboratories, Inc.",margin_pressure,Intel_Margin,5.0,5,2,2024-11-19 23:18:49,2024-11-19 23:18:49
+DNOW,DNOW Inc.,cloud_capacity,Intel_DCAI,5.0,5,1,2024-11-07 20:30:27,2024-11-07 20:30:27
+DLTH,Duluth Holdings Inc.,supply_pressure,Intel_CCG_or_DCAI,5.0,5,2,2024-12-05 16:38:07,2024-12-05 16:38:07
+CEVA,"CEVA, Inc.",margin_pressure,Intel_Margin,5.0,5,2,2024-11-08 04:04:06,2024-11-08 04:04:06
+RBRK,"Rubrik, Inc.",margin_pressure,Intel_Margin,5.0,5,3,2024-12-06 01:42:20,2024-12-06 01:42:20
+SNT,Senstar Technologies Corporation,cloud_capacity,Intel_DCAI,5.0,5,1,2024-11-13 02:33:53,2024-11-13 02:33:53
+DKNG,DraftKings Inc.,supply_pressure,Intel_CCG_or_DCAI,5.0,5,4,2024-11-08 16:41:51,2024-12-02 16:22:29
+ISSC,"Innovative Solutions and Support, Inc.",margin_pressure,Intel_Margin,5.0,5,2,2024-12-20 03:01:03,2024-12-20 03:01:03
+WRBY,Warby Parker Inc.,supply_pressure,Intel_CCG_or_DCAI,5.0,5,4,2024-11-09 00:18:01,2024-11-09 00:18:01
+SATS,EchoStar Corporation,cloud_capacity,Intel_DCAI,5.0,5,2,2024-11-12 18:39:20,2024-11-12 18:39:20
+SCVL,"Shoe Carnival, Inc.",supply_pressure,Intel_CCG_or_DCAI,5.0,5,3,2024-11-22 03:37:10,2024-11-22 03:37:10
+IMXI,"International Money Express, Inc.",margin_pressure,Intel_Margin,5.0,5,1,2024-11-08 19:27:08,2024-11-08 19:27:08
+MDT,Medtronic plc,supply_pressure,Intel_CCG_or_DCAI,5.0,5,3,2024-11-19 16:04:22,2024-11-19 16:04:22
+NTNX,"Nutanix, Inc.",margin_pressure,Intel_Margin,5.0,5,5,2024-11-27 01:29:35,2024-11-27 01:29:35
+OEC,Orion S.A.,margin_pressure,Intel_Margin,5.0,5,1,2024-11-08 17:30:34,2024-11-08 17:30:34
+NAAS,NaaS Technology Inc.,margin_pressure,Intel_Margin,5.0,5,1,2024-11-20 15:16:22,2024-11-20 15:16:22
+AZEK,The AZEK Company Inc.,supply_pressure,Intel_CCG_or_DCAI,5.0,5,1,2024-11-20 01:28:20,2024-11-20 01:28:20
+SLNG,"Stabilis Solutions, Inc.",supply_pressure,Intel_CCG_or_DCAI,5.0,5,4,2024-11-09 00:23:26,2024-11-09 00:23:26
+CAVA,"CAVA Group, Inc.",supply_pressure,Intel_CCG_or_DCAI,5.0,5,2,2024-11-12 23:37:54,2024-11-12 23:37:54
+PSTG,"Pure Storage, Inc.",server_cpu_demand,Intel_DCAI,5.0,5,2,2024-12-04 01:04:35,2024-12-04 01:04:35
+CINT,CI&T Inc.,cloud_capacity,Intel_DCAI,5.0,5,2,2024-11-14 18:38:36,2024-11-14 18:38:36
+CIVI,"Civitas Resources, Inc.",margin_pressure,Intel_Margin,5.0,5,2,2024-11-08 17:11:19,2024-11-08 17:11:19
+CLPT,"ClearPoint Neuro, Inc.",margin_pressure,Intel_Margin,5.0,5,1,2024-11-08 03:31:31,2024-11-08 03:31:31
+VVV,Valvoline Inc.,margin_pressure,Intel_Margin,5.0,5,2,2024-11-19 19:12:43,2024-11-19 19:12:43
+MVST,"Microvast Holdings, Inc.",margin_pressure,Intel_Margin,5.0,5,2,2024-11-12 23:20:54,2024-11-12 23:20:54
+PVH,PVH Corp.,margin_pressure,Intel_Margin,5.0,5,1,2024-12-05 22:53:52,2024-12-05 22:53:52
+DOCU,"DocuSign, Inc.",supply_pressure,Intel_CCG_or_DCAI,5.0,5,3,2024-12-06 00:49:44,2024-12-06 00:49:44
+UNFI,"United Natural Foods, Inc.",supply_pressure,Intel_CCG_or_DCAI,5.0,5,2,2024-12-10 17:10:52,2024-12-10 17:10:52
+SMTC,Semtech Corporation,supply_pressure,Intel_CCG_or_DCAI,5.0,5,5,2024-11-26 02:09:24,2024-11-26 02:09:24
+DAVA,Endava plc,margin_pressure,Intel_Margin,5.0,5,1,2024-11-13 01:57:20,2024-11-13 01:57:20
+AMRC,"Ameresco, Inc.",margin_pressure,Intel_Margin,5.0,5,1,2024-11-08 02:36:37,2024-11-08 02:36:37
+NRGV,"Energy Vault Holdings, Inc.",cloud_capacity,Intel_DCAI,5.0,5,1,2024-11-13 03:31:47,2024-11-13 03:31:47
+RDCM,RADCOM Ltd.,cloud_capacity,Intel_DCAI,5.0,5,1,2024-11-13 18:01:57,2024-11-13 18:01:57
+NUS,"Nu Skin Enterprises, Inc.",margin_pressure,Intel_Margin,5.0,5,1,2024-11-08 03:07:09,2024-11-08 03:07:09
+HRL,Hormel Foods Corporation,supply_pressure,Intel_CCG_or_DCAI,5.0,5,1,2024-12-04 18:54:55,2024-12-04 18:54:55
+IBM,International Business Machines Corporation,margin_pressure,Intel_Margin,5.0,5,2,2024-11-19 23:20:00,2024-11-19 23:20:00
+HQY,"HealthEquity, Inc.",margin_pressure,Intel_Margin,5.0,5,2,2024-12-10 05:08:35,2024-12-10 05:08:35
+EH,EHang Holdings Limited,supply_pressure,Intel_CCG_or_DCAI,5.0,5,4,2024-11-18 16:07:34,2024-11-18 16:07:34
+ASLE,AerSale Corporation,supply_pressure,Intel_CCG_or_DCAI,5.0,5,4,2024-11-10 02:01:31,2024-11-10 02:01:31
+ASYS,"Amtech Systems, Inc.",cloud_capacity,Intel_DCAI,5.0,5,2,2024-12-10 00:24:09,2024-12-10 00:24:09
+SGRY,"Surgery Partners, Inc.",margin_pressure,Intel_Margin,5.0,5,2,2024-11-12 19:55:21,2024-11-12 19:55:21
+TOL,"Toll Brothers, Inc.",margin_pressure,Intel_Margin,5.0,5,1,2024-12-10 15:52:20,2024-12-10 15:52:20
+HNRG,Hallador Energy Company,margin_pressure,Intel_Margin,5.0,5,2,2024-11-13 01:54:09,2024-11-13 01:54:09
+FLNC,"Fluence Energy, Inc.",margin_pressure,Intel_Margin,5.0,5,1,2024-11-26 22:15:41,2024-11-26 22:15:41
+EVGO,"EVgo, Inc.",foundry_manufacturing,Intel_Foundry,5.0,5,4,2024-11-12 16:20:25,2024-11-12 16:20:25
+PANW,"Palo Alto Networks, Inc.",pc_demand,Intel_CCG,5.0,5,4,2024-11-21 01:18:22,2024-12-03 22:11:41
+CAN,Canaan Inc.,supply_pressure,Intel_CCG_or_DCAI,5.0,5,1,2024-11-20 17:26:23,2024-11-20 17:26:23
+CAN,Canaan Inc.,foundry_manufacturing,Intel_Foundry,5.0,5,4,2024-11-20 17:26:23,2024-11-20 17:26:23
+TTD,"The Trade Desk, Inc.",cloud_capacity,Intel_DCAI,5.0,5,1,2024-11-08 02:32:12,2024-11-08 02:32:12
+IAG,IAMGOLD Corporation,supply_pressure,Intel_CCG_or_DCAI,5.0,5,3,2024-11-08 18:44:01,2024-11-08 18:44:01
+IAC,IAC Inc.,supply_pressure,Intel_CCG_or_DCAI,5.0,5,2,2024-11-12 19:25:45,2024-11-12 19:25:45
+EHAB,"Enhabit, Inc.",margin_pressure,Intel_Margin,5.0,5,2,2024-11-09 15:24:06,2024-11-09 15:24:06
+ENS,EnerSys,supply_pressure,Intel_CCG_or_DCAI,5.0,5,3,2024-11-08 01:40:33,2024-11-08 01:40:33
+EPAC,Enerpac Tool Group Corp.,margin_pressure,Intel_Margin,5.0,5,1,2024-12-19 18:26:24,2024-12-19 18:26:24
+RYN,Rayonier Inc.,supply_pressure,Intel_CCG_or_DCAI,5.0,5,3,2024-11-07 19:24:28,2024-11-07 19:24:28
+MOBX,"Mobix Labs, Inc.",margin_pressure,Intel_Margin,5.0,5,1,2024-12-20 00:47:08,2024-12-20 00:47:08
+CNNE,"Cannae Holdings, Inc.",margin_pressure,Intel_Margin,5.0,5,1,2024-11-13 01:11:25,2024-11-13 01:11:25
+CMCM,Cheetah Mobile Inc.,pc_demand,Intel_CCG,5.0,5,3,2024-12-17 18:54:22,2024-12-17 18:54:22
+PLAB,"Photronics, Inc.",foundry_manufacturing,Intel_Foundry,5.0,5,2,2024-12-11 14:55:27,2024-12-11 14:55:27
+ADEA,Adeia Inc.,supply_pressure,Intel_CCG_or_DCAI,5.0,5,3,2024-11-09 19:51:01,2024-11-09 19:51:01
+ADBE,Adobe Inc.,pc_demand,Intel_CCG,5.0,5,4,2024-12-12 06:09:16,2024-12-12 06:09:16
+MIND,"MIND Technology, Inc.",supply_pressure,Intel_CCG_or_DCAI,5.0,5,3,2024-12-11 17:50:00,2024-12-11 17:50:00
+MMI,"Marcus & Millichap, Inc.",margin_pressure,Intel_Margin,5.0,5,1,2024-11-08 22:05:32,2024-11-08 22:05:32
+S,"SentinelOne, Inc.",cloud_capacity,Intel_DCAI,5.0,5,2,2024-12-05 02:15:34,2024-12-05 02:15:34
+SAIC,Science Applications International Corporation,cloud_capacity,Intel_DCAI,5.0,5,1,2024-12-05 22:11:46,2024-12-05 22:11:46
+BRZE,"Braze, Inc.",cloud_capacity,Intel_DCAI,5.0,5,2,2024-12-10 00:57:06,2024-12-10 00:57:06
+HAE,Haemonetics Corporation,margin_pressure,Intel_Margin,5.0,5,2,2024-11-09 06:34:24,2024-11-09 06:34:24
+VRME,"VerifyMe, Inc.",supply_pressure,Intel_CCG_or_DCAI,5.0,5,3,2024-11-12 22:40:37,2024-11-12 22:40:37
+APP,AppLovin Corporation,margin_pressure,Intel_Margin,5.0,5,2,2024-12-11 16:20:59,2024-12-11 16:20:59
+ALNT,Allient Inc.,supply_pressure,Intel_CCG_or_DCAI,5.0,5,3,2024-11-10 10:45:22,2024-11-10 10:45:22
+BRZE,"Braze, Inc.",supply_pressure,Intel_CCG_or_DCAI,5.0,5,4,2024-12-10 00:57:06,2024-12-10 00:57:06
+PKOH,Park-Ohio Holdings Corp.,supply_pressure,Intel_CCG_or_DCAI,5.0,5,2,2024-11-09 02:28:01,2024-11-09 02:28:01
+PNC,"The PNC Financial Services Group, Inc.",supply_pressure,Intel_CCG_or_DCAI,5.0,5,3,2024-11-08 18:09:15,2024-11-08 18:09:15
+ACTG,Acacia Research Corporation,supply_pressure,Intel_CCG_or_DCAI,4.0,4,4,2024-11-12 18:01:23,2024-11-12 18:01:23
+ACTG,Acacia Research Corporation,margin_pressure,Intel_Margin,4.0,4,3,2024-11-12 18:01:23,2024-11-12 18:01:23
+XRAY,DENTSPLY SIRONA Inc.,supply_pressure,Intel_CCG_or_DCAI,4.0,4,3,2024-11-07 20:02:52,2024-11-07 20:02:52
+ZK,ZEEKR Intelligent Technology Holding Limited,margin_pressure,Intel_Margin,4.0,4,1,2024-11-15 20:04:24,2024-11-15 20:04:24
+BASE,"Couchbase, Inc.",supply_pressure,Intel_CCG_or_DCAI,4.0,4,4,2024-12-04 04:16:20,2024-12-04 04:16:20
+SKYH,Sky Harbour Group Corporation,supply_pressure,Intel_CCG_or_DCAI,4.0,4,3,2024-11-13 20:05:06,2024-11-13 20:05:06
+ASLE,AerSale Corporation,margin_pressure,Intel_Margin,4.0,4,2,2024-11-10 02:01:31,2024-11-10 02:01:31
+SHOP,Shopify Inc.,margin_pressure,Intel_Margin,4.0,4,2,2024-11-12 17:23:27,2024-11-12 17:23:27
+BJ,"BJ's Wholesale Club Holdings, Inc.",margin_pressure,Intel_Margin,4.0,4,3,2024-11-22 05:33:20,2024-11-22 05:33:20
+AMBA,"Ambarella, Inc.",supply_pressure,Intel_CCG_or_DCAI,4.0,4,2,2024-11-27 01:50:27,2024-11-27 01:50:27
+TGNA,TEGNA Inc.,supply_pressure,Intel_CCG_or_DCAI,4.0,4,4,2024-11-07 20:56:27,2024-11-07 20:56:27
+SVV,"Savers Value Village, Inc.",margin_pressure,Intel_Margin,4.0,4,1,2024-11-09 09:27:54,2024-11-09 09:27:54
+GEVO,"Gevo, Inc.",supply_pressure,Intel_CCG_or_DCAI,4.0,4,1,2024-11-08 01:13:04,2024-11-08 01:13:04
+BTDR,Bitdeer Technologies Group,foundry_manufacturing,Intel_Foundry,4.0,4,1,2024-11-18 16:57:35,2024-11-18 16:57:35
+CARR,Carrier Global Corporation,margin_pressure,Intel_Margin,4.0,4,2,2024-11-15 21:09:05,2024-11-15 21:09:05
+PRKS,United Parks & Resorts Inc.,supply_pressure,Intel_CCG_or_DCAI,4.0,4,4,2024-11-08 02:55:28,2024-11-08 02:55:28
+MAMA,"Mama's Creations, Inc.",margin_pressure,Intel_Margin,4.0,4,1,2024-12-17 00:25:26,2024-12-17 00:25:26
+SG,"Sweetgreen, Inc.",margin_pressure,Intel_Margin,4.0,4,1,2024-11-10 06:34:10,2024-11-10 06:34:10
+KULR,"KULR Technology Group, Inc.",cloud_capacity,Intel_DCAI,4.0,4,1,2024-11-14 01:44:05,2024-11-14 01:44:05
+KMX,"CarMax, Inc.",supply_pressure,Intel_CCG_or_DCAI,4.0,4,2,2024-12-19 16:46:03,2024-12-19 16:46:03
+ADNT,Adient plc,supply_pressure,Intel_CCG_or_DCAI,4.0,4,3,2024-11-08 16:32:14,2024-11-08 16:32:14
+KMB,Kimberly-Clark Corporation,supply_pressure,Intel_CCG_or_DCAI,4.0,4,1,2024-12-03 21:15:25,2024-12-03 21:15:25
+ORCL,Oracle Corporation,supply_pressure,Intel_CCG_or_DCAI,4.0,2,2,2024-12-10 01:35:38,2024-12-10 01:35:38
+OPRX,OptimizeRx Corporation,supply_pressure,Intel_CCG_or_DCAI,4.0,4,3,2024-11-14 03:58:34,2024-11-14 03:58:34
+ONDS,Ondas Holdings Inc.,margin_pressure,Intel_Margin,4.0,4,1,2024-11-12 18:02:06,2024-11-12 18:02:06
+GIS,"General Mills, Inc.",supply_pressure,Intel_CCG_or_DCAI,4.0,4,1,2024-12-18 14:19:15,2024-12-18 14:19:15
+STN,Stantec Inc.,cloud_capacity,Intel_DCAI,4.0,4,1,2024-11-08 17:22:44,2024-11-08 17:22:44
+STM,STMicroelectronics N.V.,margin_pressure,Intel_Margin,4.0,4,1,2024-11-22 16:05:41,2024-11-22 16:05:41
+C,Citigroup Inc.,cloud_capacity,Intel_DCAI,4.0,4,1,2024-07-12 20:26:03,2024-07-12 20:26:03
+BYRN,Byrna Technologies Inc.,margin_pressure,Intel_Margin,4.0,4,1,2024-07-09 16:10:28,2024-07-09 16:10:28
+KKR,KKR & Co. Inc.,cloud_capacity,Intel_DCAI,4.0,4,1,2024-12-10 15:56:06,2024-12-10 15:56:06
+KGS,"Kodiak Gas Services, Inc.",cloud_capacity,Intel_DCAI,4.0,4,1,2024-11-09 18:23:03,2024-11-09 18:23:03
+DAKT,"Daktronics, Inc.",supply_pressure,Intel_CCG_or_DCAI,4.0,4,2,2024-12-04 18:29:01,2024-12-04 18:29:01
+CYBR,CyberArk Software Ltd.,cloud_capacity,Intel_DCAI,4.0,4,1,2024-11-13 17:28:10,2024-11-13 17:28:10
+CXT,"Crane NXT, Co.",supply_pressure,Intel_CCG_or_DCAI,4.0,4,1,2024-11-09 14:30:25,2024-11-09 14:30:25
+VRAR,"The Glimpse Group, Inc.",margin_pressure,Intel_Margin,4.0,4,1,2024-11-15 00:54:59,2024-11-15 00:54:59
+VRAR,"The Glimpse Group, Inc.",cloud_capacity,Intel_DCAI,4.0,4,2,2024-11-15 00:54:59,2024-11-15 00:54:59
+CSCO,"Cisco Systems, Inc.",server_cpu_demand,Intel_DCAI,4.0,2,1,2024-11-14 01:27:08,2024-11-14 01:27:08
+CRWS,"Crown Crafts, Inc.",margin_pressure,Intel_Margin,4.0,4,2,2024-11-12 17:12:43,2024-11-12 17:12:43
+STEP,StepStone Group Inc.,margin_pressure,Intel_Margin,4.0,4,1,2024-11-09 18:55:48,2024-11-09 18:55:48
+GWH,"ESS Tech, Inc.",cloud_capacity,Intel_DCAI,4.0,4,1,2024-11-14 01:16:07,2024-11-14 01:16:07
+GS,"The Goldman Sachs Group, Inc.",supply_pressure,Intel_CCG_or_DCAI,4.0,4,2,2024-07-15 15:57:08,2024-12-10 17:51:03
+GRPN,"Groupon, Inc.",supply_pressure,Intel_CCG_or_DCAI,4.0,4,2,2024-11-12 23:19:49,2024-11-12 23:19:49
+FSLY,"Fastly, Inc.",supply_pressure,Intel_CCG_or_DCAI,4.0,4,2,2024-12-04 21:10:50,2024-12-04 21:10:50
+FROG,JFrog Ltd.,supply_pressure,Intel_CCG_or_DCAI,4.0,4,3,2024-11-08 02:15:33,2024-11-08 02:15:33
+WWD,"Woodward, Inc.",cloud_capacity,Intel_DCAI,4.0,4,1,2024-11-26 01:50:51,2024-11-26 01:50:51
+CRH,CRH plc,margin_pressure,Intel_Margin,4.0,4,1,2024-11-07 21:41:42,2024-11-07 21:41:42
+DGII,Digi International Inc.,supply_pressure,Intel_CCG_or_DCAI,4.0,4,2,2024-11-13 23:34:25,2024-11-13 23:34:25
+DEC,Diversified Energy Company PLC,supply_pressure,Intel_CCG_or_DCAI,4.0,4,4,2024-11-13 19:49:11,2024-11-15 18:52:08
+DDI,"DoubleDown Interactive Co., Ltd.",margin_pressure,Intel_Margin,4.0,4,1,2024-11-12 04:06:01,2024-11-12 04:06:01
+ATAT,Atour Lifestyle Holdings Limited,supply_pressure,Intel_CCG_or_DCAI,4.0,4,2,2024-11-22 17:28:56,2024-11-22 17:28:56
+CRDO,Credo Technology Group Holding Ltd,supply_pressure,Intel_CCG_or_DCAI,4.0,4,1,2024-12-03 01:35:43,2024-12-03 01:35:43
+CRDO,Credo Technology Group Holding Ltd,margin_pressure,Intel_Margin,4.0,4,2,2024-12-03 01:35:43,2024-12-03 01:35:43
+ROST,"Ross Stores, Inc.",margin_pressure,Intel_Margin,4.0,4,1,2024-11-22 01:38:30,2024-11-22 01:38:30
+OKTA,"Okta, Inc.",margin_pressure,Intel_Margin,4.0,4,2,2024-12-04 01:52:58,2024-12-04 01:52:58
+GBLI,"Global Indemnity Group, LLC",cloud_capacity,Intel_DCAI,4.0,4,1,2024-11-09 18:49:00,2024-11-09 18:49:00
+HD,"The Home Depot, Inc.",supply_pressure,Intel_CCG_or_DCAI,4.0,4,2,2024-11-12 18:03:09,2024-11-12 18:03:09
+PSMT,"PriceSmart, Inc.",supply_pressure,Intel_CCG_or_DCAI,4.0,4,3,2024-07-11 18:15:07,2024-07-11 18:15:07
+BLDE,"Blade Air Mobility, Inc.",supply_pressure,Intel_CCG_or_DCAI,4.0,4,2,2024-11-12 17:06:06,2024-11-12 17:06:06
+RNW,ReNew Energy Global Plc,supply_pressure,Intel_CCG_or_DCAI,4.0,4,1,2024-11-20 18:39:47,2024-11-20 18:39:47
+SNPS,"Synopsys, Inc.",foundry_manufacturing,Intel_Foundry,4.0,4,3,2024-12-05 01:15:00,2024-12-05 01:15:00
+DIOD,Diodes Incorporated,server_cpu_demand,Intel_DCAI,4.0,4,1,2024-11-09 07:55:41,2024-11-09 07:55:41
+MRVL,"Marvell Technology, Inc.",foundry_manufacturing,Intel_Foundry,4.0,4,3,2024-12-04 01:08:56,2024-12-04 01:08:56
+MRK,"Merck & Co., Inc.",margin_pressure,Intel_Margin,4.0,4,3,2024-11-13 21:03:07,2024-12-03 22:41:08
+CPAY,"Corpay, Inc.",margin_pressure,Intel_Margin,4.0,4,1,2024-11-08 00:03:30,2024-11-08 00:03:30
+COST,Costco Wholesale Corporation,supply_pressure,Intel_CCG_or_DCAI,4.0,4,4,2024-12-13 01:50:26,2024-12-13 01:50:26
+COLD,"Americold Realty Trust, Inc.",supply_pressure,Intel_CCG_or_DCAI,4.0,4,1,2024-11-08 12:20:51,2024-11-08 12:20:51
+CODX,"Co-Diagnostics, Inc.",cloud_capacity,Intel_DCAI,4.0,4,1,2024-11-08 01:49:07,2024-11-08 01:49:07
+DLHC,DLH Holdings Corp.,supply_pressure,Intel_CCG_or_DCAI,4.0,4,4,2024-12-05 17:48:32,2024-12-05 17:48:32
+INVE,"Identiv, Inc.",margin_pressure,Intel_Margin,4.0,4,2,2024-11-10 00:17:05,2024-11-10 00:17:05
+JAMF,Jamf Holding Corp.,supply_pressure,Intel_CCG_or_DCAI,4.0,4,3,2024-11-10 10:58:06,2024-11-10 10:58:06
+J,Jacobs Solutions Inc.,supply_pressure,Intel_CCG_or_DCAI,4.0,4,4,2024-11-20 02:13:51,2024-11-20 02:13:51
+ISSC,"Innovative Solutions and Support, Inc.",pc_demand,Intel_CCG,4.0,4,2,2024-12-20 03:01:03,2024-12-20 03:01:03
+VRME,"VerifyMe, Inc.",margin_pressure,Intel_Margin,4.0,4,1,2024-11-12 22:40:37,2024-11-12 22:40:37
+VRME,"VerifyMe, Inc.",cloud_capacity,Intel_DCAI,4.0,4,1,2024-11-12 22:40:37,2024-11-12 22:40:37
+HOOD,"Robinhood Markets, Inc.",pc_demand,Intel_CCG,4.0,4,2,2024-11-13 19:33:09,2024-11-13 19:33:09
+HON,Honeywell International Inc.,foundry_manufacturing,Intel_Foundry,4.0,4,3,2024-11-15 18:56:09,2024-12-05 15:13:34
+CCOI,"Cogent Communications Holdings, Inc.",supply_pressure,Intel_CCG_or_DCAI,4.0,4,4,2024-11-07 22:02:29,2024-11-07 22:02:29
+CHT,"Chunghwa Telecom Co., Ltd.",cloud_capacity,Intel_DCAI,4.0,4,1,2024-11-10 02:45:27,2024-11-10 02:45:27
+NVEE,"NV5 Global, Inc.",cloud_capacity,Intel_DCAI,4.0,4,1,2024-11-08 02:02:07,2024-11-08 02:02:07
+NVAX,"Novavax, Inc.",supply_pressure,Intel_CCG_or_DCAI,4.0,4,3,2024-11-12 16:52:24,2024-11-12 16:52:24
+NTNX,"Nutanix, Inc.",supply_pressure,Intel_CCG_or_DCAI,4.0,4,4,2024-11-27 01:29:35,2024-11-27 01:29:35
+ARBK,Argo Blockchain plc,margin_pressure,Intel_Margin,4.0,4,3,2024-11-20 20:28:50,2024-11-20 20:28:50
+MSI,"Motorola Solutions, Inc.",supply_pressure,Intel_CCG_or_DCAI,4.0,4,4,2024-11-08 01:02:09,2024-11-08 01:02:09
+ARHS,"Arhaus, Inc.",margin_pressure,Intel_Margin,4.0,4,1,2024-11-10 19:21:03,2024-11-10 19:21:03
+DMRC,Digimarc Corporation,supply_pressure,Intel_CCG_or_DCAI,4.0,4,3,2024-11-17 18:29:27,2024-11-17 18:29:27
+IPWR,Ideal Power Inc.,cloud_capacity,Intel_DCAI,4.0,4,1,2024-11-15 03:18:34,2024-11-15 03:18:34
+IPA,ImmunoPrecise Antibodies Ltd.,supply_pressure,Intel_CCG_or_DCAI,4.0,4,3,2024-12-10 22:33:09,2024-12-10 22:33:09
+INVE,"Identiv, Inc.",supply_pressure,Intel_CCG_or_DCAI,4.0,4,4,2024-11-10 00:17:05,2024-11-10 00:17:05
+NVEE,"NV5 Global, Inc.",margin_pressure,Intel_Margin,4.0,4,2,2024-11-08 02:02:07,2024-11-08 02:02:07
+FAST,Fastenal Company,margin_pressure,Intel_Margin,4.0,4,2,2024-07-12 17:00:27,2024-07-12 17:00:27
+HUBC,HUB Cyber Security Ltd.,margin_pressure,Intel_Margin,4.0,4,1,2024-12-02 15:13:38,2024-12-02 15:13:38
+HSDT,"Helius Medical Technologies, Inc.",pc_demand,Intel_CCG,4.0,4,2,2024-11-18 21:00:00,2024-11-18 21:00:00
+DRCT,"Direct Digital Holdings, Inc.",margin_pressure,Intel_Margin,4.0,4,2,2024-11-15 09:42:49,2024-11-15 09:42:49
+ELMD,"Electromed, Inc.",supply_pressure,Intel_CCG_or_DCAI,4.0,4,3,2024-11-16 15:12:44,2024-11-16 15:12:44
+SONY,Sony Group Corporation,foundry_manufacturing,Intel_Foundry,4.0,4,3,2024-11-11 14:34:09,2024-11-11 14:34:09
+RIVN,"Rivian Automotive, Inc.",margin_pressure,Intel_Margin,4.0,4,1,2024-11-08 01:18:59,2024-11-08 01:18:59
+CNM,"Core & Main, Inc.",cloud_capacity,Intel_DCAI,4.0,4,1,2024-12-03 17:32:30,2024-12-03 17:32:30
+AXL,"American Axle & Manufacturing Holdings, Inc.",margin_pressure,Intel_Margin,4.0,4,3,2024-11-09 00:02:35,2024-11-09 00:02:35
+AVIR,"Atea Pharmaceuticals, Inc.",pc_demand,Intel_CCG,4.0,4,2,2024-11-09 18:14:05,2024-11-09 18:14:05
+EAF,GrafTech International Ltd.,supply_pressure,Intel_CCG_or_DCAI,4.0,4,4,2024-11-12 21:27:31,2024-11-12 21:27:31
+VVPR,VivoPower International PLC,margin_pressure,Intel_Margin,4.0,4,1,2024-12-06 02:14:47,2024-12-06 02:14:47
+CLRB,"Cellectar Biosciences, Inc.",margin_pressure,Intel_Margin,4.0,4,1,2024-11-18 15:59:30,2024-11-18 15:59:30
+TTC,The Toro Company,supply_pressure,Intel_CCG_or_DCAI,4.0,4,2,2024-12-18 22:15:22,2024-12-18 22:15:22
+IEP,Icahn Enterprises L.P.,margin_pressure,Intel_Margin,4.0,4,2,2024-11-08 17:43:28,2024-11-08 17:43:28
+ESTC,Elastic N.V.,cloud_capacity,Intel_DCAI,4.0,4,1,2024-11-22 00:36:26,2024-11-22 00:36:26
+SPCB,SuperCom Ltd.,cloud_capacity,Intel_DCAI,4.0,4,2,2024-11-14 19:43:09,2024-11-14 19:43:09
+CDNS,"Cadence Design Systems, Inc.",server_cpu_demand,Intel_DCAI,4.0,4,1,2024-12-10 16:10:22,2024-12-10 16:10:22
+WDAY,"Workday, Inc.",cloud_capacity,Intel_DCAI,4.0,4,1,2024-11-26 23:42:25,2024-11-26 23:42:25
+QIPT,Quipt Home Medical Corp.,supply_pressure,Intel_CCG_or_DCAI,4.0,4,2,2024-12-17 17:39:38,2024-12-17 17:39:38
+ABM,ABM Industries Incorporated,cloud_capacity,Intel_DCAI,4.0,4,2,2024-12-18 17:08:10,2024-12-18 17:08:10
+SJM,The J. M. Smucker Company,supply_pressure,Intel_CCG_or_DCAI,4.0,4,4,2024-11-26 16:40:00,2024-11-26 16:40:00
+SIG,Signet Jewelers Limited,margin_pressure,Intel_Margin,4.0,4,1,2024-12-05 15:58:52,2024-12-05 15:58:52
+LOW,"Lowe's Companies, Inc.",supply_pressure,Intel_CCG_or_DCAI,4.0,4,3,2024-11-19 17:02:06,2024-11-19 17:02:06
+LNZA,"LanzaTech Global, Inc.",margin_pressure,Intel_Margin,4.0,4,1,2024-11-08 17:05:22,2024-11-08 17:05:22
+CVV,CVD Equipment Corporation,foundry_manufacturing,Intel_Foundry,4.0,4,2,2024-11-14 01:21:03,2024-11-14 01:21:03
+BAC,Bank of America Corporation,supply_pressure,Intel_CCG_or_DCAI,4.0,4,3,2024-11-10 03:04:27,2024-12-11 20:06:05
+GCT,GigaCloud Technology Inc.,supply_pressure,Intel_CCG_or_DCAI,4.0,4,3,2024-11-08 04:34:09,2024-11-08 04:34:09
+SVV,"Savers Value Village, Inc.",supply_pressure,Intel_CCG_or_DCAI,4.0,4,2,2024-11-09 09:27:54,2024-11-09 09:27:54
+GAME,"GameSquare Holdings, Inc.",margin_pressure,Intel_Margin,4.0,4,2,2024-11-15 00:25:28,2024-11-15 00:25:28
+TIGO,Millicom International Cellular S.A.,cloud_capacity,Intel_DCAI,4.0,4,1,2024-11-09 17:28:09,2024-11-09 17:28:09
+PENG,"Penguin Solutions, Inc.",server_cpu_demand,Intel_DCAI,4.0,4,2,2024-07-09 23:59:09,2024-07-09 23:59:09
+XERS,"Xeris Biopharma Holdings, Inc.",margin_pressure,Intel_Margin,4.0,4,2,2024-11-08 16:50:27,2024-11-08 16:50:27
+EQIX,"Equinix, Inc.",cloud_capacity,Intel_DCAI,3.6,2,1,2024-12-12 06:09:13,2024-12-12 06:09:13
+STX,Seagate Technology Holdings plc,foundry_manufacturing,Intel_Foundry,3.6,2,2,2024-12-04 00:28:32,2024-12-04 21:55:26
+ACHR,Archer Aviation Inc.,margin_pressure,Intel_Margin,3.0,3,1,2024-11-08 01:42:19,2024-11-08 01:42:19
+WYY,WidePoint Corporation,supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-14 01:51:04,2024-11-14 01:51:04
+PG,The Procter & Gamble Company,margin_pressure,Intel_Margin,3.0,3,2,2024-12-03 15:21:30,2024-12-03 15:21:30
+PANW,"Palo Alto Networks, Inc.",server_cpu_demand,Intel_DCAI,3.0,3,1,2024-12-03 22:11:41,2024-12-03 22:11:41
+BAP,Credicorp Ltd.,cloud_capacity,Intel_DCAI,3.0,3,1,2024-11-09 00:27:11,2024-11-09 00:27:11
+FTRE,Fortrea Holdings Inc.,margin_pressure,Intel_Margin,3.0,3,2,2024-11-08 16:21:12,2024-11-08 16:21:12
+PRKS,United Parks & Resorts Inc.,margin_pressure,Intel_Margin,3.0,3,1,2024-11-08 02:55:28,2024-11-08 02:55:28
+VIPS,Vipshop Holdings Limited,supply_pressure,Intel_CCG_or_DCAI,3.0,3,1,2024-11-19 16:00:56,2024-11-19 16:00:56
+ADI,"Analog Devices, Inc.",margin_pressure,Intel_Margin,3.0,3,2,2024-11-26 17:32:07,2024-11-26 17:32:07
+PBYI,"Puma Biotechnology, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,1,2024-11-08 04:09:06,2024-11-08 04:09:06
+AROC,"Archrock, Inc.",cloud_capacity,Intel_DCAI,3.0,3,1,2024-11-12 16:35:29,2024-11-12 16:35:29
+SIRI,Sirius XM Holdings Inc.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,1,2024-12-11 10:55:46,2024-12-11 10:55:46
+PHX,PHX Minerals Inc.,margin_pressure,Intel_Margin,3.0,3,1,2024-11-09 18:02:07,2024-11-09 18:02:07
+PLAB,"Photronics, Inc.",server_cpu_demand,Intel_DCAI,3.0,3,1,2024-12-11 14:55:27,2024-12-11 14:55:27
+BNS,The Bank of Nova Scotia,margin_pressure,Intel_Margin,3.0,3,2,2024-12-03 17:13:19,2024-12-03 17:13:19
+BNS,The Bank of Nova Scotia,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-12-03 17:13:19,2024-12-03 17:13:19
+BRBR,"BellRing Brands, Inc.",margin_pressure,Intel_Margin,3.0,3,1,2024-11-19 22:32:31,2024-11-19 22:32:31
+LILA,Liberty Latin America Ltd.,cloud_capacity,Intel_DCAI,3.0,3,1,2024-11-09 15:31:22,2024-11-09 15:31:22
+QIPT,Quipt Home Medical Corp.,margin_pressure,Intel_Margin,3.0,3,2,2024-12-17 17:39:38,2024-12-17 17:39:38
+WDFC,WD-40 Company,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-07-11 07:38:25,2024-07-11 07:38:25
+HYLN,Hyliion Holdings Corp.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-15 19:06:47,2024-11-15 19:06:47
+WFCF,"Where Food Comes From, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-12 18:31:02,2024-11-12 18:31:02
+IAG,IAMGOLD Corporation,margin_pressure,Intel_Margin,3.0,3,2,2024-11-08 18:44:01,2024-11-08 18:44:01
+FDS,FactSet Research Systems Inc.,cloud_capacity,Intel_DCAI,3.0,3,1,2024-12-20 00:08:50,2024-12-20 00:08:50
+ERJ,Embraer S.A.,margin_pressure,Intel_Margin,3.0,3,1,2024-11-09 00:15:29,2024-11-09 00:15:29
+ESTC,Elastic N.V.,margin_pressure,Intel_Margin,3.0,3,2,2024-11-22 00:36:26,2024-11-22 00:36:26
+CEVA,"CEVA, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-08 04:04:06,2024-11-08 04:04:06
+CGEN,Compugen Ltd.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-12 20:35:24,2024-11-12 20:35:24
+QRVO,"Qorvo, Inc.",pc_demand,Intel_CCG,3.0,3,3,2024-12-12 20:00:10,2024-12-12 20:00:10
+NPKI,NPK International Inc.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-08 17:46:09,2024-11-08 17:46:09
+AZZ,AZZ Inc.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-07-11 22:08:07,2024-07-11 22:08:07
+IDN,"Intellicheck, Inc.",cloud_capacity,Intel_DCAI,3.0,3,1,2024-11-14 04:15:26,2024-11-14 04:15:26
+IEP,Icahn Enterprises L.P.,cloud_capacity,Intel_DCAI,3.0,3,1,2024-11-08 17:43:28,2024-11-08 17:43:28
+III,"Information Services Group, Inc.",margin_pressure,Intel_Margin,3.0,3,2,2024-11-08 17:43:09,2024-11-08 17:43:09
+TTEK,"Tetra Tech, Inc.",cloud_capacity,Intel_DCAI,3.0,3,1,2024-11-15 00:09:07,2024-11-15 00:09:07
+EFC,Ellington Financial Inc.,margin_pressure,Intel_Margin,3.0,3,2,2024-11-07 22:02:08,2024-11-07 22:02:08
+NKE,"NIKE, Inc.",pc_demand,Intel_CCG,3.0,3,3,2024-12-20 00:49:09,2024-12-20 00:49:09
+VVV,Valvoline Inc.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-19 19:12:43,2024-11-19 19:12:43
+NKTR,Nektar Therapeutics,supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-08 05:21:53,2024-11-08 05:21:53
+NOMD,Nomad Foods Limited,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-14 18:29:30,2024-11-14 18:29:30
+MWA,"Mueller Water Products, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-10 05:47:15,2024-11-10 05:47:15
+CLSD,"Clearside Biomedical, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-13 01:37:09,2024-11-13 01:37:09
+CLSK,"CleanSpark, Inc.",margin_pressure,Intel_Margin,3.0,3,1,2024-12-03 00:32:08,2024-12-03 00:32:08
+CMCL,Caledonia Mining Corporation Plc,supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-11 18:24:02,2024-11-11 18:24:02
+DXC,DXC Technology Company,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-08 01:33:12,2024-11-08 01:33:12
+DY,"Dycom Industries, Inc.",margin_pressure,Intel_Margin,3.0,3,1,2024-11-20 21:42:47,2024-11-20 21:42:47
+ECC,Eagle Point Credit Co LLC,margin_pressure,Intel_Margin,3.0,3,1,2024-11-14 17:54:13,2024-11-14 17:54:13
+INTU,Intuit Inc.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-22 01:13:20,2024-12-11 23:24:49
+INDI,"indie Semiconductor, Inc.",margin_pressure,Intel_Margin,3.0,3,3,2024-11-08 02:53:12,2024-11-08 02:53:12
+INDI,"indie Semiconductor, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-08 02:53:12,2024-11-08 02:53:12
+AXON,"Axon Enterprise, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,1,2024-11-08 03:39:49,2024-11-08 03:39:49
+CMCT,Creative Media & Community Trust Corporation,supply_pressure,Intel_CCG_or_DCAI,3.0,3,1,2024-11-09 00:00:00,2024-11-09 00:00:00
+CHT,"Chunghwa Telecom Co., Ltd.",margin_pressure,Intel_Margin,3.0,3,1,2024-11-10 02:45:27,2024-11-10 02:45:27
+CIB,Grupo Cibest S.A.,margin_pressure,Intel_Margin,3.0,3,1,2024-11-08 19:16:37,2024-11-08 19:16:37
+RH,RH,margin_pressure,Intel_Margin,3.0,3,1,2024-12-13 03:55:55,2024-12-13 03:55:55
+RKLB,Rocket Lab Corporation,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-13 02:13:57,2024-11-13 02:13:57
+RMBL,"RumbleOn, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,1,2024-11-12 22:41:38,2024-11-12 22:41:38
+RMTI,"Rockwell Medical, Inc.",margin_pressure,Intel_Margin,3.0,3,1,2024-11-12 16:30:03,2024-11-12 16:30:03
+RNG,"RingCentral, Inc.",margin_pressure,Intel_Margin,3.0,3,1,2024-11-08 01:51:35,2024-11-08 01:51:35
+AREC,American Resources Corporation,margin_pressure,Intel_Margin,3.0,3,3,2024-11-15 04:19:37,2024-11-15 04:19:37
+DNOW,DNOW Inc.,margin_pressure,Intel_Margin,3.0,3,1,2024-11-07 20:30:27,2024-11-07 20:30:27
+SOFI,"SoFi Technologies, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-12-04 04:17:44,2024-12-04 04:17:44
+SOHU,Sohu.com Limited,margin_pressure,Intel_Margin,3.0,3,2,2024-11-12 17:52:04,2024-11-12 17:52:04
+ELTK,Eltek Ltd.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-19 20:48:08,2024-11-19 20:48:08
+TOL,"Toll Brothers, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-12-10 15:52:20,2024-12-10 15:52:20
+ACCS,ACCESS Newswire Inc.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-10 07:40:22,2024-11-10 07:40:22
+HTZ,"Hertz Global Holdings, Inc.",margin_pressure,Intel_Margin,3.0,3,1,2024-11-12 18:39:43,2024-11-12 18:39:43
+ESTC,Elastic N.V.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-22 00:36:26,2024-11-22 00:36:26
+EVCM,EverCommerce Inc.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-16 12:49:14,2024-11-16 12:49:14
+EVCM,EverCommerce Inc.,margin_pressure,Intel_Margin,3.0,3,2,2024-11-16 12:49:14,2024-11-16 12:49:14
+WKSP,Worksport Ltd.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,1,2024-11-14 01:44:44,2024-11-14 01:44:44
+WPRT,Westport Fuel Systems Inc.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-13 18:30:27,2024-11-13 18:30:27
+WTI,"W&T Offshore, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-08 19:46:14,2024-11-08 19:46:14
+HLLY,Holley Inc.,pc_demand,Intel_CCG,3.0,3,3,2024-11-08 17:31:20,2024-11-08 17:31:20
+NTES,"NetEase, Inc.",margin_pressure,Intel_Margin,3.0,3,3,2024-11-14 16:47:08,2024-11-14 16:47:08
+AMT,American Tower Corporation,server_cpu_demand,Intel_DCAI,3.0,3,1,2024-12-10 20:35:28,2024-12-10 20:35:28
+DUOT,"Duos Technologies Group, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-20 23:27:18,2024-11-20 23:27:18
+INVZ,Innoviz Technologies Ltd.,margin_pressure,Intel_Margin,3.0,3,2,2024-11-13 15:43:01,2024-11-13 15:43:01
+IOVA,"Iovance Biotherapeutics, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-08 01:55:53,2024-11-08 01:55:53
+UGP,Ultrapar Participações S.A.,margin_pressure,Intel_Margin,3.0,3,1,2024-11-15 02:54:40,2024-11-15 02:54:40
+UHAL,U-Haul Holding Company,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-08 04:25:23,2024-11-08 04:25:23
+NRXP,"NRx Pharmaceuticals, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-19 00:51:23,2024-11-19 00:51:23
+MTD,Mettler-Toledo International Inc.,margin_pressure,Intel_Margin,3.0,3,1,2024-11-08 21:37:06,2024-11-08 21:37:06
+APP,AppLovin Corporation,cloud_capacity,Intel_DCAI,3.0,3,1,2024-12-11 16:20:59,2024-12-11 16:20:59
+APP,AppLovin Corporation,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-12-11 16:20:59,2024-12-11 16:20:59
+CHRD,Chord Energy Corporation,supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-07 19:30:29,2024-11-07 19:30:29
+BLNK,Blink Charging Co.,margin_pressure,Intel_Margin,3.0,3,1,2024-11-08 01:22:10,2024-11-08 01:22:10
+HLLY,Holley Inc.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-08 17:31:20,2024-11-08 17:31:20
+HNST,"The Honest Company, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,1,2024-11-13 04:17:13,2024-11-13 04:17:13
+HON,Honeywell International Inc.,cloud_capacity,Intel_DCAI,3.0,3,1,2024-12-05 15:13:34,2024-12-05 15:13:34
+HOOD,"Robinhood Markets, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-13 19:33:09,2024-11-13 19:33:09
+SPWR,"Complete Solaria, Inc.",foundry_manufacturing,Intel_Foundry,3.0,3,3,2024-11-14 01:40:22,2024-11-14 01:40:22
+FTHM,Fathom Holdings Inc.,margin_pressure,Intel_Margin,3.0,3,1,2024-11-09 18:14:08,2024-11-09 18:14:08
+TMO,Thermo Fisher Scientific Inc.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,1,2024-11-19 17:19:08,2024-11-19 17:19:08
+VSCO,Victoria's Secret & Co.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-12-06 16:13:19,2024-12-06 16:13:19
+VUZI,Vuzix Corporation,foundry_manufacturing,Intel_Foundry,3.0,3,2,2024-11-14 23:00:26,2024-11-14 23:00:26
+IREN,IREN Limited,supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-28 02:45:26,2024-11-28 02:45:26
+ARHS,"Arhaus, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-10 19:21:03,2024-11-10 19:21:03
+DNOW,DNOW Inc.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-07 20:30:27,2024-11-07 20:30:27
+DLB,"Dolby Laboratories, Inc.",pc_demand,Intel_CCG,3.0,3,2,2024-11-19 23:18:49,2024-11-19 23:18:49
+BEP,Brookfield Renewable Partners L.P. Limited Partnership Units,margin_pressure,Intel_Margin,3.0,3,1,2024-11-08 15:23:18,2024-11-08 15:23:18
+CPB,The Campbell's Company,margin_pressure,Intel_Margin,3.0,3,2,2024-12-04 15:41:22,2024-12-04 15:41:22
+MODG,Topgolf Callaway Brands Corp.,margin_pressure,Intel_Margin,3.0,3,2,2024-11-13 00:44:01,2024-11-13 00:44:01
+MODG,Topgolf Callaway Brands Corp.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-13 00:44:01,2024-11-13 00:44:01
+MP,MP Materials Corp.,margin_pressure,Intel_Margin,3.0,3,2,2024-12-13 22:10:29,2024-12-13 22:10:29
+MRVI,"Maravai LifeSciences Holdings, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-09 23:45:06,2024-11-09 23:45:06
+DH,Definitive Healthcare Corp.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-10 13:50:27,2024-11-10 13:50:27
+SNOW,Snowflake Inc.,cloud_capacity,Intel_DCAI,3.0,3,1,2024-11-21 00:49:52,2024-11-21 00:49:52
+JOUT,Johnson Outdoors Inc.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-12-10 17:53:08,2024-12-10 17:53:08
+JXN,Jackson Financial Inc.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-07 20:19:08,2024-11-07 20:19:08
+BLBD,Blue Bird Corporation,supply_pressure,Intel_CCG_or_DCAI,3.0,3,1,2024-11-26 01:55:24,2024-11-26 01:55:24
+PSTG,"Pure Storage, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-12-04 01:04:35,2024-12-04 01:04:35
+NXGL,"NEXGEL, Inc.",pc_demand,Intel_CCG,3.0,3,2,2024-11-14 03:56:03,2024-11-14 03:56:03
+OCSL,Oaktree Specialty Lending Corporation,cloud_capacity,Intel_DCAI,3.0,3,1,2024-11-19 18:29:07,2024-11-19 18:29:07
+FIVE,"Five Below, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,1,2024-12-04 23:51:28,2024-12-04 23:51:28
+FIVN,"Five9, Inc.",cloud_capacity,Intel_DCAI,3.0,3,1,2024-11-08 01:30:27,2024-11-08 01:30:27
+SRRK,Scholar Rock Holding Corporation,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-12 16:09:08,2024-11-12 16:09:08
+AI,"C3.ai, Inc.",cloud_capacity,Intel_DCAI,3.0,3,1,2024-12-10 01:01:47,2024-12-10 01:01:47
+AI,"C3.ai, Inc.",margin_pressure,Intel_Margin,3.0,3,1,2024-12-10 01:01:47,2024-12-10 01:01:47
+HLLY,Holley Inc.,margin_pressure,Intel_Margin,3.0,3,1,2024-11-08 17:31:20,2024-11-08 17:31:20
+GCT,GigaCloud Technology Inc.,cloud_capacity,Intel_DCAI,3.0,3,1,2024-11-08 04:34:09,2024-11-08 04:34:09
+RY,Royal Bank of Canada,margin_pressure,Intel_Margin,3.0,3,3,2024-12-04 17:41:56,2024-12-04 17:41:56
+MITK,"Mitek Systems, Inc.",margin_pressure,Intel_Margin,3.0,3,1,2024-12-17 02:08:50,2024-12-17 02:08:50
+MITQ,"Moving iMage Technologies, Inc.",margin_pressure,Intel_Margin,3.0,3,1,2024-11-14 17:58:22,2024-11-14 17:58:22
+BKD,Brookdale Senior Living Inc.,margin_pressure,Intel_Margin,3.0,3,3,2024-11-10 00:25:25,2024-11-10 00:25:25
+KEYS,"Keysight Technologies, Inc.",cloud_capacity,Intel_DCAI,3.0,3,1,2024-11-20 00:40:25,2024-11-20 00:40:25
+ATEN,"A10 Networks, Inc.",cloud_capacity,Intel_DCAI,3.0,3,1,2024-11-08 01:53:08,2024-11-08 01:53:08
+DH,Definitive Healthcare Corp.,margin_pressure,Intel_Margin,3.0,3,1,2024-11-10 13:50:27,2024-11-10 13:50:27
+CRSP,CRISPR Therapeutics AG,supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-15 16:37:07,2024-11-21 02:28:53
+J,Jacobs Solutions Inc.,margin_pressure,Intel_Margin,3.0,3,1,2024-11-20 02:13:51,2024-11-20 02:13:51
+ALRM,"Alarm.com Holdings, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-08 14:28:01,2024-11-08 14:28:01
+ALVO,Alvotech,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-14 18:59:03,2024-11-14 18:59:03
+FSLY,"Fastly, Inc.",cloud_capacity,Intel_DCAI,3.0,3,1,2024-12-04 21:10:50,2024-12-04 21:10:50
+FPAY,"FlexShopper, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-14 23:53:02,2024-11-14 23:53:02
+FTCI,"FTC Solar, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-12 17:15:27,2024-11-12 17:15:27
+GSM,Ferroglobe PLC,foundry_manufacturing,Intel_Foundry,3.0,3,3,2024-11-07 19:09:53,2024-11-07 19:09:53
+CBAT,"CBAK Energy Technology, Inc.",cloud_capacity,Intel_DCAI,3.0,3,1,2024-11-12 19:18:13,2024-11-12 19:18:13
+FSLY,"Fastly, Inc.",margin_pressure,Intel_Margin,3.0,3,1,2024-12-04 21:10:50,2024-12-04 21:10:50
+VNET,"VNET Group, Inc.",margin_pressure,Intel_Margin,3.0,3,2,2024-11-21 11:58:05,2024-11-21 11:58:05
+VNET,"VNET Group, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-21 11:58:05,2024-11-21 11:58:05
+MMS,"Maximus, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-21 21:12:44,2024-11-21 21:12:44
+CXW,"CoreCivic, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-07 20:32:43,2024-11-07 20:32:43
+DAVE,Dave Inc.,margin_pressure,Intel_Margin,3.0,3,1,2024-11-16 02:02:41,2024-11-16 02:02:41
+AVGO,Broadcom Inc.,foundry_manufacturing,Intel_Foundry,3.0,3,2,2024-12-13 00:37:58,2024-12-13 00:37:58
+KINS,"Kingstone Companies, Inc.",margin_pressure,Intel_Margin,3.0,3,1,2024-11-13 17:32:11,2024-11-13 17:32:11
+BL,"BlackLine, Inc.",cloud_capacity,Intel_DCAI,3.0,3,1,2024-11-08 02:40:28,2024-11-08 02:40:28
+ON,ON Semiconductor Corporation,cloud_capacity,Intel_DCAI,3.0,3,1,2024-11-21 00:33:24,2024-11-21 00:33:24
+BLIN,"Bridgeline Digital, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-12-24 00:01:47,2024-12-24 00:01:47
+BYRN,Byrna Technologies Inc.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-07-09 16:10:28,2024-07-09 16:10:28
+BX,Blackstone Inc.,server_cpu_demand,Intel_DCAI,3.0,3,1,2024-12-11 19:40:30,2024-12-11 19:40:30
+CAMT,Camtek Ltd.,margin_pressure,Intel_Margin,3.0,3,1,2024-11-12 20:37:35,2024-11-12 20:37:35
+GMS,GMS Inc.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-12-05 20:24:10,2024-12-05 20:24:10
+OUST,"Ouster, Inc.",margin_pressure,Intel_Margin,3.0,3,1,2024-11-07 23:19:07,2024-11-07 23:19:07
+KO,The Coca-Cola Company,server_cpu_demand,Intel_DCAI,3.0,3,1,2024-12-03 18:04:07,2024-12-03 18:04:07
+KT,KT Corporation,cloud_capacity,Intel_DCAI,3.0,3,1,2024-11-09 00:25:05,2024-11-09 00:25:05
+VERI,"Veritone, Inc.",cloud_capacity,Intel_DCAI,3.0,3,1,2024-11-12 18:18:17,2024-11-12 18:18:17
+VET,Vermilion Energy Inc.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,1,2024-11-07 21:14:41,2024-11-07 21:14:41
+CXAI,CXApp Inc.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-13 00:05:43,2024-11-13 00:05:43
+SBH,"Sally Beauty Holdings, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-14 20:54:02,2024-11-14 20:54:02
+SDRL,Seadrill Limited,margin_pressure,Intel_Margin,3.0,3,1,2024-11-13 17:19:09,2024-11-13 17:19:09
+SERV,Serve Robotics Inc.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-09 10:11:19,2024-11-09 10:11:19
+MARA,"MARA Holdings, Inc.",foundry_manufacturing,Intel_Foundry,3.0,3,3,2024-11-13 01:13:07,2024-11-13 01:13:07
+AEG,Aegon Ltd.,margin_pressure,Intel_Margin,3.0,3,1,2024-11-15 14:13:36,2024-11-15 14:13:36
+PRTH,"Priority Technology Holdings, Inc.",margin_pressure,Intel_Margin,3.0,3,2,2024-11-10 01:11:03,2024-11-10 01:11:03
+BSET,"Bassett Furniture Industries, Incorporated",foundry_manufacturing,Intel_Foundry,3.0,3,2,2024-07-11 16:07:09,2024-07-11 16:07:09
+BN,Brookfield Corporation,server_cpu_demand,Intel_DCAI,3.0,3,1,2024-11-14 19:20:48,2024-11-14 19:20:48
+PRTH,"Priority Technology Holdings, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-10 01:11:03,2024-11-10 01:11:03
+BDX,"Becton, Dickinson and Company",supply_pressure,Intel_CCG_or_DCAI,3.0,3,1,2024-12-03 19:14:06,2024-12-03 19:14:06
+GGR,Gogoro Inc.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-14 15:05:21,2024-11-14 15:05:21
+GHM,Graham Corporation,margin_pressure,Intel_Margin,3.0,3,1,2024-11-08 21:59:11,2024-11-08 21:59:11
+OXY,Occidental Petroleum Corporation,margin_pressure,Intel_Margin,3.0,3,1,2024-11-13 21:15:27,2024-11-13 21:15:27
+AMBA,"Ambarella, Inc.",cloud_capacity,Intel_DCAI,3.0,3,1,2024-11-27 01:50:27,2024-11-27 01:50:27
+AEYE,"AudioEye, Inc.",margin_pressure,Intel_Margin,3.0,3,1,2024-11-09 21:17:37,2024-11-09 21:17:37
+CSIQ,Canadian Solar Inc.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-12-05 16:26:38,2024-12-05 16:26:38
+BILI,Bilibili Inc.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,1,2024-11-14 14:50:34,2024-11-14 14:50:34
+BJ,"BJ's Wholesale Club Holdings, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-22 05:33:20,2024-11-22 05:33:20
+BK,The Bank of New York Mellon Corporation,cloud_capacity,Intel_DCAI,3.0,3,1,2024-07-12 18:56:07,2024-07-12 18:56:07
+SGU,"Star Group, L.P. Common Units",margin_pressure,Intel_Margin,3.0,3,1,2024-12-05 18:58:02,2024-12-05 18:58:02
+SLND,"Southland Holdings, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-13 19:35:25,2024-11-13 19:35:25
+LASR,"nLIGHT, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,1,2024-11-09 21:22:09,2024-11-09 21:22:09
+LCID,"Lucid Group, Inc.",margin_pressure,Intel_Margin,3.0,3,1,2024-11-08 02:52:01,2024-11-08 02:52:01
+LEGN,Legend Biotech Corporation,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-12 19:45:07,2024-11-12 19:45:07
+BKNG,Booking Holdings Inc.,cloud_capacity,Intel_DCAI,3.0,3,1,2024-12-11 22:33:41,2024-12-11 22:33:41
+CURV,Torrid Holdings Inc.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,1,2024-12-04 00:46:07,2024-12-04 00:46:07
+ZETA,Zeta Global Holdings Corp.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-12 01:34:28,2024-11-12 01:34:28
+YELP,Yelp Inc.,pc_demand,Intel_CCG,3.0,3,1,2024-11-07 23:15:47,2024-11-07 23:15:47
+ZTS,Zoetis Inc.,margin_pressure,Intel_Margin,3.0,3,1,2024-11-20 22:34:32,2024-11-20 22:34:32
+XERS,"Xeris Biopharma Holdings, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-11-08 16:50:27,2024-11-08 16:50:27
+XHR,"Xenia Hotels & Resorts, Inc.",margin_pressure,Intel_Margin,3.0,3,1,2024-11-09 15:58:05,2024-11-09 15:58:05
+XHR,"Xenia Hotels & Resorts, Inc.",supply_pressure,Intel_CCG_or_DCAI,3.0,3,3,2024-11-09 15:58:05,2024-11-09 15:58:05
+ACN,Accenture plc,margin_pressure,Intel_Margin,3.0,3,1,2024-12-19 16:28:33,2024-12-19 16:28:33
+ACN,Accenture plc,supply_pressure,Intel_CCG_or_DCAI,3.0,3,2,2024-12-19 16:28:33,2024-12-19 16:28:33
+XYZ,"Block, Inc.",cloud_capacity,Intel_DCAI,3.0,3,1,2024-11-08 01:18:50,2024-11-08 01:18:50
+ZUMZ,Zumiez Inc.,supply_pressure,Intel_CCG_or_DCAI,3.0,3,1,2024-12-06 01:02:06,2024-12-06 01:02:06
+AAOI,"Applied Optoelectronics, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-08 01:33:03,2024-11-08 01:33:03
+ACRE,Ares Commercial Real Estate Corporation,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-07 19:47:17,2024-11-07 19:47:17
+ACHR,Archer Aviation Inc.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-08 01:42:19,2024-11-08 01:42:19
+XNET,Xunlei Limited,margin_pressure,Intel_Margin,2.0,2,1,2024-11-14 14:53:30,2024-11-14 14:53:30
+BLZE,"Backblaze, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-09 17:17:08,2024-11-09 17:17:08
+BASE,"Couchbase, Inc.",server_cpu_demand,Intel_DCAI,2.0,2,1,2024-12-04 04:16:20,2024-12-04 04:16:20
+WWW,"Wolverine World Wide, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-09 21:16:47,2024-11-09 21:16:47
+BOX,"Box, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-12-04 00:56:17,2024-12-04 00:56:17
+BOX,"Box, Inc.",cloud_capacity,Intel_DCAI,2.0,2,1,2024-12-04 00:56:17,2024-12-04 00:56:17
+BORR,Borr Drilling Limited,margin_pressure,Intel_Margin,2.0,2,1,2024-11-09 16:17:07,2024-11-09 16:17:07
+BODI,"The Beachbody Company, Inc.",pc_demand,Intel_CCG,2.0,2,1,2024-11-13 03:34:01,2024-11-13 03:34:01
+PLUG,Plug Power Inc.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-12-04 22:09:08,2024-12-04 22:09:08
+TIGO,Millicom International Cellular S.A.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-09 17:28:09,2024-11-09 17:28:09
+TLN,Talen Energy Corporation,margin_pressure,Intel_Margin,2.0,2,2,2024-11-14 18:40:23,2024-11-14 18:40:23
+G,Genpact Limited,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-08 03:08:44,2024-11-08 03:08:44
+GAME,"GameSquare Holdings, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-15 00:25:28,2024-11-15 00:25:28
+SYM,Symbotic Inc.,foundry_manufacturing,Intel_Foundry,2.0,2,2,2024-11-19 02:32:26,2024-11-19 02:32:26
+GDEV,GDEV Inc.,margin_pressure,Intel_Margin,2.0,2,1,2024-11-15 04:04:08,2024-11-15 04:04:08
+BAM,Brookfield Asset Management Ltd.,cloud_capacity,Intel_DCAI,2.0,2,1,2024-12-11 19:41:26,2024-12-11 19:41:26
+BASE,"Couchbase, Inc.",margin_pressure,Intel_Margin,2.0,2,2,2024-12-04 04:16:20,2024-12-04 04:16:20
+PBPB,Potbelly Corporation,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-09 20:30:27,2024-11-09 20:30:27
+PCG,PG&E Corporation,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-07 20:04:56,2024-11-07 20:04:56
+PDFS,"PDF Solutions, Inc.",cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-09 00:26:03,2024-11-09 00:26:03
+BRSL,Brightstar Lottery PLC,cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-12 21:05:29,2024-11-12 21:05:29
+BRSL,Brightstar Lottery PLC,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-12 21:05:29,2024-11-12 21:05:29
+BTBT,"Bit Digital, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-18 22:24:52,2024-11-18 22:24:52
+BUR,Burford Capital Limited,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-10 02:50:03,2024-11-10 02:50:03
+GDRX,"GoodRx Holdings, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-07 19:14:19,2024-11-07 19:14:19
+SFIX,"Stitch Fix, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-12-11 01:03:06,2024-12-11 01:03:06
+MAIN,Main Street Capital Corporation,margin_pressure,Intel_Margin,2.0,2,1,2024-11-08 19:06:22,2024-11-08 19:06:22
+MAMA,"Mama's Creations, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-12-17 00:25:26,2024-12-17 00:25:26
+MARA,"MARA Holdings, Inc.",pc_demand,Intel_CCG,2.0,2,1,2024-11-13 01:13:07,2024-11-13 01:13:07
+ADSK,"Autodesk, Inc.",margin_pressure,Intel_Margin,2.0,2,2,2024-11-27 01:27:04,2024-12-03 18:48:07
+ADSK,"Autodesk, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-12-03 18:48:07,2024-12-03 18:48:07
+AEG,Aegon Ltd.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-15 14:13:36,2024-11-15 14:13:36
+BITF,Bitfarms Ltd.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-13 19:16:15,2024-11-13 19:16:15
+SGRY,"Surgery Partners, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-12 19:55:21,2024-11-12 19:55:21
+SGU,"Star Group, L.P. Common Units",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-12-05 18:58:02,2024-12-05 18:58:02
+SHO,"Sunstone Hotel Investors, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-12 21:32:28,2024-11-12 21:32:28
+SIBN,"SI-BONE, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-13 03:42:29,2024-11-13 03:42:29
+ASTS,"AST SpaceMobile, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-15 01:44:07,2024-11-15 01:44:07
+SMR,NuScale Power Corporation,supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-08 01:40:42,2024-11-08 01:40:42
+LAZR,"Luminar Technologies, Inc.",margin_pressure,Intel_Margin,2.0,2,2,2024-11-12 00:37:23,2024-11-12 00:37:23
+DCBO,Docebo Inc.,margin_pressure,Intel_Margin,2.0,2,1,2024-11-09 01:48:39,2024-11-09 01:48:39
+AUTL,Autolus Therapeutics plc,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-12 19:57:37,2024-11-12 19:57:37
+AVGO,Broadcom Inc.,server_cpu_demand,Intel_DCAI,2.0,2,1,2024-12-13 00:37:58,2024-12-13 00:37:58
+KFS,Kingsway Financial Services Inc.,cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-10 18:53:08,2024-11-10 18:53:08
+KGS,"Kodiak Gas Services, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-09 18:23:03,2024-11-09 18:23:03
+KELYA,"Kelly Services, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-09 14:46:09,2024-11-09 14:46:09
+KOP,Koppers Holdings Inc.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-08 20:14:59,2024-11-08 20:14:59
+KOPN,Kopin Corporation,margin_pressure,Intel_Margin,2.0,2,1,2024-11-12 18:57:44,2024-11-12 18:57:44
+KOPN,Kopin Corporation,supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-12 18:57:44,2024-11-12 18:57:44
+KURA,"Kura Oncology, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-09 10:54:58,2024-11-09 10:54:58
+KVHI,"KVH Industries, Inc.",server_cpu_demand,Intel_DCAI,2.0,2,1,2024-11-10 06:15:55,2024-11-10 06:15:55
+USB,U.S. Bancorp,margin_pressure,Intel_Margin,2.0,2,2,2024-11-09 19:44:11,2024-12-11 17:39:30
+VEEE,Twin Vee Powercats Co.,margin_pressure,Intel_Margin,2.0,2,1,2024-11-14 19:04:07,2024-11-14 19:04:07
+VEON,VEON Ltd.,cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-14 15:14:09,2024-11-14 15:14:09
+SAP,SAP SE,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-12-03 21:38:31,2024-12-03 21:38:31
+SAR,Saratoga Investment Corp,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-07-10 17:18:05,2024-07-10 17:18:05
+SERV,Serve Robotics Inc.,margin_pressure,Intel_Margin,2.0,2,1,2024-11-09 10:11:19,2024-11-09 10:11:19
+ATKR,Atkore Inc.,foundry_manufacturing,Intel_Foundry,2.0,2,2,2024-11-21 15:49:45,2024-11-21 15:49:45
+ATKR,Atkore Inc.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-21 15:49:45,2024-11-21 15:49:45
+ATO,Atmos Energy Corporation,margin_pressure,Intel_Margin,2.0,2,1,2024-11-07 19:53:05,2024-11-07 19:53:05
+ATO,Atmos Energy Corporation,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-07 19:53:05,2024-11-07 19:53:05
+SMTC,Semtech Corporation,foundry_manufacturing,Intel_Foundry,2.0,2,1,2024-11-26 02:09:24,2024-11-26 02:09:24
+SNCR,"Synchronoss Technologies, Inc.",cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-13 01:31:54,2024-11-13 01:31:54
+DGII,Digi International Inc.,cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-13 23:34:25,2024-11-13 23:34:25
+DGXX,Digi Power X Inc.,margin_pressure,Intel_Margin,2.0,2,1,2024-11-15 15:29:12,2024-11-15 15:29:12
+VREX,Varex Imaging Corporation,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-20 01:25:49,2024-11-20 01:25:49
+MNY,MoneyHero Limited,margin_pressure,Intel_Margin,2.0,2,1,2024-12-10 15:36:41,2024-12-10 15:36:41
+MDB,"MongoDB, Inc.",margin_pressure,Intel_Margin,2.0,2,2,2024-12-10 01:26:34,2024-12-11 19:32:00
+MDWD,MediWound Ltd.,pc_demand,Intel_CCG,2.0,2,1,2024-11-26 18:46:12,2024-11-26 18:46:12
+MDWD,MediWound Ltd.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-26 18:46:12,2024-11-26 18:46:12
+MEI,"Methode Electronics, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-12-06 00:57:18,2024-12-06 00:57:18
+MGIC,Magic Software Enterprises Ltd.,cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-18 17:57:47,2024-11-18 17:57:47
+CXM,"Sprinklr, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-12-05 02:15:30,2024-12-05 02:15:30
+SNCR,"Synchronoss Technologies, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-13 01:31:54,2024-11-13 01:31:54
+SND,"Smart Sand, Inc.",foundry_manufacturing,Intel_Foundry,2.0,2,2,2024-11-13 18:38:37,2024-11-13 18:38:37
+SNDA,"Sonida Senior Living, Inc.",margin_pressure,Intel_Margin,2.0,2,2,2024-11-16 01:06:49,2024-11-16 01:06:49
+SNDA,"Sonida Senior Living, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-16 01:06:49,2024-11-16 01:06:49
+SNOW,Snowflake Inc.,pc_demand,Intel_CCG,2.0,2,2,2024-12-04 00:13:13,2024-12-04 00:13:13
+JG,Aurora Mobile Limited,cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-14 15:40:02,2024-11-14 15:40:02
+JPM,JPMorgan Chase & Co.,cloud_capacity,Intel_DCAI,2.0,2,1,2024-12-10 19:12:05,2024-12-10 19:12:05
+RPAY,Repay Holdings Corporation,supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-13 02:46:14,2024-11-13 02:46:14
+SAIC,Science Applications International Corporation,supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-12-05 22:11:46,2024-12-05 22:11:46
+MGNI,"Magnite, Inc.",pc_demand,Intel_CCG,2.0,2,2,2024-11-08 00:45:27,2024-11-08 00:45:27
+MLKN,"MillerKnoll, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-12-19 00:21:39,2024-12-19 00:21:39
+MLKN,"MillerKnoll, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-12-19 00:21:39,2024-12-19 00:21:39
+MMI,"Marcus & Millichap, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-08 22:05:32,2024-11-08 22:05:32
+BKD,Brookdale Senior Living Inc.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-10 00:25:25,2024-11-10 00:25:25
+CRH,CRH plc,cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-07 21:41:42,2024-11-07 21:41:42
+KEYS,"Keysight Technologies, Inc.",server_cpu_demand,Intel_DCAI,2.0,2,1,2024-11-20 00:40:25,2024-11-20 00:40:25
+APA,APA Corporation,margin_pressure,Intel_Margin,2.0,2,1,2024-11-07 20:14:15,2024-11-07 20:14:15
+MOBX,"Mobix Labs, Inc.",foundry_manufacturing,Intel_Foundry,2.0,2,2,2024-12-20 00:47:08,2024-12-20 00:47:08
+JYNT,The Joint Corp.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-09 00:22:09,2024-11-09 00:22:09
+JACK,Jack in the Box Inc.,margin_pressure,Intel_Margin,2.0,2,1,2024-11-21 01:46:10,2024-11-21 01:46:10
+JACK,Jack in the Box Inc.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-21 01:46:10,2024-11-21 01:46:10
+JAMF,Jamf Holding Corp.,margin_pressure,Intel_Margin,2.0,2,2,2024-11-10 10:58:06,2024-11-10 10:58:06
+DOMO,"Domo, Inc.",cloud_capacity,Intel_DCAI,2.0,2,1,2024-12-06 02:18:08,2024-12-06 02:18:08
+DOOO,BRP Inc.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-12-06 17:14:44,2024-12-06 17:14:44
+CNNE,"Cannae Holdings, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-13 01:11:25,2024-11-13 01:11:25
+CODX,"Co-Diagnostics, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-08 01:49:07,2024-11-08 01:49:07
+CPA,"Copa Holdings, S.A.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-21 20:35:28,2024-11-21 20:35:28
+MP,MP Materials Corp.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-12-13 22:10:29,2024-12-13 22:10:29
+MPTI,"M-tron Industries, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-14 18:07:05,2024-11-14 18:07:05
+DIOD,Diodes Incorporated,foundry_manufacturing,Intel_Foundry,2.0,2,2,2024-11-09 07:55:41,2024-11-09 07:55:41
+UNFI,"United Natural Foods, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-12-10 17:10:52,2024-12-10 17:10:52
+UONE,"Urban One, Inc.",cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-12 19:03:08,2024-11-12 19:03:08
+INKT,"MiNK Therapeutics, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-14 15:47:09,2024-11-14 15:47:09
+ELV,"Elevance Health, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-15 19:13:09,2024-11-15 19:13:09
+ELV,"Elevance Health, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-15 19:13:09,2024-11-15 19:13:09
+DXC,DXC Technology Company,cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-08 01:33:12,2024-11-08 01:33:12
+DXC,DXC Technology Company,server_cpu_demand,Intel_DCAI,2.0,2,1,2024-11-08 01:33:12,2024-11-08 01:33:12
+BEPC,Brookfield Renewable Corporation,margin_pressure,Intel_Margin,2.0,2,1,2024-11-08 19:06:30,2024-11-08 19:06:30
+IPA,ImmunoPrecise Antibodies Ltd.,cloud_capacity,Intel_DCAI,2.0,2,1,2024-12-10 22:33:09,2024-12-10 22:33:09
+SNPS,"Synopsys, Inc.",pc_demand,Intel_CCG,2.0,2,2,2024-12-05 01:15:00,2024-12-05 01:15:00
+TTEK,"Tetra Tech, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-15 00:09:07,2024-11-15 00:09:07
+UGI,UGI Corporation,margin_pressure,Intel_Margin,2.0,2,1,2024-11-22 15:19:42,2024-11-22 15:19:42
+UMH,"UMH Properties, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-07 20:46:09,2024-11-07 20:46:09
+BILI,Bilibili Inc.,margin_pressure,Intel_Margin,2.0,2,1,2024-11-14 14:50:34,2024-11-14 14:50:34
+DLO,DLocal Limited,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-14 04:17:13,2024-11-14 04:17:13
+MSM,"MSC Industrial Direct Co., Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-07-02 16:00:25,2024-07-02 16:00:25
+MVIS,"MicroVision, Inc.",foundry_manufacturing,Intel_Foundry,2.0,2,1,2024-11-08 01:30:32,2024-11-08 01:30:32
+MSM,"MSC Industrial Direct Co., Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-07-02 16:00:25,2024-07-02 16:00:25
+CMCM,Cheetah Mobile Inc.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-12-17 18:54:22,2024-12-17 18:54:22
+CMCSA,Comcast Corporation,cloud_capacity,Intel_DCAI,2.0,2,1,2024-12-09 19:09:56,2024-12-09 19:09:56
+EC,Ecopetrol S.A.,margin_pressure,Intel_Margin,2.0,2,1,2024-11-15 00:09:38,2024-11-15 00:09:38
+INTU,Intuit Inc.,cloud_capacity,Intel_DCAI,2.0,2,1,2024-12-11 23:24:49,2024-12-11 23:24:49
+AVIR,"Atea Pharmaceuticals, Inc.",margin_pressure,Intel_Margin,2.0,2,2,2024-11-09 18:14:05,2024-11-09 18:14:05
+AVIR,"Atea Pharmaceuticals, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-09 18:14:05,2024-11-09 18:14:05
+AXON,"Axon Enterprise, Inc.",cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-08 03:39:49,2024-11-08 03:39:49
+AZZ,AZZ Inc.,margin_pressure,Intel_Margin,2.0,2,2,2024-07-11 22:08:07,2024-07-11 22:08:07
+CNM,"Core & Main, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-12-03 17:32:30,2024-12-03 17:32:30
+CNM,"Core & Main, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-12-03 17:32:30,2024-12-03 17:32:30
+RH,RH,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-12-13 03:55:55,2024-12-13 03:55:55
+RIVN,"Rivian Automotive, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-08 01:18:59,2024-11-08 01:18:59
+RNG,"RingCentral, Inc.",cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-08 01:51:35,2024-11-08 01:51:35
+SOFI,"SoFi Technologies, Inc.",cloud_capacity,Intel_DCAI,2.0,2,1,2024-12-04 04:17:44,2024-12-04 04:17:44
+SONO,"Sonos, Inc.",pc_demand,Intel_CCG,2.0,2,2,2024-11-14 07:02:56,2024-11-14 07:02:56
+INGN,"Inogen, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-10 02:55:32,2024-11-10 02:55:32
+NIO,NIO Inc.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-20 16:27:26,2024-11-20 16:27:26
+CLCO,Cool Company Ltd.,margin_pressure,Intel_Margin,2.0,2,2,2024-11-22 00:46:49,2024-11-22 00:46:49
+CLCO,Cool Company Ltd.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-22 00:46:49,2024-11-22 00:46:49
+CLIR,ClearSign Technologies Corporation,foundry_manufacturing,Intel_Foundry,2.0,2,1,2024-11-21 01:41:03,2024-11-21 01:41:03
+VVOS,"Vivos Therapeutics, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-15 04:31:06,2024-11-15 04:31:06
+VVPR,VivoPower International PLC,cloud_capacity,Intel_DCAI,2.0,2,1,2024-12-06 02:14:47,2024-12-06 02:14:47
+VZ,Verizon Communications Inc.,margin_pressure,Intel_Margin,2.0,2,1,2024-12-09 17:22:24,2024-12-09 17:22:24
+NMTC,NeuroOne Medical Technologies Corporation,pc_demand,Intel_CCG,2.0,2,1,2024-12-17 14:42:59,2024-12-17 14:42:59
+NNOX,Nano-X Imaging Ltd.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-21 16:47:09,2024-11-21 16:47:09
+MVIS,"MicroVision, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-08 01:30:32,2024-11-08 01:30:32
+NATL,NCR Atleos Corporation,supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-13 17:13:07,2024-11-13 17:13:07
+NCNO,"nCino, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-12-05 01:57:33,2024-12-05 01:57:33
+NET,"Cloudflare, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-08 01:33:36,2024-11-08 01:33:36
+CPB,The Campbell's Company,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-12-04 15:41:22,2024-12-04 15:41:22
+CLRB,"Cellectar Biosciences, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-18 15:59:30,2024-11-18 15:59:30
+CMCM,Cheetah Mobile Inc.,cloud_capacity,Intel_DCAI,2.0,2,1,2024-12-17 18:54:22,2024-12-17 18:54:22
+NPCE,"NeuroPace, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-13 00:59:47,2024-11-13 00:59:47
+NPCE,"NeuroPace, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-13 00:59:47,2024-11-13 00:59:47
+NPWR,NET Power Inc.,margin_pressure,Intel_Margin,2.0,2,2,2024-11-12 19:04:34,2024-11-12 19:04:34
+NPWR,NET Power Inc.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-12 19:04:34,2024-11-12 19:04:34
+III,"Information Services Group, Inc.",cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-08 17:43:09,2024-11-08 17:43:09
+III,"Information Services Group, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-08 17:43:09,2024-11-08 17:43:09
+IIIV,"i3 Verticals, Inc.",cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-19 21:03:19,2024-11-19 21:03:19
+IIIV,"i3 Verticals, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-19 21:03:19,2024-11-19 21:03:19
+TSHA,"Taysha Gene Therapies, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-14 03:48:42,2024-11-14 03:48:42
+EDIT,"Editas Medicine, Inc.",margin_pressure,Intel_Margin,2.0,2,2,2024-11-20 00:53:15,2024-12-04 03:52:49
+EDIT,"Editas Medicine, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-12-04 03:52:49,2024-12-04 03:52:49
+EFC,Ellington Financial Inc.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-07 22:02:08,2024-11-07 22:02:08
+NRDY,"Nerdy, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-09 18:44:06,2024-11-09 18:44:06
+REAX,The Real Brokerage Inc.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-09 13:21:43,2024-11-09 13:21:43
+REGN,"Regeneron Pharmaceuticals, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-12-05 19:55:24,2024-12-05 19:55:24
+REKR,"Rekor Systems, Inc.",server_cpu_demand,Intel_DCAI,2.0,2,1,2024-11-15 02:04:17,2024-11-15 02:04:17
+EHAB,"Enhabit, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-09 15:24:06,2024-11-09 15:24:06
+SPNS,Sapiens International Corporation N.V.,cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-12 02:36:29,2024-11-12 02:36:29
+SPNS,Sapiens International Corporation N.V.,margin_pressure,Intel_Margin,2.0,2,1,2024-11-12 02:36:29,2024-11-12 02:36:29
+SPNS,Sapiens International Corporation N.V.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-12 02:36:29,2024-11-12 02:36:29
+HYLN,Hyliion Holdings Corp.,cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-15 19:06:47,2024-11-15 19:06:47
+ERIC,Telefonaktiebolaget LM Ericsson (publ),margin_pressure,Intel_Margin,2.0,2,1,2024-07-12 17:23:03,2024-07-12 17:23:03
+TS,Tenaris S.A.,margin_pressure,Intel_Margin,2.0,2,1,2024-11-07 21:36:51,2024-11-07 21:36:51
+TSEM,Tower Semiconductor Ltd.,margin_pressure,Intel_Margin,2.0,2,2,2024-11-13 19:49:06,2024-11-13 19:49:06
+CEVA,"CEVA, Inc.",cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-08 04:04:06,2024-11-08 04:04:06
+CEVA,"CEVA, Inc.",pc_demand,Intel_CCG,2.0,2,2,2024-11-08 04:04:06,2024-11-08 04:04:06
+CGEN,Compugen Ltd.,pc_demand,Intel_CCG,2.0,2,2,2024-11-12 20:35:24,2024-11-12 20:35:24
+CHMI,Cherry Hill Mortgage Investment Corporation,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-13 02:05:31,2024-11-13 02:05:31
+QTRX,Quanterix Corporation,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-13 00:16:14,2024-11-13 00:16:14
+QUIK,QuickLogic Corporation,margin_pressure,Intel_Margin,2.0,2,1,2024-11-12 01:50:27,2024-11-12 01:50:27
+RBRK,"Rubrik, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-12-06 01:42:20,2024-12-06 01:42:20
+NOTE,"FiscalNote Holdings, Inc.",pc_demand,Intel_CCG,2.0,2,2,2024-11-16 14:30:34,2024-11-16 14:30:34
+HOFT,Hooker Furnishings Corporation,cloud_capacity,Intel_DCAI,2.0,2,1,2024-12-05 20:26:21,2024-12-05 20:26:21
+FTNT,"Fortinet, Inc.",pc_demand,Intel_CCG,2.0,2,2,2024-12-12 06:09:10,2024-12-12 06:09:10
+TMC,TMC the metals company Inc.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-15 09:29:08,2024-11-15 09:29:08
+TNON,"Tenon Medical, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-13 23:21:31,2024-11-13 23:21:31
+TPIC,"TPI Composites, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-08 02:48:16,2024-11-08 02:48:16
+IBM,International Business Machines Corporation,pc_demand,Intel_CCG,2.0,2,2,2024-11-19 23:20:00,2024-11-19 23:20:00
+IBP,"Installed Building Products, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-10 02:02:09,2024-11-10 02:02:09
+HQI,"HireQuest, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-09 18:35:29,2024-11-09 18:35:29
+FLO,"Flowers Foods, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-09 20:04:49,2024-11-09 20:04:49
+FOUR,"Shift4 Payments, Inc.",cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-12 16:57:45,2024-11-12 16:57:45
+EVGN,Evogene Ltd.,cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-21 18:46:50,2024-11-21 18:46:50
+EXPI,"eXp World Holdings, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-08 09:02:19,2024-11-08 09:02:19
+FAST,Fastenal Company,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-07-12 17:00:27,2024-07-12 17:00:27
+QMCO,Quantum Corporation,supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-14 01:41:53,2024-11-14 01:41:53
+VZ,Verizon Communications Inc.,server_cpu_demand,Intel_DCAI,2.0,2,1,2024-12-09 17:22:24,2024-12-09 17:22:24
+WBD,"Warner Bros. Discovery, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-12-10 23:28:14,2024-12-10 23:28:14
+TRUE,"TrueCar, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-09 18:27:53,2024-11-09 18:27:53
+TRUE,"TrueCar, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-09 18:27:53,2024-11-09 18:27:53
+FIVN,"Five9, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-08 01:30:27,2024-11-08 01:30:27
+AHR,"American Healthcare REIT, Inc.",margin_pressure,Intel_Margin,2.0,2,2,2024-11-13 22:17:09,2024-11-13 22:17:09
+HAE,Haemonetics Corporation,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-09 06:34:24,2024-11-09 06:34:24
+HAIN,"The Hain Celestial Group, Inc.",pc_demand,Intel_CCG,2.0,2,1,2024-11-07 20:39:29,2024-11-07 20:39:29
+FPAY,"FlexShopper, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-14 23:53:02,2024-11-14 23:53:02
+OKLO,Oklo Inc.,cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-15 04:37:47,2024-11-15 04:37:47
+AOMR,"Angel Oak Mortgage REIT, Inc.",margin_pressure,Intel_Margin,2.0,2,2,2024-11-08 16:56:04,2024-11-08 16:56:04
+AOMR,"Angel Oak Mortgage REIT, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-08 16:56:04,2024-11-08 16:56:04
+AOUT,"American Outdoor Brands, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-12-06 00:48:08,2024-12-06 00:48:08
+AP,Ampco-Pittsburgh Corporation,margin_pressure,Intel_Margin,2.0,2,1,2024-11-12 18:35:27,2024-11-12 18:35:27
+CBRL,"Cracker Barrel Old Country Store, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-12-04 19:29:01,2024-12-04 19:29:01
+CCL,Carnival Corporation & plc,supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-12-20 19:11:02,2024-12-20 19:11:02
+CCLD,"CareCloud, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-12 19:45:18,2024-11-12 19:45:18
+HNST,"The Honest Company, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-13 04:17:13,2024-11-13 04:17:13
+ALVO,Alvotech,pc_demand,Intel_CCG,2.0,2,2,2024-11-14 18:59:03,2024-11-14 18:59:03
+WULF,TeraWulf Inc.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-13 04:05:25,2024-11-13 04:05:25
+WWD,"Woodward, Inc.",foundry_manufacturing,Intel_Foundry,2.0,2,2,2024-11-26 01:50:51,2024-11-26 01:50:51
+FROG,JFrog Ltd.,margin_pressure,Intel_Margin,2.0,2,1,2024-11-08 02:15:33,2024-11-08 02:15:33
+FSM,Fortuna Mining Corp.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-07 21:13:08,2024-11-07 21:13:08
+FTEK,"Fuel Tech, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-07 20:53:03,2024-11-07 20:53:03
+GWH,"ESS Tech, Inc.",margin_pressure,Intel_Margin,2.0,2,2,2024-11-14 01:16:07,2024-11-14 01:16:07
+SSYS,Stratasys Ltd.,margin_pressure,Intel_Margin,2.0,2,2,2024-11-13 16:47:39,2024-11-13 16:47:39
+CAVA,"CAVA Group, Inc.",margin_pressure,Intel_Margin,2.0,2,2,2024-11-12 23:37:54,2024-11-12 23:37:54
+BKYI,"BIO-key International, Inc.",cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-15 21:10:36,2024-11-15 21:10:36
+BLDE,"Blade Air Mobility, Inc.",margin_pressure,Intel_Margin,2.0,2,2,2024-11-12 17:06:06,2024-11-12 17:06:06
+NWN,Northwest Natural Holding Company,margin_pressure,Intel_Margin,2.0,2,1,2024-11-12 21:58:14,2024-11-12 21:58:14
+NWN,Northwest Natural Holding Company,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-12 21:58:14,2024-11-12 21:58:14
+NXGL,"NEXGEL, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-14 03:56:03,2024-11-14 03:56:03
+OABI,"OmniAb, Inc.",cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-13 02:53:10,2024-11-13 02:53:10
+OEC,Orion S.A.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-08 17:30:34,2024-11-08 17:30:34
+STLA,Stellantis N.V.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-12-04 16:11:39,2024-12-04 16:11:39
+STM,STMicroelectronics N.V.,foundry_manufacturing,Intel_Foundry,2.0,2,1,2024-11-22 16:05:41,2024-11-22 16:05:41
+STM,STMicroelectronics N.V.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-22 16:05:41,2024-11-22 16:05:41
+GHM,Graham Corporation,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-08 21:59:11,2024-11-08 21:59:11
+GLOB,Globant S.A.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-15 01:41:00,2024-11-15 01:41:00
+GM,General Motors Company,margin_pressure,Intel_Margin,2.0,2,1,2024-11-20 21:27:11,2024-11-20 21:27:11
+GMS,GMS Inc.,cloud_capacity,Intel_DCAI,2.0,2,1,2024-12-05 20:24:10,2024-12-05 20:24:10
+GNSS,Genasys Inc.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-12-10 00:58:02,2024-12-10 00:58:02
+GOOS,Canada Goose Holdings Inc.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-07 19:28:00,2024-11-07 19:28:00
+BCAB,"BioAtla, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-09 13:53:15,2024-11-09 13:53:15
+ONON,On Holding AG,cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-12 20:27:11,2024-11-12 20:27:11
+ONTF,"ON24, Inc.",cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-09 21:00:23,2024-11-09 21:00:23
+OOMA,"Ooma, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-12-05 01:25:45,2024-12-05 01:25:45
+OPAL,OPAL Fuels Inc.,cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-08 20:25:09,2024-11-08 20:25:09
+ORCL,Oracle Corporation,margin_pressure,Intel_Margin,2.0,1,1,2024-12-10 01:35:38,2024-12-10 01:35:38
+OUST,"Ouster, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-07 23:19:07,2024-11-07 23:19:07
+GENI,Genius Sports Limited,margin_pressure,Intel_Margin,2.0,2,2,2024-11-12 18:54:32,2024-11-12 18:54:32
+GENI,Genius Sports Limited,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-12 18:54:32,2024-11-12 18:54:32
+GETY,"Getty Images Holdings, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-09 17:08:09,2024-11-09 17:08:09
+GFL,GFL Environmental Inc.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-09 16:43:07,2024-11-09 16:43:07
+SU,Suncor Energy Inc.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-13 17:34:15,2024-11-13 17:34:15
+BBU,Brookfield Business Partners L.P. LP Units,margin_pressure,Intel_Margin,2.0,2,1,2024-11-08 18:49:41,2024-11-08 18:49:41
+BBU,Brookfield Business Partners L.P. LP Units,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-08 18:49:41,2024-11-08 18:49:41
+TBPH,"Theravance Biopharma, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-13 03:46:24,2024-11-13 03:46:24
+TGT,Target Corporation,foundry_manufacturing,Intel_Foundry,2.0,2,1,2024-11-20 16:34:51,2024-11-20 16:34:51
+ALIT,"Alight, Inc.",cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-12 18:10:58,2024-11-12 18:10:58
+ALRM,"Alarm.com Holdings, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-08 14:28:01,2024-11-08 14:28:01
+BLK,"BlackRock, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-07-15 15:47:06,2024-07-15 15:47:06
+BX,Blackstone Inc.,margin_pressure,Intel_Margin,2.0,2,2,2024-12-11 19:40:30,2024-12-11 19:40:30
+CAE,CAE Inc.,margin_pressure,Intel_Margin,2.0,2,1,2024-11-13 18:21:17,2024-11-13 18:21:17
+CAG,"Conagra Brands, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-07-11 14:26:04,2024-12-19 16:28:19
+STGW,Stagwell Inc.,cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-09 15:39:08,2024-11-09 15:39:08
+PLL,Piedmont Lithium Inc.,margin_pressure,Intel_Margin,2.0,2,1,2024-11-12 16:39:10,2024-11-12 16:39:10
+YELP,Yelp Inc.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-07 23:15:47,2024-11-07 23:15:47
+ZD,"Ziff Davis, Inc.",margin_pressure,Intel_Margin,2.0,2,2,2024-11-08 19:26:08,2024-11-08 19:26:08
+ZETA,Zeta Global Holdings Corp.,cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-12 01:34:28,2024-11-12 01:34:28
+AAON,"AAON, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-10 01:55:28,2024-11-10 01:55:28
+ABM,ABM Industries Incorporated,supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-12-18 17:08:10,2024-12-18 17:08:10
+POCI,"Precision Optics Corporation, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-15 03:32:55,2024-11-15 03:32:55
+PPSI,"Pioneer Power Solutions, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-19 01:22:03,2024-11-19 01:22:03
+PDFS,"PDF Solutions, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-09 00:26:03,2024-11-09 00:26:03
+PEB,Pebblebrook Hotel Trust,margin_pressure,Intel_Margin,2.0,2,1,2024-11-08 21:58:22,2024-11-08 21:58:22
+PESI,"Perma-Fix Environmental Services, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-14 06:34:07,2024-11-14 06:34:07
+PG,The Procter & Gamble Company,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-12-03 15:21:30,2024-12-03 15:21:30
+PGY,Pagaya Technologies Ltd.,margin_pressure,Intel_Margin,2.0,2,2,2024-11-12 15:56:02,2024-11-12 15:56:02
+PHI,PLDT Inc.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-12 14:30:00,2024-11-12 20:00:00
+PAY,"Paymentus Holdings, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-15 12:51:06,2024-11-15 12:51:06
+THR,"Thermon Group Holdings, Inc.",cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-10 15:12:08,2024-11-10 15:12:08
+DCTH,"Delcath Systems, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-08 17:30:25,2024-11-08 17:30:25
+CSX,CSX Corporation,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-19 21:06:50,2024-11-19 21:06:50
+CWD,CaliberCos Inc.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-15 21:41:03,2024-11-15 21:41:03
+LNZA,"LanzaTech Global, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-08 17:05:22,2024-11-08 17:05:22
+LOVE,The Lovesac Company,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-12-12 16:49:08,2024-12-12 16:49:08
+LINE,"Lineage, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-09 16:23:44,2024-11-09 16:23:44
+ARMN,Aris Mining Corporation,margin_pressure,Intel_Margin,2.0,2,1,2024-11-13 16:50:33,2024-11-13 16:50:33
+ARMN,Aris Mining Corporation,supply_pressure,Intel_CCG_or_DCAI,2.0,2,1,2024-11-13 16:50:33,2024-11-13 16:50:33
+ARRY,"Array Technologies, Inc.",cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-08 04:45:28,2024-11-08 04:45:28
+ARRY,"Array Technologies, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-08 04:45:28,2024-11-08 04:45:28
+ARWR,"Arrowhead Pharmaceuticals, Inc.",margin_pressure,Intel_Margin,2.0,2,1,2024-11-27 04:08:49,2024-11-27 04:08:49
+SIRI,Sirius XM Holdings Inc.,margin_pressure,Intel_Margin,2.0,2,1,2024-12-11 10:55:46,2024-12-11 10:55:46
+PHUN,"Phunware, Inc.",cloud_capacity,Intel_DCAI,2.0,2,1,2024-11-09 18:42:06,2024-11-09 18:42:06
+PHUN,"Phunware, Inc.",supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-09 18:42:06,2024-11-09 18:42:06
+PHX,PHX Minerals Inc.,supply_pressure,Intel_CCG_or_DCAI,2.0,2,2,2024-11-09 18:02:07,2024-11-09 18:02:07
+PL,Planet Labs PBC,cloud_capacity,Intel_DCAI,2.0,2,1,2024-12-10 03:06:06,2024-12-10 03:06:06
+NTAP,"NetApp, Inc.",margin_pressure,Intel_Margin,1.8,1,1,2024-11-22 04:37:35,2024-11-22 04:37:35
+BL,"BlackLine, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-08 02:40:28,2024-11-08 02:40:28
+CBAT,"CBAK Energy Technology, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-12 19:18:13,2024-11-12 19:18:13
+XYZ,"Block, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-03 21:02:05,2024-12-03 21:02:05
+A,"Agilent Technologies, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-26 02:03:01,2024-11-26 02:03:01
+ZD,"Ziff Davis, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-11-08 19:26:08,2024-11-08 19:26:08
+ZD,"Ziff Davis, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 19:26:08,2024-11-08 19:26:08
+ZEPP,Zepp Health Corporation,pc_demand,Intel_CCG,1.0,1,1,2024-11-19 14:32:08,2024-11-19 14:32:08
+ZEPP,Zepp Health Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-19 14:32:08,2024-11-19 14:32:08
+CGC,Canopy Growth Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 17:17:05,2024-11-08 17:17:05
+ABNB,"Airbnb, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 02:37:08,2024-11-08 02:37:08
+PHUN,"Phunware, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-11-09 18:42:06,2024-11-09 18:42:06
+PINS,"Pinterest, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-11-08 01:27:29,2024-11-08 01:27:29
+PL,Planet Labs PBC,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-10 03:06:06,2024-12-10 03:06:06
+PLAB,"Photronics, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-12-11 14:55:27,2024-12-11 14:55:27
+PLL,Piedmont Lithium Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-12 16:39:10,2024-11-12 16:39:10
+PLX,"Protalix BioTherapeutics, Inc.",foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-14 16:23:13,2024-11-14 16:23:13
+PLYM,"Plymouth Industrial REIT, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-07 19:37:45,2024-11-07 19:37:45
+PNC,"The PNC Financial Services Group, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-08 18:09:15,2024-11-08 18:09:15
+PODD,Insulet Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 03:54:39,2024-11-08 03:54:39
+POWL,"Powell Industries, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-20 18:14:14,2024-11-20 18:14:14
+PR,Permian Resources Corporation,margin_pressure,Intel_Margin,1.0,1,1,2024-11-07 20:48:08,2024-11-07 20:48:08
+PR,Permian Resources Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-07 20:48:08,2024-11-07 20:48:08
+PDSB,PDS Biotechnology Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-14 16:18:51,2024-11-14 16:18:51
+XPEV,XPeng Inc.,foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-19 17:19:54,2024-11-19 17:19:54
+PENG,"Penguin Solutions, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-07-09 23:59:09,2024-07-09 23:59:09
+PEP,"PepsiCo, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-07-11 15:00:07,2024-07-11 15:00:07
+PESI,"Perma-Fix Environmental Services, Inc.",foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-14 06:34:07,2024-11-14 06:34:07
+PFE,Pfizer Inc.,margin_pressure,Intel_Margin,1.0,1,1,2024-12-17 16:37:15,2024-12-17 16:37:15
+PFE,Pfizer Inc.,pc_demand,Intel_CCG,1.0,1,1,2024-12-17 16:37:15,2024-12-17 16:37:15
+PGNY,"Progyny, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-13 01:15:02,2024-11-13 01:15:02
+AMLX,"Amylyx Pharmaceuticals, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-07-10 18:23:09,2024-07-10 18:23:09
+PBPB,Potbelly Corporation,margin_pressure,Intel_Margin,1.0,1,1,2024-11-09 20:30:27,2024-11-09 20:30:27
+PBYI,"Puma Biotechnology, Inc.",foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-08 04:09:06,2024-11-08 04:09:06
+PRPH,"ProPhase Labs, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-15 19:49:06,2024-11-15 19:49:06
+AKBA,"Akebia Therapeutics, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-11-07 18:59:54,2024-11-07 18:59:54
+AKBA,"Akebia Therapeutics, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-07 18:59:54,2024-11-07 18:59:54
+ALIT,"Alight, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-12 18:10:58,2024-11-12 18:10:58
+ALLO,"Allogene Therapeutics, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 01:59:01,2024-11-08 01:59:01
+OWLT,"Owlet, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-14 02:19:46,2024-11-14 02:19:46
+OWLT,"Owlet, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-14 02:19:46,2024-11-14 02:19:46
+OXM,"Oxford Industries, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-12 06:36:52,2024-12-12 06:36:52
+OXY,Occidental Petroleum Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-13 21:15:27,2024-11-13 21:15:27
+PAA,"Plains All American Pipeline, L.P. Common Units",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 19:23:38,2024-11-08 19:23:38
+PAGP,"Plains GP Holdings, L.P. Class A Shares",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 19:37:33,2024-11-08 19:37:33
+PANW,"Palo Alto Networks, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-12-03 22:11:41,2024-12-03 22:11:41
+AMBA,"Ambarella, Inc.",foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-27 01:50:27,2024-11-27 01:50:27
+OMER,Omeros Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-14 03:22:06,2024-11-14 03:22:06
+OVV,Ovintiv Inc.,margin_pressure,Intel_Margin,1.0,1,1,2024-11-08 17:43:05,2024-11-08 17:43:05
+ALVO,Alvotech,margin_pressure,Intel_Margin,1.0,1,1,2024-11-14 18:59:03,2024-11-14 18:59:03
+PSMT,"PriceSmart, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-07-11 18:15:07,2024-07-11 18:15:07
+PSQH,"PSQ Holdings, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-13 04:02:09,2024-11-13 04:02:09
+PTCT,"PTC Therapeutics, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-08 04:19:42,2024-11-08 04:19:42
+PUBM,"PubMatic, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-11-13 05:53:09,2024-11-13 05:53:09
+PXLW,"Pixelworks, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-11-13 03:52:58,2024-11-13 03:52:58
+NX,Quanex Building Products Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-13 18:43:33,2024-12-13 18:43:33
+ANGI,Angi Inc.,margin_pressure,Intel_Margin,1.0,1,1,2024-11-12 19:23:34,2024-11-12 19:23:34
+AORT,"Artivion, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 17:02:09,2024-11-09 17:02:09
+NUS,"Nu Skin Enterprises, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 03:07:09,2024-11-08 03:07:09
+NVAX,"Novavax, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-11-20 18:18:06,2024-11-20 18:18:06
+NSPR,"InspireMD, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-12 15:20:28,2024-11-12 15:20:28
+NSYS,Nortech Systems Incorporated,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 13:20:26,2024-11-09 13:20:26
+NTIC,Northern Technologies International Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-20 01:03:34,2024-11-20 01:03:34
+AMRX,"Amneal Pharmaceuticals, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 20:27:09,2024-11-08 20:27:09
+AMWD,American Woodmark Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-27 00:13:41,2024-11-27 00:13:41
+QUIK,QuickLogic Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-12 01:50:27,2024-11-12 01:50:27
+RAND,Rand Capital,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 20:03:08,2024-11-09 20:03:08
+RBA,"RB Global, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 20:05:25,2024-11-08 20:05:25
+RC,Ready Capital Corporation,margin_pressure,Intel_Margin,1.0,1,1,2024-11-08 16:43:45,2024-11-08 16:43:45
+NOTE,"FiscalNote Holdings, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-16 14:30:34,2024-11-16 14:30:34
+NOTE,"FiscalNote Holdings, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-16 14:30:34,2024-11-16 14:30:34
+NPKI,NPK International Inc.,margin_pressure,Intel_Margin,1.0,1,1,2024-11-08 17:46:09,2024-11-08 17:46:09
+NRDY,"Nerdy, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 18:44:06,2024-11-09 18:44:06
+RDNT,"RadNet, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-12 03:34:33,2024-11-12 03:34:33
+RENT,"Rent the Runway, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-12-09 15:22:34,2024-12-09 15:22:34
+REPX,"Riley Exploration Permian, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-09 18:11:07,2024-11-09 18:11:07
+REPX,"Riley Exploration Permian, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 18:11:07,2024-11-09 18:11:07
+REVG,"REV Group, Inc.",foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-12-11 18:09:08,2024-12-11 18:09:08
+REVG,"REV Group, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-12-11 18:09:08,2024-12-11 18:09:08
+RGLD,"Royal Gold, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-07 22:16:13,2024-11-07 22:16:13
+RGTI,"Rigetti Computing, Inc.",foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-12 18:33:06,2024-11-12 18:33:06
+NGL,NGL Energy Partners LP Common Units,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-13 01:44:33,2024-11-13 01:44:33
+NGS,"Natural Gas Services Group, Inc.",foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-15 15:52:34,2024-11-15 15:52:34
+NGS,"Natural Gas Services Group, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-15 15:52:34,2024-11-15 15:52:34
+NICE,NICE Ltd.,pc_demand,Intel_CCG,1.0,1,1,2024-11-14 18:02:08,2024-11-14 18:02:08
+NNOX,Nano-X Imaging Ltd.,foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-21 16:47:09,2024-11-21 16:47:09
+NOC,Northrop Grumman Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-13 18:34:08,2024-11-13 18:34:08
+NOMD,Nomad Foods Limited,margin_pressure,Intel_Margin,1.0,1,1,2024-11-14 18:29:30,2024-11-14 18:29:30
+MVST,"Microvast Holdings, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-11-12 23:20:54,2024-11-12 23:20:54
+MYGN,"Myriad Genetics, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 21:50:07,2024-11-09 21:50:07
+NCNO,"nCino, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-12-05 01:57:33,2024-12-05 01:57:33
+NGL,NGL Energy Partners LP Common Units,margin_pressure,Intel_Margin,1.0,1,1,2024-11-13 01:44:33,2024-11-13 01:44:33
+RL,Ralph Lauren Corporation,foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-07 20:50:00,2024-11-07 20:50:00
+RLGT,"Radiant Logistics, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-12 23:40:29,2024-11-12 23:40:29
+RLGT,"Radiant Logistics, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-12 23:40:29,2024-11-12 23:40:29
+RMTI,"Rockwell Medical, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-12 16:30:03,2024-11-12 16:30:03
+RNW,ReNew Energy Global Plc,foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-20 18:39:47,2024-11-20 18:39:47
+RNW,ReNew Energy Global Plc,margin_pressure,Intel_Margin,1.0,1,1,2024-11-20 18:39:47,2024-11-20 18:39:47
+ARLO,"Arlo Technologies, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-11-08 03:50:52,2024-11-08 03:50:52
+MTD,Mettler-Toledo International Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 21:37:06,2024-11-08 21:37:06
+MTRX,Matrix Service Company,margin_pressure,Intel_Margin,1.0,1,1,2024-11-09 14:52:06,2024-11-09 14:52:06
+MUR,Murphy Oil Corporation,foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-07 19:20:22,2024-11-07 19:20:22
+MVIS,"MicroVision, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-08 01:30:32,2024-11-08 01:30:32
+MSGE,Madison Square Garden Entertainment Corp.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 19:59:09,2024-11-09 19:59:09
+MSI,"Motorola Solutions, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-08 01:02:09,2024-11-08 01:02:09
+APA,APA Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-07 20:14:15,2024-11-07 20:14:15
+APEI,"American Public Education, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-13 03:07:04,2024-11-13 03:07:04
+APEI,"American Public Education, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-13 03:07:04,2024-11-13 03:07:04
+ARBK,Argo Blockchain plc,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-20 20:28:50,2024-11-20 20:28:50
+MNY,MoneyHero Limited,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-10 15:36:41,2024-12-10 15:36:41
+MOBX,"Mobix Labs, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-20 00:47:08,2024-12-20 00:47:08
+MOVE,Movano Inc.,pc_demand,Intel_CCG,1.0,1,1,2024-11-15 02:57:20,2024-11-15 02:57:20
+MOVE,Movano Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-15 02:57:20,2024-11-15 02:57:20
+ROST,"Ross Stores, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-22 01:38:30,2024-11-22 01:38:30
+RSLS,ReShape Lifesciences Inc.,margin_pressure,Intel_Margin,1.0,1,1,2024-11-15 00:43:17,2024-11-15 00:43:17
+RSLS,ReShape Lifesciences Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-15 00:43:17,2024-11-15 00:43:17
+MGNI,"Magnite, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 00:45:27,2024-11-08 00:45:27
+MIND,"MIND Technology, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-12-11 17:50:00,2024-12-11 17:50:00
+MITK,"Mitek Systems, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-17 02:08:50,2024-12-17 02:08:50
+MLSS,Milestone Scientific Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-15 17:07:00,2024-11-15 17:07:00
+MMS,"Maximus, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-21 21:12:44,2024-11-21 21:12:44
+MNMD,Mind Medicine (MindMed) Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 01:06:14,2024-11-08 01:06:14
+MATW,Matthews International Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-22 16:26:33,2024-11-22 16:26:33
+MDWD,MediWound Ltd.,margin_pressure,Intel_Margin,1.0,1,1,2024-11-26 18:46:12,2024-11-26 18:46:12
+MEI,"Methode Electronics, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-12-06 00:57:18,2024-12-06 00:57:18
+MFG,"Mizuho Financial Group, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-17 17:09:11,2024-11-17 17:09:11
+MGNI,"Magnite, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-08 00:45:27,2024-11-08 00:45:27
+SDGR,"Schrödinger, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-12 15:51:41,2024-11-12 15:51:41
+SDRL,Seadrill Limited,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-13 17:19:09,2024-11-13 17:19:09
+SEE,Sealed Air Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-07 21:32:10,2024-11-07 21:32:10
+SFIX,"Stitch Fix, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-11 01:03:06,2024-12-11 01:03:06
+SG,"Sweetgreen, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-10 06:34:10,2024-11-10 06:34:10
+LRFC,Logan Ridge Finance Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-12 17:53:09,2024-11-12 17:53:09
+LTRX,"Lantronix, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-09 19:40:32,2024-11-09 19:40:32
+LUNR,"Intuitive Machines, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-14 17:06:43,2024-11-14 17:06:43
+LUXE,LuxExperience B.V.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-19 15:52:58,2024-11-19 15:52:58
+LYTS,LSI Industries Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 02:39:13,2024-11-09 02:39:13
+LYV,"Live Nation Entertainment, Inc.",foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-11 23:23:51,2024-11-11 23:23:51
+MAIN,Main Street Capital Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 19:06:22,2024-11-08 19:06:22
+SHCO,Soho House & Co Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-19 18:12:06,2024-12-19 18:12:06
+SHLS,"Shoals Technologies Group, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-12 19:54:27,2024-11-12 19:54:27
+SHO,"Sunstone Hotel Investors, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-11-12 21:32:28,2024-11-12 21:32:28
+SHO,"Sunstone Hotel Investors, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-12 21:32:28,2024-11-12 21:32:28
+SHOO,"Steven Madden, Ltd.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 17:24:04,2024-11-09 17:24:04
+SIBN,"SI-BONE, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-13 03:42:29,2024-11-13 03:42:29
+ASM,Avino Silver & Gold Mines Ltd.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-15 01:34:30,2024-11-15 01:34:30
+ASTS,"AST SpaceMobile, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-15 01:44:07,2024-11-15 01:44:07
+LLYVK,Liberty Live Group,margin_pressure,Intel_Margin,1.0,1,1,2024-11-11 01:53:06,2024-11-11 01:53:06
+LLYVK,Liberty Live Group,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-11 01:53:06,2024-11-11 01:53:06
+LNW,"Light & Wonder, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-13 07:19:32,2024-11-13 07:19:32
+LNW,"Light & Wonder, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-13 07:19:32,2024-11-13 07:19:32
+LINC,Lincoln Educational Services Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-11 22:13:49,2024-11-11 22:13:49
+LINE,"Lineage, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 16:23:44,2024-11-09 16:23:44
+LIQT,"LiqTech International, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-14 17:55:27,2024-11-14 17:55:27
+LIQT,"LiqTech International, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-14 17:55:27,2024-11-14 17:55:27
+ARQ,"Arq, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 21:15:28,2024-11-09 21:15:28
+ARRY,"Array Technologies, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 04:45:28,2024-11-08 04:45:28
+ARWR,"Arrowhead Pharmaceuticals, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-27 04:08:49,2024-11-27 04:08:49
+SIDU,"Sidus Space, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-15 00:55:29,2024-11-15 00:55:29
+SIDU,"Sidus Space, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-15 00:55:29,2024-11-15 00:55:29
+SIG,Signet Jewelers Limited,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-05 15:58:52,2024-12-05 15:58:52
+SKYT,"SkyWater Technology, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-10 06:10:39,2024-11-10 06:10:39
+SKYX,SKYX Platforms Corp.,pc_demand,Intel_CCG,1.0,1,1,2024-11-13 02:31:40,2024-11-13 02:31:40
+SLNG,"Stabilis Solutions, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-09 00:23:26,2024-11-09 00:23:26
+SMSI,"Smith Micro Software, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-14 00:28:36,2024-11-14 00:28:36
+LB,LandBridge Company LLC,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 00:57:16,2024-11-09 00:57:16
+LCUT,"Lifetime Brands, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-08 17:47:55,2024-11-08 17:47:55
+LE,"Lands' End, Inc.",foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-12-05 17:17:49,2024-12-05 17:17:49
+LFMD,"LifeMD, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 14:58:18,2024-11-09 14:58:18
+KRUS,"Kura Sushi USA, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-07-10 00:29:01,2024-07-10 00:29:01
+LAMR,Lamar Advertising Company,pc_demand,Intel_CCG,1.0,1,1,2024-11-08 17:28:15,2024-11-08 17:28:15
+LASR,"nLIGHT, Inc.",foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-09 21:22:09,2024-11-09 21:22:09
+KINS,"Kingstone Companies, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-13 17:32:11,2024-11-13 17:32:11
+KLIC,"Kulicke and Soffa Industries, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-11-14 15:50:28,2024-11-14 15:50:28
+KELYA,"Kelly Services, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 14:46:09,2024-11-09 14:46:09
+ASYS,"Amtech Systems, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-10 00:24:09,2024-12-10 00:24:09
+SMWB,Similarweb Ltd.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-13 15:57:09,2024-11-13 15:57:09
+SNAL,"Snail, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-11-15 19:50:25,2024-11-15 19:50:25
+SND,"Smart Sand, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-13 18:38:37,2024-11-13 18:38:37
+SND,"Smart Sand, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-13 18:38:37,2024-11-13 18:38:37
+SNPS,"Synopsys, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-12-05 01:15:00,2024-12-05 01:15:00
+JBL,Jabil Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-18 17:09:10,2024-12-18 17:09:10
+JJSF,J&J Snack Foods Corp.,pc_demand,Intel_CCG,1.0,1,1,2024-11-15 01:45:55,2024-11-15 01:45:55
+JJSF,J&J Snack Foods Corp.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-15 01:45:55,2024-11-15 01:45:55
+JOB,GEE Group Inc.,margin_pressure,Intel_Margin,1.0,1,1,2024-12-20 23:00:00,2024-12-20 23:00:00
+JOB,GEE Group Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-20 23:00:00,2024-12-20 23:00:00
+JOUT,Johnson Outdoors Inc.,pc_demand,Intel_CCG,1.0,1,1,2024-12-10 17:53:08,2024-12-10 17:53:08
+JPM,JPMorgan Chase & Co.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-07-12 15:47:07,2024-07-12 15:47:07
+IREN,IREN Limited,pc_demand,Intel_CCG,1.0,1,1,2024-11-28 02:45:26,2024-11-28 02:45:26
+JBL,Jabil Inc.,foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-12-18 17:09:10,2024-12-18 17:09:10
+INVZ,Innoviz Technologies Ltd.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-13 15:43:01,2024-11-13 15:43:01
+IPWR,Ideal Power Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-15 03:18:34,2024-11-15 03:18:34
+SNPS,"Synopsys, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-05 01:15:00,2024-12-05 01:15:00
+SNT,Senstar Technologies Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-13 02:33:53,2024-11-13 02:33:53
+SOL,Emeren Group Ltd,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-15 00:19:44,2024-11-15 00:19:44
+INO,"Inovio Pharmaceuticals, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-11-15 00:53:10,2024-11-15 00:53:10
+INOD,Innodata Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 22:07:09,2024-11-09 22:07:09
+INSE,"Inspired Entertainment, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-08 17:23:45,2024-11-08 17:23:45
+INSE,"Inspired Entertainment, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 17:23:45,2024-11-08 17:23:45
+INDI,"indie Semiconductor, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-11-08 02:53:12,2024-11-08 02:53:12
+AXGN,"Axogen, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-11-09 14:53:02,2024-11-09 14:53:02
+AXGN,"Axogen, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 14:53:02,2024-11-09 14:53:02
+AZZ,AZZ Inc.,foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-07-11 22:08:07,2024-07-11 22:08:07
+ICCC,ImmuCell Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-14 16:09:10,2024-11-14 16:09:10
+IMNN,"Imunon, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-07 22:11:39,2024-11-07 22:11:39
+IMXI,"International Money Express, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 19:27:08,2024-11-08 19:27:08
+SPGI,S&P Global Inc.,pc_demand,Intel_CCG,1.0,1,1,2024-11-15 19:58:07,2024-11-15 19:58:07
+SPHR,Sphere Entertainment Co.,margin_pressure,Intel_Margin,1.0,1,1,2024-11-12 19:45:15,2024-11-12 19:45:15
+SPHR,Sphere Entertainment Co.,pc_demand,Intel_CCG,1.0,1,1,2024-11-12 19:45:15,2024-11-12 19:45:15
+SPHR,Sphere Entertainment Co.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-12 19:45:15,2024-11-12 19:45:15
+SPT,"Sprout Social, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 16:34:24,2024-11-09 16:34:24
+HYPD,"Hyperion DeFi, Inc.",foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-13 03:42:42,2024-11-13 03:42:42
+HYPD,"Hyperion DeFi, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-13 03:42:42,2024-11-13 03:42:42
+IAC,IAC Inc.,margin_pressure,Intel_Margin,1.0,1,1,2024-11-12 19:25:45,2024-11-12 19:25:45
+IBM,International Business Machines Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-19 23:20:00,2024-11-19 23:20:00
+IBP,"Installed Building Products, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-10 02:02:09,2024-11-10 02:02:09
+HST,"Host Hotels & Resorts, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-07 21:53:12,2024-11-07 21:53:12
+HUBC,HUB Cyber Security Ltd.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-02 15:13:38,2024-12-02 15:13:38
+HUT,Hut 8 Corp.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-13 16:19:45,2024-11-13 16:19:45
+HUYA,HUYA Inc.,pc_demand,Intel_CCG,1.0,1,1,2024-11-12 15:04:09,2024-11-12 15:04:09
+HPP,"Hudson Pacific Properties, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-13 02:36:15,2024-11-13 02:36:15
+HPP,"Hudson Pacific Properties, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-13 02:36:15,2024-11-13 02:36:15
+AGO,Assured Guaranty Ltd.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-12 19:04:04,2024-11-12 19:04:04
+AGRO,Adecoagro S.A.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-14 22:04:52,2024-11-14 22:04:52
+AI,"C3.ai, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-10 01:01:47,2024-12-10 01:01:47
+AIM,AIM ImmunoTech Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-15 15:32:37,2024-11-15 15:32:37
+AIRG,"Airgain, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-16 02:49:10,2024-11-16 02:49:10
+AKAM,"Akamai Technologies, Inc.",foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-08 01:07:03,2024-11-08 01:07:03
+AKAM,"Akamai Technologies, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-08 01:07:03,2024-11-08 01:07:03
+HBIO,"Harvard Bioscience, Inc.",foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-09 14:37:07,2024-11-09 14:37:07
+HBM,Hudbay Minerals Inc.,margin_pressure,Intel_Margin,1.0,1,1,2024-11-13 19:42:07,2024-11-13 19:42:07
+HBM,Hudbay Minerals Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-13 19:42:07,2024-11-13 19:42:07
+HG,"Hamilton Insurance Group, Ltd.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-10 09:28:05,2024-11-10 09:28:05
+HG,"Hamilton Insurance Group, Ltd.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-10 09:28:05,2024-11-10 09:28:05
+HI,"Hillenbrand, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-14 15:06:56,2024-11-14 15:06:56
+HIVE,HIVE Digital Technologies Ltd.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-13 16:42:18,2024-11-13 16:42:18
+GOVX,"GeoVax Labs, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-13 04:33:14,2024-11-13 04:33:14
+GP,GreenPower Motor Company Inc.,margin_pressure,Intel_Margin,1.0,1,1,2024-07-01 15:46:03,2024-07-01 15:46:03
+GRPN,"Groupon, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-11-12 23:19:49,2024-11-12 23:19:49
+GSL,"Global Ship Lease, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-11 18:20:29,2024-11-11 18:20:29
+GTM,ZoomInfo Technologies Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-13 01:31:20,2024-11-13 01:31:20
+GWRE,"Guidewire Software, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-06 01:33:08,2024-12-06 01:33:08
+STEP,StepStone Group Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 18:55:48,2024-11-09 18:55:48
+STLA,Stellantis N.V.,margin_pressure,Intel_Margin,1.0,1,1,2024-12-04 16:11:39,2024-12-04 16:11:39
+STRA,"Strategic Education, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-09 18:29:08,2024-11-09 18:29:08
+STRA,"Strategic Education, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 18:29:08,2024-11-09 18:29:08
+GIS,"General Mills, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-12-18 14:19:15,2024-12-18 14:19:15
+GMAB,Genmab A/S,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 21:38:34,2024-11-09 21:38:34
+GNL,"Global Net Lease, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-07 22:16:09,2024-11-07 22:16:09
+GNL,"Global Net Lease, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-07 22:16:09,2024-11-07 22:16:09
+GOTU,Gaotu Techedu Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-04 15:36:21,2024-12-04 15:36:21
+GDRX,"GoodRx Holdings, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-07 19:14:19,2024-11-07 19:14:19
+GDS,GDS Holdings Limited,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-19 15:45:40,2024-11-19 15:45:40
+GEF,"Greif, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-05 17:30:53,2024-12-05 17:30:53
+GETY,"Getty Images Holdings, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 17:08:09,2024-11-09 17:08:09
+SWKS,"Skyworks Solutions, Inc.",foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-13 02:05:27,2024-11-13 02:05:27
+SY,So-Young International Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-22 16:56:30,2024-11-22 16:56:30
+SYNA,Synaptics Incorporated,foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-08 02:55:25,2024-11-08 02:55:25
+SYNA,Synaptics Incorporated,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 02:55:25,2024-11-08 02:55:25
+SYY,Sysco Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-03 15:50:27,2024-12-03 15:50:27
+T,AT&T Inc.,foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-12-10 16:39:53,2024-12-10 16:39:53
+T,AT&T Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-10 16:39:53,2024-12-10 16:39:53
+GDEN,"Golden Entertainment, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-09 18:06:06,2024-11-09 18:06:06
+GDEN,"Golden Entertainment, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 18:06:06,2024-11-09 18:06:06
+BAC,Bank of America Corporation,margin_pressure,Intel_Margin,1.0,1,1,2024-12-11 20:06:05,2024-12-11 20:06:05
+BAER,"Bridger Aerospace Group Holdings, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-12 02:49:07,2024-11-12 02:49:07
+TBCH,Turtle Beach Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 01:59:16,2024-11-08 01:59:16
+TDW,Tidewater Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 20:04:31,2024-11-08 20:04:31
+TGNA,TEGNA Inc.,margin_pressure,Intel_Margin,1.0,1,1,2024-11-07 20:56:27,2024-11-07 20:56:27
+TITN,Titan Machinery Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-26 20:09:07,2024-11-26 20:09:07
+TIXT,TELUS International (Cda) Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 22:25:28,2024-11-08 22:25:28
+TLN,Talen Energy Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-14 18:40:23,2024-11-14 18:40:23
+FWONA,Formula One Group,margin_pressure,Intel_Margin,1.0,1,1,2024-11-07 22:16:16,2024-11-07 22:16:16
+FWONA,Formula One Group,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-07 22:16:16,2024-11-07 22:16:16
+FWRG,"First Watch Restaurant Group, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-10 09:37:13,2024-11-10 09:37:13
+GAP,"The Gap, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-22 00:35:22,2024-11-22 00:35:22
+GAU,Galiano Gold Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 19:46:11,2024-11-08 19:46:11
+GBX,"The Greenbrier Companies, Inc.",foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-07-08 17:13:08,2024-07-08 17:13:08
+GCO,Genesco Inc.,margin_pressure,Intel_Margin,1.0,1,1,2024-12-06 21:41:18,2024-12-06 21:41:18
+GCO,Genesco Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-06 21:41:18,2024-12-06 21:41:18
+FTEK,"Fuel Tech, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-11-07 20:53:03,2024-11-07 20:53:03
+FTHM,Fathom Holdings Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 18:14:08,2024-11-09 18:14:08
+TLS,Telos Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-12 19:09:08,2024-11-12 19:09:08
+TMC,TMC the metals company Inc.,pc_demand,Intel_CCG,1.0,1,1,2024-11-15 09:29:08,2024-11-15 09:29:08
+TMO,Thermo Fisher Scientific Inc.,margin_pressure,Intel_Margin,1.0,1,1,2024-11-19 17:19:08,2024-11-19 17:19:08
+TNON,"Tenon Medical, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-11-13 23:21:31,2024-11-13 23:21:31
+TNON,"Tenon Medical, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-13 23:21:31,2024-11-13 23:21:31
+TOST,"Toast, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-08 00:20:09,2024-11-08 00:20:09
+FGI,FGI Industries Ltd.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-15 17:05:05,2024-11-15 17:05:05
+FIGS,"FIGS, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-09 13:34:28,2024-11-09 13:34:28
+FIVE,"Five Below, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-12-04 23:51:28,2024-12-04 23:51:28
+FLNC,"Fluence Energy, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-11-26 22:15:41,2024-11-26 22:15:41
+FLR,Fluor Corporation,foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-08 17:41:16,2024-11-08 17:41:16
+FLR,Fluor Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 17:41:16,2024-11-08 17:41:16
+FLYW,Flywire Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 20:28:08,2024-11-09 20:28:08
+EXAS,Exact Sciences Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-04 16:06:02,2024-12-04 16:06:02
+FCEL,"FuelCell Energy, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-19 16:53:57,2024-12-19 16:53:57
+FEIM,"Frequency Electronics, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-11 01:59:35,2024-12-11 01:59:35
+ENR,"Energizer Holdings, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-20 00:33:19,2024-11-20 00:33:19
+ENR,"Energizer Holdings, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-20 00:33:19,2024-11-20 00:33:19
+ERIC,Telefonaktiebolaget LM Ericsson (publ),supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-07-12 17:23:03,2024-07-12 17:23:03
+ESE,ESCO Technologies Inc.,margin_pressure,Intel_Margin,1.0,1,1,2024-11-15 01:00:58,2024-11-15 01:00:58
+ESE,ESCO Technologies Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-15 01:00:58,2024-11-15 01:00:58
+TS,Tenaris S.A.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-07 21:36:51,2024-11-07 21:36:51
+TSAT,Telesat Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-14 20:57:57,2024-11-14 20:57:57
+TSSI,"TSS, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-15 03:36:25,2024-11-15 03:36:25
+TTC,The Toro Company,margin_pressure,Intel_Margin,1.0,1,1,2024-12-18 22:15:22,2024-12-18 22:15:22
+ECO,Okeanis Eco Tankers Corp.,pc_demand,Intel_CCG,1.0,1,1,2024-11-09 16:00:29,2024-11-09 16:00:29
+EGY,"VAALCO Energy, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-12 20:15:01,2024-11-12 20:15:01
+EGY,"VAALCO Energy, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-12 20:15:01,2024-11-12 20:15:01
+EH,EHang Holdings Limited,pc_demand,Intel_CCG,1.0,1,1,2024-11-18 16:07:34,2024-11-18 16:07:34
+DOYU,DouYu International Holdings Limited,pc_demand,Intel_CCG,1.0,1,1,2024-11-23 04:51:47,2024-11-23 04:51:47
+DOYU,DouYu International Holdings Limited,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-23 04:51:47,2024-11-23 04:51:47
+DRRX,DURECT Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-14 03:17:53,2024-11-14 03:17:53
+DUOT,"Duos Technologies Group, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-20 23:27:18,2024-11-20 23:27:18
+ECC,Eagle Point Credit Co LLC,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-14 17:54:13,2024-11-14 17:54:13
+TTEK,"Tetra Tech, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-15 00:09:07,2024-11-15 00:09:07
+UBER,"Uber Technologies, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-11 23:20:54,2024-12-11 23:20:54
+UEIC,Universal Electronics Inc.,pc_demand,Intel_CCG,1.0,1,1,2024-11-09 18:43:33,2024-11-09 18:43:33
+UGP,Ultrapar Participações S.A.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-15 02:54:40,2024-11-15 02:54:40
+ULTA,"Ulta Beauty, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-06 01:27:17,2024-12-06 01:27:17
+UMH,"UMH Properties, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-07 20:46:09,2024-11-07 20:46:09
+BEPC,Brookfield Renewable Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 19:06:30,2024-11-08 19:06:30
+BIDU,"Baidu, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-21 16:25:28,2024-11-21 16:25:28
+DLTR,"Dollar Tree, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-04 15:58:12,2024-12-04 15:58:12
+DNA,"Ginkgo Bioworks Holdings, Inc.",foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-13 03:02:05,2024-11-13 03:02:05
+DOYU,DouYu International Holdings Limited,margin_pressure,Intel_Margin,1.0,1,1,2024-11-23 04:51:47,2024-11-23 04:51:47
+DKNG,DraftKings Inc.,margin_pressure,Intel_Margin,1.0,1,1,2024-12-02 16:22:29,2024-12-02 16:22:29
+BE,Bloom Energy Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 02:13:09,2024-11-08 02:13:09
+BEAT,"HeartBeam, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-10 02:22:09,2024-11-10 02:22:09
+BEAT,"HeartBeam, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-11-10 02:22:09,2024-11-10 02:22:09
+BEEP,Mobile Infrastructure Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-13 14:50:29,2024-11-13 14:50:29
+BENF,Beneficient,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-15 16:08:06,2024-11-15 16:08:06
+BEP,Brookfield Renewable Partners L.P. Limited Partnership Units,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 15:23:18,2024-11-08 15:23:18
+DDOG,"Datadog, Inc.",foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-19 17:17:08,2024-11-19 17:17:08
+UNP,Union Pacific Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-04 17:20:22,2024-12-04 17:20:22
+USB,U.S. Bancorp,pc_demand,Intel_CCG,1.0,1,1,2024-11-09 19:44:11,2024-11-09 19:44:11
+USFD,US Foods Holding Corp.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-07 18:53:02,2024-11-07 18:53:02
+VALN,Valneva SE,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 18:10:24,2024-11-09 18:10:24
+VBNK,VersaBank,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-09 15:46:34,2024-12-09 15:46:34
+VEEV,Veeva Systems Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-06 01:23:52,2024-12-06 01:23:52
+CXT,"Crane NXT, Co.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-09 14:30:25,2024-11-09 14:30:25
+DAVA,Endava plc,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-13 01:57:20,2024-11-13 01:57:20
+DBX,"Dropbox, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-12-03 20:34:09,2024-12-03 20:34:09
+DCBO,Docebo Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 01:48:39,2024-11-09 01:48:39
+CTAS,Cintas Corporation,margin_pressure,Intel_Margin,1.0,1,1,2024-12-19 18:50:20,2024-12-19 18:50:20
+CTAS,Cintas Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-19 18:50:20,2024-12-19 18:50:20
+CTLP,"Cantaloupe, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-09 09:53:35,2024-11-09 09:53:35
+CTLP,"Cantaloupe, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 09:53:35,2024-11-09 09:53:35
+CTMX,"CytomX Therapeutics, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 13:44:12,2024-11-08 13:44:12
+CURV,Torrid Holdings Inc.,foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-12-04 00:46:07,2024-12-04 00:46:07
+CURV,Torrid Holdings Inc.,margin_pressure,Intel_Margin,1.0,1,1,2024-12-04 00:46:07,2024-12-04 00:46:07
+CVS,CVS Health Corporation,foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-19 18:01:02,2024-11-19 18:01:02
+CWD,CaliberCos Inc.,margin_pressure,Intel_Margin,1.0,1,1,2024-11-15 21:41:03,2024-11-15 21:41:03
+VIPS,Vipshop Holdings Limited,margin_pressure,Intel_Margin,1.0,1,1,2024-11-19 16:00:56,2024-11-19 16:00:56
+ADNT,Adient plc,margin_pressure,Intel_Margin,1.0,1,1,2024-11-08 16:32:14,2024-11-08 16:32:14
+ADSK,"Autodesk, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-11-27 01:27:04,2024-11-27 01:27:04
+AEO,"American Eagle Outfitters, Inc.",foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-12-05 00:22:40,2024-12-05 00:22:40
+CSTE,Caesarstone Ltd.,foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-13 16:01:10,2024-11-13 16:01:10
+BILI,Bilibili Inc.,pc_demand,Intel_CCG,1.0,1,1,2024-11-14 14:50:34,2024-11-14 14:50:34
+BITF,Bitfarms Ltd.,pc_demand,Intel_CCG,1.0,1,1,2024-11-13 19:16:15,2024-11-13 19:16:15
+BKH,Black Hills Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-07 21:03:36,2024-11-07 21:03:36
+CPRI,Capri Holdings Limited,pc_demand,Intel_CCG,1.0,1,1,2024-11-15 16:08:10,2024-11-15 16:08:10
+CRESY,"Cresud Sociedad Anónima, Comercial, Inmobiliaria, Financiera y Agropecuaria",pc_demand,Intel_CCG,1.0,1,1,2024-11-11 16:22:16,2024-11-11 16:22:16
+CRNT,Ceragon Networks Ltd.,foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-13 16:35:30,2024-11-13 16:35:30
+CRNT,Ceragon Networks Ltd.,margin_pressure,Intel_Margin,1.0,1,1,2024-11-13 16:35:30,2024-11-13 16:35:30
+CRSP,CRISPR Therapeutics AG,margin_pressure,Intel_Margin,1.0,1,1,2024-11-15 16:37:07,2024-11-15 16:37:07
+CRWD,"CrowdStrike Holdings, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-11-27 02:02:32,2024-11-27 02:02:32
+CRWS,"Crown Crafts, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-12 17:12:43,2024-11-12 17:12:43
+AFRM,"Affirm Holdings, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-20 23:40:29,2024-11-20 23:40:29
+AFRM,"Affirm Holdings, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-20 23:40:29,2024-11-20 23:40:29
+VIST,"Vista Energy, S.A.B. de C.V.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-07-12 16:33:06,2024-07-12 16:33:06
+VUZI,Vuzix Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-14 23:00:26,2024-11-14 23:00:26
+CNVS,Cineverse Corp.,margin_pressure,Intel_Margin,1.0,1,1,2024-11-15 04:21:02,2024-11-15 04:21:02
+COTY,Coty Inc.,foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-07 20:02:02,2024-11-07 20:02:02
+CPA,"Copa Holdings, S.A.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-21 20:35:28,2024-11-21 20:35:28
+CPAY,"Corpay, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 00:03:30,2024-11-08 00:03:30
+CPK,Chesapeake Utilities Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 19:11:55,2024-11-08 19:11:55
+CPRI,Capri Holdings Limited,margin_pressure,Intel_Margin,1.0,1,1,2024-11-15 16:08:10,2024-11-15 16:08:10
+CLSK,"CleanSpark, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-03 00:32:08,2024-12-03 00:32:08
+CM,Canadian Imperial Bank of Commerce,margin_pressure,Intel_Margin,1.0,1,1,2024-12-05 16:25:26,2024-12-05 16:25:26
+CM,Canadian Imperial Bank of Commerce,pc_demand,Intel_CCG,1.0,1,1,2024-12-05 16:25:26,2024-12-05 16:25:26
+CMTG,"Claros Mortgage Trust, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 19:06:08,2024-11-08 19:06:08
+CHWY,"Chewy, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-12-04 16:26:58,2024-12-04 16:26:58
+CIB,Grupo Cibest S.A.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 19:16:37,2024-11-08 19:16:37
+CLDT,Chatham Lodging Trust,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 02:25:29,2024-11-08 02:25:29
+CLPT,"ClearPoint Neuro, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 03:31:31,2024-11-08 03:31:31
+VVOS,"Vivos Therapeutics, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-15 04:31:06,2024-11-15 04:31:06
+WDH,Waterdrop Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-11 17:15:27,2024-12-11 17:15:27
+CDNS,"Cadence Design Systems, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-10 16:10:22,2024-12-10 16:10:22
+CEVA,"CEVA, Inc.",foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-08 04:04:06,2024-11-08 04:04:06
+CGC,Canopy Growth Corporation,margin_pressure,Intel_Margin,1.0,1,1,2024-11-08 17:17:05,2024-11-08 17:17:05
+ZTS,Zoetis Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-20 22:34:32,2024-11-20 22:34:32
+CHPT,"ChargePoint Holdings, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-05 00:22:06,2024-12-05 00:22:06
+BLNK,Blink Charging Co.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 01:22:10,2024-11-08 01:22:10
+CBAT,"CBAK Energy Technology, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-11-12 19:18:13,2024-11-12 19:18:13
+CBAT,"CBAK Energy Technology, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-12 19:18:13,2024-11-12 19:18:13
+CCLD,"CareCloud, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-11-12 19:45:18,2024-11-12 19:45:18
+CCOI,"Cogent Communications Holdings, Inc.",foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-07 22:02:29,2024-11-07 22:02:29
+CDNS,"Cadence Design Systems, Inc.",foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-12-10 16:10:22,2024-12-10 16:10:22
+CDNS,"Cadence Design Systems, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-12-10 16:10:22,2024-12-10 16:10:22
+CDNS,"Cadence Design Systems, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-12-10 16:10:22,2024-12-10 16:10:22
+WOR,"Worthington Enterprises, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-12-18 15:51:03,2024-12-18 15:51:03
+WOR,"Worthington Enterprises, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-18 15:51:03,2024-12-18 15:51:03
+WPM,Wheaton Precious Metals Corp.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 18:51:01,2024-11-08 18:51:01
+WVE,Wave Life Sciences Ltd.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-12 17:20:23,2024-11-12 17:20:23
+CARR,Carrier Global Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-15 21:09:05,2024-11-15 21:09:05
+XYZ,"Block, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-12-03 21:02:05,2024-12-03 21:02:05
+XWEL,"XWELL, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-15 00:45:32,2024-11-15 00:45:32
+BL,"BlackLine, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 02:40:28,2024-11-08 02:40:28
+CAE,CAE Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-13 18:21:17,2024-11-13 18:21:17
+BRY,Berry Corporation,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 10:28:45,2024-11-09 10:28:45
+BRZE,"Braze, Inc.",margin_pressure,Intel_Margin,1.0,1,1,2024-12-10 00:57:06,2024-12-10 00:57:06
+BSY,"Bentley Systems, Incorporated",pc_demand,Intel_CCG,1.0,1,1,2024-11-09 11:22:37,2024-11-09 11:22:37
+BWEN,"Broadwind, Inc.",foundry_manufacturing,Intel_Foundry,1.0,1,1,2024-11-15 20:11:12,2024-11-15 20:11:12
+BWMN,Bowman Consulting Group Ltd.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 00:39:43,2024-11-09 00:39:43
+BORR,Borr Drilling Limited,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-09 16:17:07,2024-11-09 16:17:07
+BRAG,Bragg Gaming Group Inc.,margin_pressure,Intel_Margin,1.0,1,1,2024-11-14 16:57:19,2024-11-14 16:57:19
+XAIR,"Beyond Air, Inc.",pc_demand,Intel_CCG,1.0,1,1,2024-11-12 00:56:53,2024-11-12 00:56:53
+XAIR,"Beyond Air, Inc.",supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-12 00:56:53,2024-11-12 00:56:53
+ACCS,ACCESS Newswire Inc.,margin_pressure,Intel_Margin,1.0,1,1,2024-11-10 07:40:22,2024-11-10 07:40:22
+ACCS,ACCESS Newswire Inc.,pc_demand,Intel_CCG,1.0,1,1,2024-11-10 07:40:22,2024-11-10 07:40:22
+ABBV,AbbVie Inc.,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-12-03 19:26:03,2024-12-03 19:26:03
+PEB,Pebblebrook Hotel Trust,supply_pressure,Intel_CCG_or_DCAI,1.0,1,1,2024-11-08 21:58:22,2024-11-08 21:58:22

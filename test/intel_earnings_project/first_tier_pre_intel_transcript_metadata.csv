@@ -1,0 +1,7 @@
+quarter,fiscalYear,date,symbol,company,role,intel_group,target_ticker,target_quarter,target_earnings_date,days_before_target
+4,2026,2026-02-26,DELL,Dell Technologies,pc_oem_server_vendor,CCG_DCAI,INTC,2026Q1,2026-04-23,56
+3,2026,2025-11-25,DELL,Dell Technologies,pc_oem_server_vendor,CCG_DCAI,INTC,2026Q1,2026-04-23,149
+1,2026,2026-02-24,HPQ,HP Inc.,pc_oem,CCG,INTC,2026Q1,2026-04-23,58
+4,2025,2025-11-25,HPQ,HP Inc.,pc_oem,CCG,INTC,2026Q1,2026-04-23,149
+3,2026,2026-02-12,LNVGY,Lenovo Group ADR,pc_oem_server_vendor,CCG_DCAI,INTC,2026Q1,2026-04-23,70
+2,2026,2025-11-20,LNVGY,Lenovo Group ADR,pc_oem_server_vendor,CCG_DCAI,INTC,2026Q1,2026-04-23,154

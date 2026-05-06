@@ -1,0 +1,852 @@
+node,node_type,name
+COMPANY::QUIK,company,QuickLogic Corporation
+SIGNAL::foundry_manufacturing,signal,
+BUSINESS::Intel_Foundry,intel_business_node,
+COMPANY::WDFC,company,WD-40 Company
+SIGNAL::supply_pressure,signal,
+BUSINESS::Intel_CCG_or_DCAI,intel_business_node,
+SIGNAL::margin_pressure,signal,
+BUSINESS::Intel_Margin,intel_business_node,
+COMPANY::AMD,company,"Advanced Micro Devices, Inc."
+SIGNAL::pc_demand,signal,
+BUSINESS::Intel_CCG,intel_business_node,
+COMPANY::MU,company,"Micron Technology, Inc."
+COMPANY::BIDU,company,"Baidu, Inc."
+SIGNAL::cloud_capacity,signal,
+BUSINESS::Intel_DCAI,intel_business_node,
+COMPANY::WDC,company,Western Digital Corporation
+COMPANY::CIEN,company,Ciena Corporation
+COMPANY::SKYT,company,"SkyWater Technology, Inc."
+COMPANY::NVDA,company,NVIDIA Corporation
+COMPANY::RENT,company,"Rent the Runway, Inc."
+COMPANY::RBRK,company,"Rubrik, Inc."
+COMPANY::DELL,company,Dell Technologies Inc.
+SIGNAL::server_cpu_demand,signal,
+COMPANY::ORCL,company,Oracle Corporation
+COMPANY::VRNT,company,Verint Systems Inc.
+COMPANY::KLAC,company,KLA Corporation
+COMPANY::IPWR,company,Ideal Power Inc.
+COMPANY::TXN,company,Texas Instruments Incorporated
+COMPANY::ON,company,ON Semiconductor Corporation
+COMPANY::CRWD,company,"CrowdStrike Holdings, Inc."
+COMPANY::SWKS,company,"Skyworks Solutions, Inc."
+COMPANY::AVGO,company,Broadcom Inc.
+COMPANY::TKC,company,Turkcell Iletisim Hizmetleri A.S.
+COMPANY::DIOD,company,Diodes Incorporated
+COMPANY::BABA,company,Alibaba Group Holding Limited
+COMPANY::TSEM,company,Tower Semiconductor Ltd.
+COMPANY::SYNA,company,Synaptics Incorporated
+COMPANY::PHI,company,PLDT Inc.
+COMPANY::KLIC,company,"Kulicke and Soffa Industries, Inc."
+COMPANY::AMBA,company,"Ambarella, Inc."
+COMPANY::NTNX,company,"Nutanix, Inc."
+COMPANY::FTNT,company,"Fortinet, Inc."
+COMPANY::PENG,company,"Penguin Solutions, Inc."
+COMPANY::EQIX,company,"Equinix, Inc."
+COMPANY::PANW,company,"Palo Alto Networks, Inc."
+COMPANY::AMAT,company,"Applied Materials, Inc."
+COMPANY::ICAD,company,"iCAD, Inc."
+COMPANY::LRCX,company,Lam Research Corporation
+COMPANY::DTST,company,Data Storage Corporation
+COMPANY::HUT,company,Hut 8 Corp.
+COMPANY::NATL,company,NCR Atleos Corporation
+COMPANY::IRM,company,Iron Mountain Incorporated
+COMPANY::LITE,company,Lumentum Holdings Inc.
+COMPANY::IBM,company,International Business Machines Corporation
+COMPANY::MRVL,company,"Marvell Technology, Inc."
+COMPANY::INTU,company,Intuit Inc.
+COMPANY::NNDM,company,Nano Dimension Ltd.
+COMPANY::JOUT,company,Johnson Outdoors Inc.
+COMPANY::HPQ,company,HP Inc.
+COMPANY::OTEX,company,Open Text Corporation
+COMPANY::STX,company,Seagate Technology Holdings plc
+COMPANY::BLMN,company,"Bloomin' Brands, Inc."
+COMPANY::HPE,company,Hewlett Packard Enterprise Company
+COMPANY::FSLY,company,"Fastly, Inc."
+COMPANY::RXT,company,"Rackspace Technology, Inc."
+COMPANY::INGM,company,Ingram Micro Holding Corporation
+COMPANY::DOX,company,Amdocs Limited
+COMPANY::WWD,company,"Woodward, Inc."
+COMPANY::TGEN,company,Tecogen Inc.
+COMPANY::TBCH,company,Turtle Beach Corporation
+COMPANY::FROG,company,JFrog Ltd.
+COMPANY::JBL,company,Jabil Inc.
+COMPANY::NTIC,company,Northern Technologies International Corporation
+COMPANY::KC,company,Kingsoft Cloud Holdings Limited
+COMPANY::PXLW,company,"Pixelworks, Inc."
+COMPANY::OOMA,company,"Ooma, Inc."
+COMPANY::KRUS,company,"Kura Sushi USA, Inc."
+COMPANY::MTSI,company,"MACOM Technology Solutions Holdings, Inc."
+COMPANY::CCOI,company,"Cogent Communications Holdings, Inc."
+COMPANY::PDFS,company,"PDF Solutions, Inc."
+COMPANY::BTDR,company,Bitdeer Technologies Group
+COMPANY::GWRE,company,"Guidewire Software, Inc."
+COMPANY::SONO,company,"Sonos, Inc."
+COMPANY::AKAM,company,"Akamai Technologies, Inc."
+COMPANY::ADI,company,"Analog Devices, Inc."
+COMPANY::NET,company,"Cloudflare, Inc."
+COMPANY::SIRI,company,Sirius XM Holdings Inc.
+COMPANY::IIIV,company,"i3 Verticals, Inc."
+COMPANY::BASE,company,"Couchbase, Inc."
+COMPANY::NICE,company,NICE Ltd.
+COMPANY::BILI,company,Bilibili Inc.
+COMPANY::XOS,company,"Xos, Inc."
+COMPANY::CSCO,company,"Cisco Systems, Inc."
+COMPANY::DDD,company,3D Systems Corporation
+COMPANY::TUYA,company,Tuya Inc.
+COMPANY::SNT,company,Senstar Technologies Corporation
+COMPANY::SOUN,company,"SoundHound AI, Inc."
+COMPANY::CXAI,company,CXApp Inc.
+COMPANY::DOCU,company,"DocuSign, Inc."
+COMPANY::SONY,company,Sony Group Corporation
+COMPANY::AAON,company,"AAON, Inc."
+COMPANY::BLZE,company,"Backblaze, Inc."
+COMPANY::BORR,company,Borr Drilling Limited
+COMPANY::BWMN,company,Bowman Consulting Group Ltd.
+COMPANY::TSSI,company,"TSS, Inc."
+COMPANY::LCUT,company,"Lifetime Brands, Inc."
+COMPANY::FLR,company,Fluor Corporation
+COMPANY::ADBE,company,Adobe Inc.
+COMPANY::AMT,company,American Tower Corporation
+COMPANY::AZEK,company,The AZEK Company Inc.
+COMPANY::TPL,company,Texas Pacific Land Corporation
+COMPANY::KIRK,company,"Kirkland's, Inc."
+COMPANY::CAN,company,Canaan Inc.
+COMPANY::SAP,company,SAP SE
+COMPANY::CRM,company,"Salesforce, Inc."
+COMPANY::ACN,company,Accenture plc
+COMPANY::LESL,company,"Leslie's, Inc."
+COMPANY::SJM,company,The J. M. Smucker Company
+COMPANY::NTAP,company,"NetApp, Inc."
+COMPANY::IREN,company,IREN Limited
+COMPANY::CL,company,Colgate-Palmolive Company
+COMPANY::GDS,company,GDS Holdings Limited
+COMPANY::BTBT,company,"Bit Digital, Inc."
+COMPANY::FEIM,company,"Frequency Electronics, Inc."
+COMPANY::HOV,company,"Hovnanian Enterprises, Inc."
+COMPANY::PSTG,company,"Pure Storage, Inc."
+COMPANY::BOSC,company,B.O.S. Better Online Solutions Ltd.
+COMPANY::MDB,company,"MongoDB, Inc."
+COMPANY::CURV,company,Torrid Holdings Inc.
+COMPANY::ABEO,company,Abeona Therapeutics Inc.
+COMPANY::SNPS,company,"Synopsys, Inc."
+COMPANY::CVV,company,CVD Equipment Corporation
+COMPANY::DGII,company,Digi International Inc.
+COMPANY::KINS,company,"Kingstone Companies, Inc."
+COMPANY::QRVO,company,"Qorvo, Inc."
+COMPANY::PUBM,company,"PubMatic, Inc."
+COMPANY::KEYS,company,"Keysight Technologies, Inc."
+COMPANY::MATW,company,Matthews International Corporation
+COMPANY::DAVA,company,Endava plc
+COMPANY::MARA,company,"MARA Holdings, Inc."
+COMPANY::MASS,company,908 Devices Inc.
+COMPANY::FGI,company,FGI Industries Ltd.
+COMPANY::CDNS,company,"Cadence Design Systems, Inc."
+COMPANY::JAMF,company,Jamf Holding Corp.
+COMPANY::CSX,company,CSX Corporation
+COMPANY::RXO,company,"RXO, Inc."
+COMPANY::EH,company,EHang Holdings Limited
+COMPANY::DDOG,company,"Datadog, Inc."
+COMPANY::MWA,company,"Mueller Water Products, Inc."
+COMPANY::GPRK,company,GeoPark Limited
+COMPANY::USB,company,U.S. Bancorp
+COMPANY::KGS,company,"Kodiak Gas Services, Inc."
+COMPANY::FIGS,company,"FIGS, Inc."
+COMPANY::VEEE,company,Twin Vee Powercats Co.
+COMPANY::HSDT,company,"Helius Medical Technologies, Inc."
+COMPANY::SVV,company,"Savers Value Village, Inc."
+COMPANY::LB,company,LandBridge Company LLC
+COMPANY::JYNT,company,The Joint Corp.
+COMPANY::PCYO,company,Pure Cycle Corporation
+COMPANY::ULBI,company,Ultralife Corporation
+COMPANY::NTES,company,"NetEase, Inc."
+COMPANY::QBTS,company,D-Wave Quantum Inc.
+COMPANY::COST,company,Costco Wholesale Corporation
+COMPANY::ICCC,company,ImmuCell Corporation
+COMPANY::PRKS,company,United Parks & Resorts Inc.
+COMPANY::PACB,company,"Pacific Biosciences of California, Inc."
+COMPANY::AAOI,company,"Applied Optoelectronics, Inc."
+COMPANY::GEVO,company,"Gevo, Inc."
+COMPANY::MSI,company,"Motorola Solutions, Inc."
+COMPANY::DBX,company,"Dropbox, Inc."
+COMPANY::MDU,company,"MDU Resources Group, Inc."
+COMPANY::SEE,company,Sealed Air Corporation
+COMPANY::FTEK,company,"Fuel Tech, Inc."
+COMPANY::DNOW,company,DNOW Inc.
+COMPANY::JJSF,company,J&J Snack Foods Corp.
+COMPANY::ZEPP,company,Zepp Health Corporation
+COMPANY::PLAB,company,"Photronics, Inc."
+COMPANY::ZUMZ,company,Zumiez Inc.
+COMPANY::PLAY,company,"Dave & Buster's Entertainment, Inc."
+COMPANY::AZZ,company,AZZ Inc.
+COMPANY::MEI,company,"Methode Electronics, Inc."
+COMPANY::PSMT,company,"PriceSmart, Inc."
+COMPANY::LE,company,"Lands' End, Inc."
+COMPANY::MMS,company,"Maximus, Inc."
+COMPANY::ATAT,company,Atour Lifestyle Holdings Limited
+COMPANY::ESTC,company,Elastic N.V.
+COMPANY::BOX,company,"Box, Inc."
+COMPANY::OKTA,company,"Okta, Inc."
+COMPANY::ARBE,company,Arbe Robotics Ltd.
+COMPANY::AAP,company,"Advance Auto Parts, Inc."
+COMPANY::TLN,company,Talen Energy Corporation
+COMPANY::AKYA,company,"Akoya Biosciences, Inc."
+COMPANY::JD,company,"JD.com, Inc."
+COMPANY::PLX,company,"Protalix BioTherapeutics, Inc."
+COMPANY::GGR,company,Gogoro Inc.
+COMPANY::DLO,company,DLocal Limited
+COMPANY::QMCO,company,Quantum Corporation
+COMPANY::RNW,company,ReNew Energy Global Plc
+COMPANY::GP,company,GreenPower Motor Company Inc.
+COMPANY::STM,company,STMicroelectronics N.V.
+COMPANY::HOOD,company,"Robinhood Markets, Inc."
+COMPANY::WPRT,company,Westport Fuel Systems Inc.
+COMPANY::RDCM,company,RADCOM Ltd.
+COMPANY::CYBR,company,CyberArk Software Ltd.
+COMPANY::HIVE,company,HIVE Digital Technologies Ltd.
+COMPANY::CRNT,company,Ceragon Networks Ltd.
+COMPANY::ISSC,company,"Innovative Solutions and Support, Inc."
+COMPANY::WULF,company,TeraWulf Inc.
+COMPANY::XPEV,company,XPeng Inc.
+COMPANY::RKLB,company,Rocket Lab Corporation
+COMPANY::GS,company,"The Goldman Sachs Group, Inc."
+COMPANY::DLTH,company,Duluth Holdings Inc.
+COMPANY::MOBX,company,"Mobix Labs, Inc."
+COMPANY::SNCR,company,"Synchronoss Technologies, Inc."
+COMPANY::ATKR,company,Atkore Inc.
+COMPANY::IPM,company,Intelligent Protection Management Corp.
+COMPANY::CAVA,company,"CAVA Group, Inc."
+COMPANY::PRSO,company,Peraso Inc.
+COMPANY::SMTC,company,Semtech Corporation
+COMPANY::VRME,company,"VerifyMe, Inc."
+COMPANY::UNFI,company,"United Natural Foods, Inc."
+COMPANY::CAMT,company,Camtek Ltd.
+COMPANY::ONON,company,On Holding AG
+COMPANY::KMX,company,"CarMax, Inc."
+COMPANY::IAC,company,IAC Inc.
+COMPANY::ANGI,company,Angi Inc.
+COMPANY::TLS,company,Telos Corporation
+COMPANY::CHPT,company,"ChargePoint Holdings, Inc."
+COMPANY::SHOP,company,Shopify Inc.
+COMPANY::DGXX,company,Digi Power X Inc.
+COMPANY::HUYA,company,HUYA Inc.
+COMPANY::REKR,company,"Rekor Systems, Inc."
+COMPANY::WSM,company,"Williams-Sonoma, Inc."
+COMPANY::ZETA,company,Zeta Global Holdings Corp.
+COMPANY::MLKN,company,"MillerKnoll, Inc."
+COMPANY::XAIR,company,"Beyond Air, Inc."
+COMPANY::BMY,company,Bristol-Myers Squibb Company
+COMPANY::HEI,company,HEICO Corporation
+COMPANY::ALNT,company,Allient Inc.
+COMPANY::PL,company,Planet Labs PBC
+COMPANY::INGN,company,"Inogen, Inc."
+COMPANY::HON,company,Honeywell International Inc.
+COMPANY::GBLI,company,"Global Indemnity Group, LLC"
+COMPANY::GIS,company,"General Mills, Inc."
+COMPANY::BLBD,company,Blue Bird Corporation
+COMPANY::TIGO,company,Millicom International Cellular S.A.
+COMPANY::LOW,company,"Lowe's Companies, Inc."
+COMPANY::AI,company,"C3.ai, Inc."
+COMPANY::MAMA,company,"Mama's Creations, Inc."
+COMPANY::GFL,company,GFL Environmental Inc.
+COMPANY::LFMD,company,"LifeMD, Inc."
+COMPANY::AXGN,company,"Axogen, Inc."
+COMPANY::MODV,company,ModivCare Inc.
+COMPANY::LPTH,company,"LightPath Technologies, Inc."
+COMPANY::KO,company,The Coca-Cola Company
+COMPANY::ASYS,company,"Amtech Systems, Inc."
+COMPANY::ECX,company,ECARX Holdings Inc.
+COMPANY::SLNG,company,"Stabilis Solutions, Inc."
+COMPANY::MMI,company,"Marcus & Millichap, Inc."
+COMPANY::IMXI,company,"International Money Express, Inc."
+COMPANY::MAIN,company,Main Street Capital Corporation
+COMPANY::CIVI,company,"Civitas Resources, Inc."
+COMPANY::NRG,company,"NRG Energy, Inc."
+COMPANY::COLD,company,"Americold Realty Trust, Inc."
+COMPANY::SSSS,company,SuRo Capital Corp.
+COMPANY::CEVA,company,"CEVA, Inc."
+COMPANY::PODD,company,Insulet Corporation
+COMPANY::NGG,company,National Grid plc
+COMPANY::FPAY,company,"FlexShopper, Inc."
+COMPANY::ANET,company,Arista Networks Inc
+COMPANY::ZS,company,"Zscaler, Inc."
+COMPANY::BKNG,company,Booking Holdings Inc.
+COMPANY::BE,company,Bloom Energy Corporation
+COMPANY::IOVA,company,"Iovance Biotherapeutics, Inc."
+COMPANY::DUOT,company,"Duos Technologies Group, Inc."
+COMPANY::NIO,company,NIO Inc.
+COMPANY::RIVN,company,"Rivian Automotive, Inc."
+COMPANY::FIVE,company,"Five Below, Inc."
+COMPANY::BX,company,Blackstone Inc.
+COMPANY::DY,company,"Dycom Industries, Inc."
+COMPANY::CRH,company,CRH plc
+COMPANY::VET,company,Vermilion Energy Inc.
+COMPANY::B,company,Barrick Mining Corporation
+COMPANY::ERIC,company,Telefonaktiebolaget LM Ericsson (publ)
+COMPANY::RYN,company,Rayonier Inc.
+COMPANY::NOTE,company,"FiscalNote Holdings, Inc."
+COMPANY::BB,company,BlackBerry Limited
+COMPANY::BLK,company,"BlackRock, Inc."
+COMPANY::CBRL,company,"Cracker Barrel Old Country Store, Inc."
+COMPANY::HRL,company,Hormel Foods Corporation
+COMPANY::FAST,company,Fastenal Company
+COMPANY::DAKT,company,"Daktronics, Inc."
+COMPANY::RY,company,Royal Bank of Canada
+COMPANY::VIST,company,"Vista Energy, S.A.B. de C.V."
+COMPANY::ROST,company,"Ross Stores, Inc."
+COMPANY::MCK,company,McKesson Corporation
+COMPANY::AIRG,company,"Airgain, Inc."
+COMPANY::ELTK,company,Eltek Ltd.
+COMPANY::SOFI,company,"SoFi Technologies, Inc."
+COMPANY::POST,company,"Post Holdings, Inc."
+COMPANY::VVV,company,Valvoline Inc.
+COMPANY::SNDA,company,"Sonida Senior Living, Inc."
+COMPANY::SPCB,company,SuperCom Ltd.
+COMPANY::ALVO,company,Alvotech
+COMPANY::NOMD,company,Nomad Foods Limited
+COMPANY::MSM,company,"MSC Industrial Direct Co., Inc."
+COMPANY::CARR,company,Carrier Global Corporation
+COMPANY::MITQ,company,"Moving iMage Technologies, Inc."
+COMPANY::BLIN,company,"Bridgeline Digital, Inc."
+COMPANY::CCL,company,Carnival Corporation & plc
+COMPANY::IDN,company,"Intellicheck, Inc."
+COMPANY::OPRX,company,OptimizeRx Corporation
+COMPANY::NKE,company,"NIKE, Inc."
+COMPANY::WKSP,company,Worksport Ltd.
+COMPANY::KULR,company,"KULR Technology Group, Inc."
+COMPANY::GWH,company,"ESS Tech, Inc."
+COMPANY::EPAC,company,Enerpac Tool Group Corp.
+COMPANY::BNGO,company,"Bionano Genomics, Inc."
+COMPANY::NGS,company,"Natural Gas Services Group, Inc."
+COMPANY::HWM,company,Howmet Aerospace Inc.
+COMPANY::AHR,company,"American Healthcare REIT, Inc."
+COMPANY::SKYH,company,Sky Harbour Group Corporation
+COMPANY::FCEL,company,"FuelCell Energy, Inc."
+COMPANY::SLND,company,"Southland Holdings, Inc."
+COMPANY::BITF,company,Bitfarms Ltd.
+COMPANY::VIK,company,Viking Holdings Ltd
+COMPANY::SU,company,Suncor Energy Inc.
+COMPANY::SDRL,company,Seadrill Limited
+COMPANY::AMBC,company,"Ambac Financial Group, Inc."
+COMPANY::ARMN,company,Aris Mining Corporation
+COMPANY::SSYS,company,Stratasys Ltd.
+COMPANY::VNET,company,"VNET Group, Inc."
+COMPANY::TTC,company,The Toro Company
+COMPANY::BODI,company,"The Beachbody Company, Inc."
+COMPANY::IPW,company,iPower Inc.
+COMPANY::BDX,company,"Becton, Dickinson and Company"
+COMPANY::AEG,company,Aegon Ltd.
+COMPANY::HNRG,company,Hallador Energy Company
+COMPANY::CMCM,company,Cheetah Mobile Inc.
+COMPANY::MODG,company,Topgolf Callaway Brands Corp.
+COMPANY::NX,company,Quanex Building Products Corporation
+COMPANY::RH,company,RH
+COMPANY::MVST,company,"Microvast Holdings, Inc."
+COMPANY::SPGI,company,S&P Global Inc.
+COMPANY::IHS,company,IHS Holding Limited
+COMPANY::PAY,company,"Paymentus Holdings, Inc."
+COMPANY::EAF,company,GrafTech International Ltd.
+COMPANY::CNM,company,"Core & Main, Inc."
+COMPANY::BRSL,company,Brightstar Lottery PLC
+COMPANY::SHLS,company,"Shoals Technologies Group, Inc."
+COMPANY::MDT,company,Medtronic plc
+COMPANY::CBAT,company,"CBAK Energy Technology, Inc."
+COMPANY::BNS,company,The Bank of Nova Scotia
+COMPANY::NPWR,company,NET Power Inc.
+COMPANY::GENI,company,Genius Sports Limited
+COMPANY::RGTI,company,"Rigetti Computing, Inc."
+COMPANY::HD,company,"The Home Depot, Inc."
+COMPANY::ONDS,company,Ondas Holdings Inc.
+COMPANY::ACTG,company,Acacia Research Corporation
+COMPANY::BRFS,company,BRF S.A.
+COMPANY::VIPS,company,Vipshop Holdings Limited
+COMPANY::SOHU,company,Sohu.com Limited
+COMPANY::TMC,company,TMC the metals company Inc.
+COMPANY::FTCI,company,"FTC Solar, Inc."
+COMPANY::EVGO,company,"EVgo, Inc."
+COMPANY::SRRK,company,Scholar Rock Holding Corporation
+COMPANY::SDGR,company,"Schrödinger, Inc."
+COMPANY::PG,company,The Procter & Gamble Company
+COMPANY::SPNS,company,Sapiens International Corporation N.V.
+COMPANY::SWK,company,"Stanley Black & Decker, Inc."
+COMPANY::CRDO,company,Credo Technology Group Holding Ltd
+COMPANY::BZ,company,Kanzhun Limited
+COMPANY::VRTX,company,Vertex Pharmaceuticals Incorporated
+COMPANY::HUBC,company,HUB Cyber Security Ltd.
+COMPANY::LYV,company,"Live Nation Entertainment, Inc."
+COMPANY::ARHS,company,"Arhaus, Inc."
+COMPANY::KFS,company,Kingsway Financial Services Inc.
+COMPANY::DH,company,Definitive Healthcare Corp.
+COMPANY::KVHI,company,"KVH Industries, Inc."
+COMPANY::REVG,company,"REV Group, Inc."
+COMPANY::PD,company,"PagerDuty, Inc."
+COMPANY::ASLE,company,AerSale Corporation
+COMPANY::MRVI,company,"Maravai LifeSciences Holdings, Inc."
+COMPANY::INOD,company,Innodata Inc.
+COMPANY::APP,company,AppLovin Corporation
+COMPANY::ARBK,company,Argo Blockchain plc
+COMPANY::FLO,company,"Flowers Foods, Inc."
+COMPANY::SPWH,company,"Sportsman's Warehouse Holdings, Inc."
+COMPANY::ADEA,company,Adeia Inc.
+COMPANY::LTRX,company,"Lantronix, Inc."
+COMPANY::PCT,company,"PureCycle Technologies, Inc."
+COMPANY::WBD,company,"Warner Bros. Discovery, Inc."
+COMPANY::SOL,company,Emeren Group Ltd
+COMPANY::TTEC,company,"TTEC Holdings, Inc."
+COMPANY::GETY,company,"Getty Images Holdings, Inc."
+COMPANY::OKLO,company,Oklo Inc.
+COMPANY::POWL,company,"Powell Industries, Inc."
+COMPANY::SPT,company,"Sprout Social, Inc."
+COMPANY::LINE,company,"Lineage, Inc."
+COMPANY::ADSK,company,"Autodesk, Inc."
+COMPANY::VRAR,company,"The Glimpse Group, Inc."
+COMPANY::PPSI,company,"Pioneer Power Solutions, Inc."
+COMPANY::CXT,company,"Crane NXT, Co."
+COMPANY::REAX,company,The Real Brokerage Inc.
+COMPANY::NRXP,company,"NRx Pharmaceuticals, Inc."
+COMPANY::BSY,company,"Bentley Systems, Incorporated"
+COMPANY::WDAY,company,"Workday, Inc."
+COMPANY::LYTS,company,LSI Industries Inc.
+COMPANY::PKOH,company,Park-Ohio Holdings Corp.
+COMPANY::FLNC,company,"Fluence Energy, Inc."
+COMPANY::KT,company,KT Corporation
+COMPANY::BRZE,company,"Braze, Inc."
+COMPANY::WRBY,company,Warby Parker Inc.
+COMPANY::CMCSA,company,Comcast Corporation
+COMPANY::VBNK,company,VersaBank
+COMPANY::DOOO,company,BRP Inc.
+COMPANY::KOP,company,Koppers Holdings Inc.
+COMPANY::TGT,company,Target Corporation
+COMPANY::AREC,company,American Resources Corporation
+COMPANY::VSCO,company,Victoria's Secret & Co.
+COMPANY::BBU,company,Brookfield Business Partners L.P. LP Units
+COMPANY::IAG,company,IAMGOLD Corporation
+COMPANY::PNC,company,"The PNC Financial Services Group, Inc."
+COMPANY::NPKI,company,NPK International Inc.
+COMPANY::III,company,"Information Services Group, Inc."
+COMPANY::HLLY,company,Holley Inc.
+COMPANY::OEC,company,Orion S.A.
+COMPANY::STN,company,Stantec Inc.
+COMPANY::RC,company,Ready Capital Corporation
+COMPANY::ADNT,company,Adient plc
+COMPANY::BBY,company,"Best Buy Co., Inc."
+COMPANY::INUV,company,"Inuvo, Inc."
+COMPANY::BEP,company,Brookfield Renewable Partners L.P. Limited Partnership Units
+COMPANY::ALRM,company,"Alarm.com Holdings, Inc."
+COMPANY::UHAL,company,U-Haul Holding Company
+COMPANY::PBYI,company,"Puma Biotechnology, Inc."
+COMPANY::VEEV,company,Veeva Systems Inc.
+COMPANY::ARLO,company,"Arlo Technologies, Inc."
+COMPANY::AXON,company,"Axon Enterprise, Inc."
+COMPANY::INO,company,"Inovio Pharmaceuticals, Inc."
+COMPANY::VUZI,company,Vuzix Corporation
+COMPANY::AOUT,company,"American Outdoor Brands, Inc."
+COMPANY::INDI,company,"indie Semiconductor, Inc."
+COMPANY::LCID,company,"Lucid Group, Inc."
+COMPANY::HSAI,company,Hesai Group
+COMPANY::BL,company,"BlackLine, Inc."
+COMPANY::TTD,company,"The Trade Desk, Inc."
+COMPANY::AEE,company,Ameren Corporation
+COMPANY::NVEE,company,"NV5 Global, Inc."
+COMPANY::SAIC,company,Science Applications International Corporation
+COMPANY::ACHR,company,Archer Aviation Inc.
+COMPANY::ENS,company,EnerSys
+COMPANY::TWST,company,Twist Bioscience Corporation
+COMPANY::DXC,company,DXC Technology Company
+COMPANY::HOFT,company,Hooker Furnishings Corporation
+COMPANY::GMS,company,GMS Inc.
+COMPANY::MVIS,company,"MicroVision, Inc."
+COMPANY::REGN,company,"Regeneron Pharmaceuticals, Inc."
+COMPANY::MGNI,company,"Magnite, Inc."
+COMPANY::RVYL,company,Ryvyl Inc.
+COMPANY::SPB,company,"Spectrum Brands Holdings, Inc."
+COMPANY::EVRG,company,"Evergy, Inc."
+COMPANY::DMRC,company,Digimarc Corporation
+COMPANY::FSM,company,Fortuna Mining Corp.
+COMPANY::BKH,company,Black Hills Corporation
+COMPANY::QGEN,company,Qiagen N.V.
+COMPANY::CSIQ,company,Canadian Solar Inc.
+COMPANY::PR,company,Permian Resources Corporation
+COMPANY::SIG,company,Signet Jewelers Limited
+COMPANY::JXN,company,Jackson Financial Inc.
+COMPANY::PCG,company,PG&E Corporation
+COMPANY::XRAY,company,DENTSPLY SIRONA Inc.
+COMPANY::COTY,company,Coty Inc.
+COMPANY::CXM,company,"Sprinklr, Inc."
+COMPANY::MUR,company,Murphy Oil Corporation
+COMPANY::GSM,company,Ferroglobe PLC
+COMPANY::ILMN,company,"Illumina, Inc."
+COMPANY::NVAX,company,"Novavax, Inc."
+COMPANY::NAAS,company,NaaS Technology Inc.
+COMPANY::J,company,Jacobs Solutions Inc.
+COMPANY::VREX,company,Varex Imaging Corporation
+COMPANY::EDIT,company,"Editas Medicine, Inc."
+COMPANY::ENR,company,"Energizer Holdings, Inc."
+COMPANY::DLB,company,"Dolby Laboratories, Inc."
+COMPANY::BRBR,company,"BellRing Brands, Inc."
+COMPANY::OCSL,company,Oaktree Specialty Lending Corporation
+COMPANY::CVS,company,CVS Health Corporation
+COMPANY::Z,company,"Zillow Group, Inc."
+COMPANY::TMO,company,Thermo Fisher Scientific Inc.
+COMPANY::LUXE,company,LuxExperience B.V.
+COMPANY::SYM,company,Symbotic Inc.
+COMPANY::MGIC,company,Magic Software Enterprises Ltd.
+COMPANY::CLRB,company,"Cellectar Biosciences, Inc."
+COMPANY::MFG,company,"Mizuho Financial Group, Inc."
+COMPANY::ELMD,company,"Electromed, Inc."
+COMPANY::EVCM,company,EverCommerce Inc.
+COMPANY::DAVE,company,Dave Inc.
+COMPANY::CWD,company,CaliberCos Inc.
+COMPANY::BKYI,company,"BIO-key International, Inc."
+COMPANY::BWEN,company,"Broadwind, Inc."
+COMPANY::ZK,company,ZEEKR Intelligent Technology Holding Limited
+COMPANY::SNAL,company,"Snail, Inc."
+COMPANY::PRPH,company,"ProPhase Labs, Inc."
+COMPANY::ELV,company,"Elevance Health, Inc."
+COMPANY::HYLN,company,Hyliion Holdings Corp.
+COMPANY::DEC,company,Diversified Energy Company PLC
+COMPANY::MLSS,company,Milestone Scientific Inc.
+COMPANY::CRSP,company,CRISPR Therapeutics AG
+COMPANY::CPRI,company,Capri Holdings Limited
+COMPANY::BENF,company,Beneficient
+COMPANY::AIM,company,AIM ImmunoTech Inc.
+COMPANY::DRCT,company,"Direct Digital Holdings, Inc."
+COMPANY::VVOS,company,"Vivos Therapeutics, Inc."
+COMPANY::CNVS,company,Cineverse Corp.
+COMPANY::GDEV,company,GDEV Inc.
+COMPANY::POCI,company,"Precision Optics Corporation, Inc."
+COMPANY::MOVE,company,Movano Inc.
+COMPANY::UGP,company,Ultrapar Participações S.A.
+COMPANY::ASTS,company,"AST SpaceMobile, Inc."
+COMPANY::GLOB,company,Globant S.A.
+COMPANY::ASM,company,Avino Silver & Gold Mines Ltd.
+COMPANY::ESE,company,ESCO Technologies Inc.
+COMPANY::SIDU,company,"Sidus Space, Inc."
+COMPANY::XWEL,company,"XWELL, Inc."
+COMPANY::RSLS,company,ReShape Lifesciences Inc.
+COMPANY::GAME,company,"GameSquare Holdings, Inc."
+COMPANY::EC,company,Ecopetrol S.A.
+COMPANY::TTEK,company,"Tetra Tech, Inc."
+COMPANY::AGRO,company,Adecoagro S.A.
+COMPANY::TSAT,company,Telesat Corporation
+COMPANY::SBH,company,"Sally Beauty Holdings, Inc."
+COMPANY::C,company,Citigroup Inc.
+COMPANY::BK,company,The Bank of New York Mellon Corporation
+COMPANY::AKBA,company,"Akebia Therapeutics, Inc."
+COMPANY::BN,company,Brookfield Corporation
+COMPANY::JPM,company,JPMorgan Chase & Co.
+COMPANY::CINT,company,CI&T Inc.
+COMPANY::MPTI,company,"M-tron Industries, Inc."
+COMPANY::BSET,company,"Bassett Furniture Industries, Incorporated"
+COMPANY::PEP,company,"PepsiCo, Inc."
+COMPANY::LIQT,company,"LiqTech International, Inc."
+COMPANY::ECC,company,Eagle Point Credit Co LLC
+COMPANY::CAG,company,"Conagra Brands, Inc."
+COMPANY::AMLX,company,"Amylyx Pharmaceuticals, Inc."
+COMPANY::SAR,company,Saratoga Investment Corp
+COMPANY::LUNR,company,"Intuitive Machines, Inc."
+COMPANY::BRAG,company,Bragg Gaming Group Inc.
+COMPANY::BYRN,company,Byrna Technologies Inc.
+COMPANY::PDSB,company,PDS Biotechnology Corporation
+COMPANY::GBX,company,"The Greenbrier Companies, Inc."
+COMPANY::INKT,company,"MiNK Therapeutics, Inc."
+COMPANY::JG,company,Aurora Mobile Limited
+COMPANY::VEON,company,VEON Ltd.
+COMPANY::HI,company,"Hillenbrand, Inc."
+COMPANY::XNET,company,Xunlei Limited
+COMPANY::PESI,company,"Perma-Fix Environmental Services, Inc."
+COMPANY::JOB,company,GEE Group Inc.
+COMPANY::NXGL,company,"NEXGEL, Inc."
+COMPANY::TSHA,company,"Taysha Gene Therapies, Inc."
+COMPANY::OMER,company,Omeros Corporation
+COMPANY::DRRX,company,DURECT Corporation
+COMPANY::MRNA,company,"Moderna, Inc."
+COMPANY::OWLT,company,"Owlet, Inc."
+COMPANY::WYY,company,WidePoint Corporation
+COMPANY::SPWR,company,"Complete Solaria, Inc."
+COMPANY::FDS,company,FactSet Research Systems Inc.
+COMPANY::LEN,company,Lennar Corporation
+COMPANY::CTAS,company,Cintas Corporation
+COMPANY::SMSI,company,"Smith Micro Software, Inc."
+COMPANY::SHCO,company,Soho House & Co Inc.
+COMPANY::TNON,company,"Tenon Medical, Inc."
+COMPANY::OXY,company,Occidental Petroleum Corporation
+COMPANY::MRK,company,"Merck & Co., Inc."
+COMPANY::HBM,company,Hudbay Minerals Inc.
+COMPANY::SND,company,"Smart Sand, Inc."
+COMPANY::NOC,company,Northrop Grumman Corporation
+COMPANY::CAE,company,CAE Inc.
+COMPANY::ABM,company,ABM Industries Incorporated
+COMPANY::WOR,company,"Worthington Enterprises, Inc."
+COMPANY::QIPT,company,Quipt Home Medical Corp.
+COMPANY::PFE,company,Pfizer Inc.
+COMPANY::NMTC,company,NeuroOne Medical Technologies Corporation
+COMPANY::MITK,company,"Mitek Systems, Inc."
+COMPANY::CSTE,company,Caesarstone Ltd.
+COMPANY::SMWB,company,Similarweb Ltd.
+COMPANY::INVZ,company,Innoviz Technologies Ltd.
+COMPANY::BEEP,company,Mobile Infrastructure Corporation
+COMPANY::MP,company,MP Materials Corp.
+COMPANY::LNW,company,"Light & Wonder, Inc."
+COMPANY::GOVX,company,"GeoVax Labs, Inc."
+COMPANY::HNST,company,"The Honest Company, Inc."
+COMPANY::PSQH,company,"PSQ Holdings, Inc."
+COMPANY::TBPH,company,"Theravance Biopharma, Inc."
+COMPANY::HYPD,company,"Hyperion DeFi, Inc."
+COMPANY::SIBN,company,"SI-BONE, Inc."
+COMPANY::NRGV,company,"Energy Vault Holdings, Inc."
+COMPANY::LOVE,company,The Lovesac Company
+COMPANY::NDSN,company,Nordson Corporation
+COMPANY::APEI,company,"American Public Education, Inc."
+COMPANY::DNA,company,"Ginkgo Bioworks Holdings, Inc."
+COMPANY::OXM,company,"Oxford Industries, Inc."
+COMPANY::OABI,company,"OmniAb, Inc."
+COMPANY::RPAY,company,Repay Holdings Corporation
+COMPANY::HPP,company,"Hudson Pacific Properties, Inc."
+COMPANY::SKYX,company,SKYX Platforms Corp.
+COMPANY::CHMI,company,Cherry Hill Mortgage Investment Corporation
+COMPANY::UBER,company,"Uber Technologies, Inc."
+COMPANY::BAC,company,Bank of America Corporation
+COMPANY::NGL,company,NGL Energy Partners LP Common Units
+COMPANY::CLSD,company,"Clearside Biomedical, Inc."
+COMPANY::BAM,company,Brookfield Asset Management Ltd.
+COMPANY::GTM,company,ZoomInfo Technologies Inc.
+COMPANY::PGNY,company,"Progyny, Inc."
+COMPANY::CNNE,company,"Cannae Holdings, Inc."
+COMPANY::NPCE,company,"NeuroPace, Inc."
+COMPANY::MIND,company,"MIND Technology, Inc."
+COMPANY::QTRX,company,Quanterix Corporation
+COMPANY::WDH,company,Waterdrop Inc.
+COMPANY::RLGT,company,"Radiant Logistics, Inc."
+COMPANY::GRPN,company,"Groupon, Inc."
+COMPANY::SFIX,company,"Stitch Fix, Inc."
+COMPANY::RMBL,company,"RumbleOn, Inc."
+COMPANY::IPA,company,ImmunoPrecise Antibodies Ltd.
+COMPANY::NWN,company,Northwest Natural Holding Company
+COMPANY::SHO,company,"Sunstone Hotel Investors, Inc."
+COMPANY::CGEN,company,Compugen Ltd.
+COMPANY::TFC,company,Truist Financial Corporation
+COMPANY::EGY,company,"VAALCO Energy, Inc."
+COMPANY::AUTL,company,Autolus Therapeutics plc
+COMPANY::SGRY,company,"Surgery Partners, Inc."
+COMPANY::CCLD,company,"CareCloud, Inc."
+COMPANY::SPHR,company,Sphere Entertainment Co.
+COMPANY::LEGN,company,Legend Biotech Corporation
+COMPANY::T,company,AT&T Inc.
+COMPANY::AGO,company,Assured Guaranty Ltd.
+COMPANY::UONE,company,"Urban One, Inc."
+COMPANY::KOPN,company,Kopin Corporation
+COMPANY::KKR,company,KKR & Co. Inc.
+COMPANY::HTZ,company,"Hertz Global Holdings, Inc."
+COMPANY::TOL,company,"Toll Brothers, Inc."
+COMPANY::SATS,company,EchoStar Corporation
+COMPANY::AP,company,Ampco-Pittsburgh Corporation
+COMPANY::MNY,company,MoneyHero Limited
+COMPANY::WFCF,company,"Where Food Comes From, Inc."
+COMPANY::PLUG,company,Plug Power Inc.
+COMPANY::VERI,company,"Veritone, Inc."
+COMPANY::HQY,company,"HealthEquity, Inc."
+COMPANY::ALIT,company,"Alight, Inc."
+COMPANY::LRFC,company,Logan Ridge Finance Corporation
+COMPANY::WVE,company,Wave Life Sciences Ltd.
+COMPANY::GNSS,company,Genasys Inc.
+COMPANY::CRWS,company,"Crown Crafts, Inc."
+COMPANY::BLDE,company,"Blade Air Mobility, Inc."
+COMPANY::FOUR,company,"Shift4 Payments, Inc."
+COMPANY::PLL,company,Piedmont Lithium Inc.
+COMPANY::AROC,company,"Archrock, Inc."
+COMPANY::RMTI,company,"Rockwell Medical, Inc."
+COMPANY::VZ,company,Verizon Communications Inc.
+COMPANY::PGY,company,Pagaya Technologies Ltd.
+COMPANY::GCO,company,Genesco Inc.
+COMPANY::NSPR,company,"InspireMD, Inc."
+COMPANY::DDI,company,"DoubleDown Interactive Co., Ltd."
+COMPANY::RDNT,company,"RadNet, Inc."
+COMPANY::BAER,company,"Bridger Aerospace Group Holdings, Inc."
+COMPANY::CULP,company,"Culp, Inc."
+COMPANY::DOMO,company,"Domo, Inc."
+COMPANY::VVPR,company,VivoPower International PLC
+COMPANY::LAZR,company,"Luminar Technologies, Inc."
+COMPANY::LINC,company,Lincoln Educational Services Corporation
+COMPANY::CMCL,company,Caledonia Mining Corporation Plc
+COMPANY::GSL,company,"Global Ship Lease, Inc."
+COMPANY::ULTA,company,"Ulta Beauty, Inc."
+COMPANY::CRESY,company,"Cresud Sociedad Anónima, Comercial, Inmobiliaria, Financiera y Agropecuaria"
+COMPANY::LLYVK,company,Liberty Live Group
+COMPANY::THR,company,"Thermon Group Holdings, Inc."
+COMPANY::FWRG,company,"First Watch Restaurant Group, Inc."
+COMPANY::HG,company,"Hamilton Insurance Group, Ltd."
+COMPANY::ACCS,company,ACCESS Newswire Inc.
+COMPANY::SG,company,"Sweetgreen, Inc."
+COMPANY::PVH,company,PVH Corp.
+COMPANY::BUR,company,Burford Capital Limited
+COMPANY::CHT,company,"Chunghwa Telecom Co., Ltd."
+COMPANY::BEAT,company,"HeartBeam, Inc."
+COMPANY::IBP,company,"Installed Building Products, Inc."
+COMPANY::PRTH,company,"Priority Technology Holdings, Inc."
+COMPANY::BKD,company,Brookdale Senior Living Inc.
+COMPANY::SGU,company,"Star Group, L.P. Common Units"
+COMPANY::INVE,company,"Identiv, Inc."
+COMPANY::LCII,company,LCI Industries
+COMPANY::MYGN,company,"Myriad Genetics, Inc."
+COMPANY::GMAB,company,Genmab A/S
+COMPANY::LASR,company,"nLIGHT, Inc."
+COMPANY::AEYE,company,"AudioEye, Inc."
+COMPANY::DLHC,company,DLH Holdings Corp.
+COMPANY::WWW,company,"Wolverine World Wide, Inc."
+COMPANY::GEF,company,"Greif, Inc."
+COMPANY::ARQ,company,"Arq, Inc."
+COMPANY::ONTF,company,"ON24, Inc."
+COMPANY::PBPB,company,Potbelly Corporation
+COMPANY::FLYW,company,Flywire Corporation
+COMPANY::RAND,company,Rand Capital
+COMPANY::MSGE,company,Madison Square Garden Entertainment Corp.
+COMPANY::CM,company,Canadian Imperial Bank of Commerce
+COMPANY::S,company,"SentinelOne, Inc."
+COMPANY::STEP,company,StepStone Group Inc.
+COMPANY::NRDY,company,"Nerdy, Inc."
+COMPANY::UEIC,company,Universal Electronics Inc.
+COMPANY::PHUN,company,"Phunware, Inc."
+COMPANY::NCNO,company,"nCino, Inc."
+COMPANY::HQI,company,"HireQuest, Inc."
+COMPANY::STRA,company,"Strategic Education, Inc."
+COMPANY::TRUE,company,"TrueCar, Inc."
+COMPANY::AEO,company,"American Eagle Outfitters, Inc."
+COMPANY::FTHM,company,Fathom Holdings Inc.
+COMPANY::AVIR,company,"Atea Pharmaceuticals, Inc."
+COMPANY::REPX,company,"Riley Exploration Permian, Inc."
+COMPANY::VALN,company,Valneva SE
+COMPANY::GDEN,company,"Golden Entertainment, Inc."
+COMPANY::PHX,company,PHX Minerals Inc.
+COMPANY::SHOO,company,"Steven Madden, Ltd."
+COMPANY::AORT,company,"Artivion, Inc."
+COMPANY::UNP,company,Union Pacific Corporation
+COMPANY::CHWY,company,"Chewy, Inc."
+COMPANY::ECO,company,Okeanis Eco Tankers Corp.
+COMPANY::XHR,company,"Xenia Hotels & Resorts, Inc."
+COMPANY::STLA,company,Stellantis N.V.
+COMPANY::EXAS,company,Exact Sciences Corporation
+COMPANY::STGW,company,Stagwell Inc.
+COMPANY::LILA,company,Liberty Latin America Ltd.
+COMPANY::EHAB,company,"Enhabit, Inc."
+COMPANY::DLTR,company,"Dollar Tree, Inc."
+COMPANY::CPB,company,The Campbell's Company
+COMPANY::GOTU,company,Gaotu Techedu Inc.
+COMPANY::MTRX,company,Matrix Service Company
+COMPANY::KELYA,company,"Kelly Services, Inc."
+COMPANY::HBIO,company,"Harvard Bioscience, Inc."
+COMPANY::BCAB,company,"BioAtla, Inc."
+COMPANY::NSYS,company,Nortech Systems Incorporated
+COMPANY::KURA,company,"Kura Oncology, Inc."
+COMPANY::BRY,company,Berry Corporation
+COMPANY::SERV,company,Serve Robotics Inc.
+COMPANY::CTLP,company,"Cantaloupe, Inc."
+COMPANY::GOCO,company,"GoHealth, Inc."
+COMPANY::SNOW,company,Snowflake Inc.
+COMPANY::HAE,company,Haemonetics Corporation
+COMPANY::DCBO,company,Docebo Inc.
+COMPANY::KMB,company,Kimberly-Clark Corporation
+COMPANY::BAP,company,Credicorp Ltd.
+COMPANY::XYZ,company,"Block, Inc."
+COMPANY::ABBV,company,AbbVie Inc.
+COMPANY::ERJ,company,Embraer S.A.
+COMPANY::AXL,company,"American Axle & Manufacturing Holdings, Inc."
+COMPANY::CMCT,company,Creative Media & Community Trust Corporation
+COMPANY::TIXT,company,TELUS International (Cda) Inc.
+COMPANY::GHM,company,Graham Corporation
+COMPANY::PEB,company,Pebblebrook Hotel Trust
+COMPANY::MTD,company,Mettler-Toledo International Inc.
+COMPANY::AMRX,company,"Amneal Pharmaceuticals, Inc."
+COMPANY::OPAL,company,OPAL Fuels Inc.
+COMPANY::SYY,company,Sysco Corporation
+COMPANY::RBA,company,"RB Global, Inc."
+COMPANY::TDW,company,Tidewater Inc.
+COMPANY::WTI,company,"W&T Offshore, Inc."
+COMPANY::GAU,company,Galiano Gold Inc.
+COMPANY::PAGP,company,"Plains GP Holdings, L.P. Class A Shares"
+COMPANY::ZD,company,"Ziff Davis, Inc."
+COMPANY::PAA,company,"Plains All American Pipeline, L.P. Common Units"
+COMPANY::CIB,company,Grupo Cibest S.A.
+COMPANY::CPK,company,Chesapeake Utilities Corporation
+COMPANY::BEPC,company,Brookfield Renewable Corporation
+COMPANY::CMTG,company,"Claros Mortgage Trust, Inc."
+COMPANY::WPM,company,Wheaton Precious Metals Corp.
+COMPANY::CLSK,company,"CleanSpark, Inc."
+COMPANY::DKNG,company,DraftKings Inc.
+COMPANY::IEP,company,Icahn Enterprises L.P.
+COMPANY::OVV,company,Ovintiv Inc.
+COMPANY::DCTH,company,"Delcath Systems, Inc."
+COMPANY::LAMR,company,Lamar Advertising Company
+COMPANY::INSE,company,"Inspired Entertainment, Inc."
+COMPANY::CGC,company,Canopy Growth Corporation
+COMPANY::LNZA,company,"LanzaTech Global, Inc."
+COMPANY::AOMR,company,"Angel Oak Mortgage REIT, Inc."
+COMPANY::XERS,company,"Xeris Biopharma Holdings, Inc."
+COMPANY::ARWR,company,"Arrowhead Pharmaceuticals, Inc."
+COMPANY::FTRE,company,Fortrea Holdings Inc.
+COMPANY::CTMX,company,"CytomX Therapeutics, Inc."
+COMPANY::EXPI,company,"eXp World Holdings, Inc."
+COMPANY::NKTR,company,Nektar Therapeutics
+COMPANY::ARRY,company,"Array Technologies, Inc."
+COMPANY::GCT,company,GigaCloud Technology Inc.
+COMPANY::PTCT,company,"PTC Therapeutics, Inc."
+COMPANY::AMWD,company,American Woodmark Corporation
+COMPANY::CLPT,company,"ClearPoint Neuro, Inc."
+COMPANY::TITN,company,Titan Machinery Inc.
+COMPANY::MDWD,company,MediWound Ltd.
+COMPANY::G,company,Genpact Limited
+COMPANY::NUS,company,"Nu Skin Enterprises, Inc."
+COMPANY::TPIC,company,"TPI Composites, Inc."
+COMPANY::ABNB,company,"Airbnb, Inc."
+COMPANY::AMRC,company,"Ameresco, Inc."
+COMPANY::CLDT,company,Chatham Lodging Trust
+COMPANY::A,company,"Agilent Technologies, Inc."
+COMPANY::ALLO,company,"Allogene Therapeutics, Inc."
+COMPANY::ATEN,company,"A10 Networks, Inc."
+COMPANY::DOYU,company,DouYu International Holdings Limited
+COMPANY::RNG,company,"RingCentral, Inc."
+COMPANY::CODX,company,"Co-Diagnostics, Inc."
+COMPANY::SMR,company,NuScale Power Corporation
+COMPANY::SY,company,So-Young International Inc.
+COMPANY::FIVN,company,"Five9, Inc."
+COMPANY::UGI,company,UGI Corporation
+COMPANY::PINS,company,"Pinterest, Inc."
+COMPANY::BLNK,company,Blink Charging Co.
+COMPANY::BJ,company,"BJ's Wholesale Club Holdings, Inc."
+COMPANY::SCVL,company,"Shoe Carnival, Inc."
+COMPANY::MNMD,company,Mind Medicine (MindMed) Inc.
+COMPANY::CLCO,company,Cool Company Ltd.
+COMPANY::TOST,company,"Toast, Inc."
+COMPANY::CPAY,company,"Corpay, Inc."
+COMPANY::GAP,company,"The Gap, Inc."
+COMPANY::OUST,company,"Ouster, Inc."
+COMPANY::YELP,company,Yelp Inc.
+COMPANY::FWONA,company,Formula One Group
+COMPANY::RGLD,company,"Royal Gold, Inc."
+COMPANY::GNL,company,"Global Net Lease, Inc."
+COMPANY::CPA,company,"Copa Holdings, S.A."
+COMPANY::IMNN,company,"Imunon, Inc."
+COMPANY::EVGN,company,Evogene Ltd.
+COMPANY::EFC,company,Ellington Financial Inc.
+COMPANY::HST,company,"Host Hotels & Resorts, Inc."
+COMPANY::TS,company,Tenaris S.A.
+COMPANY::NNOX,company,Nano-X Imaging Ltd.
+COMPANY::TGNA,company,TEGNA Inc.
+COMPANY::ICG,company,Intchains Group Limited
+COMPANY::RL,company,Ralph Lauren Corporation
+COMPANY::JACK,company,Jack in the Box Inc.
+COMPANY::UMH,company,"UMH Properties, Inc."
+COMPANY::HAIN,company,"The Hain Celestial Group, Inc."
+COMPANY::CLIR,company,ClearSign Technologies Corporation
+COMPANY::CXW,company,"CoreCivic, Inc."
+COMPANY::APA,company,APA Corporation
+COMPANY::ATO,company,Atmos Energy Corporation
+COMPANY::ACRE,company,Ares Commercial Real Estate Corporation
+COMPANY::PLYM,company,"Plymouth Industrial REIT, Inc."
+COMPANY::AFRM,company,"Affirm Holdings, Inc."
+COMPANY::CHRD,company,Chord Energy Corporation
+COMPANY::GOOS,company,Canada Goose Holdings Inc.
+COMPANY::ZTS,company,Zoetis Inc.
+COMPANY::GM,company,General Motors Company
+COMPANY::USFD,company,US Foods Holding Corp.
+COMPANY::GDRX,company,"GoodRx Holdings, Inc."
