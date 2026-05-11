@@ -3,4 +3,9 @@ name = "eearningalz"
 version = "0.1.0"
 description = "Add your description here"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "beautifulsoup4>=4.14.3",
+    "pandas>=3.0.2",
+    "selenium>=4.43.0",
+    "webdriver-manager>=4.0.2",
+]
