@@ -97,3 +97,5 @@ coverage.xml
 
 # pyproject / poetry
 poetry.lock
+*.bin
+*.pickle
