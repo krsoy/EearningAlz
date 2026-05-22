@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="GY53XM@student.aau.dk@ailab-fe01.srv.aau.dk:22 password" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false" compareModeInSync="SIZE">
+    <option name="confirmBeforeUploading" value="false" />
     <serverData>
       <paths name="GY53XM@student.aau.dk@ailab-fe01.srv.aau.dk:22 password">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="sem2" local="$PROJECT_DIR$" web="/" />
           </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path=".venv" />
+          </excludedPaths>
         </serverdata>
       </paths>
       <paths name="GY53XM@student.aau.dk@ailab-fe01.srv.aau.dk:22 password (2)">
@@ -38,5 +42,6 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>

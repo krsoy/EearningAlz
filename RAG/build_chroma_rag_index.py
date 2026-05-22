@@ -13,8 +13,10 @@ import chromadb
 # CONFIG
 # ============================================================
 
-INPUT_CSV = Path("combined_hf_earnings_analysis/combined_transcripts_deduplicated.csv")
+from pathlib import Path
 
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+INPUT_CSV = PROJECT_ROOT / "data" / "combined_transcript_data" / "combined_transcripts_deduplicated.csv"
 OUT_DIR = Path("rag_chroma_output")
 CHROMA_DIR = OUT_DIR / "chroma_db"
 CHUNK_INDEX_PATH = OUT_DIR / "chunk_index.csv"
@@ -304,7 +306,11 @@ def main():
     chunk_df.to_parquet(CHUNK_INDEX_PARQUET_PATH, index=False)
 
     print(f"Loading embedding model: {EMBEDDING_MODEL_NAME}")
-    model = SentenceTransformer(EMBEDDING_MODEL_NAME)
+    import torch
+
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    print(f"Using device: {device}")
+    model = SentenceTransformer(EMBEDDING_MODEL_NAME, device=device)
 
     collection = get_chroma_collection()
 

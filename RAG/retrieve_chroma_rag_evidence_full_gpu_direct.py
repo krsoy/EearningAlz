@@ -22,7 +22,7 @@ REQUIRE_CUDA = True
 if REQUIRE_CUDA and not torch.cuda.is_available():
     raise RuntimeError(
         "CUDA is required but not available. "
-        "Check CUDA torch installation or Slurm GPU allocation."
+        "Check CUDA torch installation, GPU driver, or Slurm GPU allocation."
     )
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
@@ -46,16 +46,14 @@ if torch.cuda.is_available():
 
 OUT_DIR = Path("rag_chroma_output")
 CHROMA_DIR = OUT_DIR / "chroma_db"
+CHUNK_INDEX_PATH = OUT_DIR / "chunk_index.csv"
 
 COLLECTION_NAME = "earnings_call_chunks"
 EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 
-TARGET_QUARTERS = {"2025Q2", "2025Q3"}
-
-TARGET_DATE_START = "2025-04-01"
-TARGET_DATE_END = "2025-09-30"
-
-OUTPUT_SUFFIX = "2025Q2_Q3_gpu_direct"
+# Full-data mode
+PROCESS_FULL_DATA = True
+OUTPUT_SUFFIX = "full_gpu_direct"
 
 EVIDENCE_JSONL_PATH = OUT_DIR / f"rag_evidence_packages_{OUTPUT_SUFFIX}.jsonl"
 EVIDENCE_FLAT_CSV_PATH = OUT_DIR / f"rag_evidence_chunks_flat_{OUTPUT_SUFFIX}.csv"
@@ -65,15 +63,17 @@ RETRIEVAL_SUMMARY_PATH = OUT_DIR / f"retrieval_summary_{OUTPUT_SUFFIX}.json"
 TOP_K_PER_GROUP = 5
 CANDIDATE_K = 25
 
-# Set None for all filtered documents.
+# Set None for all documents.
+# For testing, use for example: MAX_DOCS = 100
 MAX_DOCS = None
 
 # ChromaDB is used only as embedding storage.
-CHROMA_READ_BATCH_SIZE = 10000
+# If memory or Chroma read has problems, reduce this to 5000 or 10000.
+CHROMA_READ_BATCH_SIZE = 20000
 
 QUERY_EMBED_BATCH_SIZE = 32
 
-CHUNK_INDEX_PATH = OUT_DIR / "chunk_index.csv"
+
 # ============================================================
 # QUERY GROUPS
 # ============================================================
@@ -132,29 +132,11 @@ def safe_meta(metadata: dict, key: str, default=""):
 
 def parse_int(value, default=-1) -> int:
     try:
+        if pd.isna(value):
+            return default
         return int(value)
     except Exception:
         return default
-
-
-def is_target_period(meta: dict) -> bool:
-    quarter = str(safe_meta(meta, "quarter", "")).strip()
-
-    if quarter in TARGET_QUARTERS:
-        return True
-
-    publish_date = str(safe_meta(meta, "publish_date", "")).strip()
-    if not publish_date:
-        return False
-
-    dt = pd.to_datetime(publish_date, errors="coerce")
-    if pd.isna(dt):
-        return False
-
-    start = pd.to_datetime(TARGET_DATE_START)
-    end = pd.to_datetime(TARGET_DATE_END)
-
-    return start <= dt <= end
 
 
 def keyword_score_chunk(chunk: str, query_terms: list[str]) -> int:
@@ -213,20 +195,20 @@ def get_chroma_collection():
 
 
 # ============================================================
-# LOAD CHROMA AS EMBEDDING STORAGE ONLY
+# LOAD FULL CHROMA STORAGE BY chunk_uid
 # ============================================================
 
-def load_target_chunks_from_chroma(collection):
+def load_full_chunks_from_chroma(collection):
     """
-    Correct version based on build_chroma_rag_index.py.
+    Full-data version based on build_chroma_rag_index.py.
 
-    The build script stores ChromaDB ids as chunk_df["chunk_uid"].
+    Build script stores ChromaDB ids as chunk_df["chunk_uid"].
     Therefore retrieval must use chunk_index.csv["chunk_uid"] directly.
 
     ChromaDB is used only as embedding storage:
-    - chunk_index.csv filters target quarter chunks
-    - chunk_uid is used to fetch exact embeddings from ChromaDB
-    - PyTorch GPU handles similarity search later
+    - chunk_index.csv provides all chunk_uid ids
+    - collection.get(ids=chunk_uid) fetches embeddings/documents/metadatas
+    - PyTorch GPU performs similarity search later
     """
 
     if not CHUNK_INDEX_PATH.exists():
@@ -241,21 +223,11 @@ def load_target_chunks_from_chroma(collection):
     print("Chunk index rows:", len(chunk_df))
     print("Chunk index columns:", chunk_df.columns.tolist())
 
-    # ========================================================
-    # This MUST exist because build script creates it
-    # and uses it as ChromaDB id.
-    # ========================================================
-
     if "chunk_uid" not in chunk_df.columns:
         raise RuntimeError(
             "chunk_index.csv does not contain 'chunk_uid'. "
-            "But build_chroma_rag_index.py should save chunk_uid. "
-            "Check whether this chunk_index.csv was created by the correct build script."
+            "Your build_chroma_rag_index.py should save chunk_uid and use it as ChromaDB id."
         )
-
-    # ========================================================
-    # Ensure required metadata columns
-    # ========================================================
 
     required_cols = [
         "chunk_uid",
@@ -279,64 +251,48 @@ def load_target_chunks_from_chroma(collection):
             chunk_df[col] = ""
 
     # ========================================================
-    # Filter target quarters / dates from chunk_index.csv
+    # Full data: no quarter/date filtering
     # ========================================================
 
-    chunk_df["quarter"] = chunk_df["quarter"].astype(str).str.strip()
-
-    chunk_df["publish_date_dt"] = pd.to_datetime(
-        chunk_df["publish_date"],
-        errors="coerce"
-    )
-
-    date_start = pd.to_datetime(TARGET_DATE_START)
-    date_end = pd.to_datetime(TARGET_DATE_END)
-
-    quarter_mask = chunk_df["quarter"].isin(TARGET_QUARTERS)
-
-    date_mask = (
-        chunk_df["publish_date_dt"].notna()
-        & (chunk_df["publish_date_dt"] >= date_start)
-        & (chunk_df["publish_date_dt"] <= date_end)
-    )
-
-    target_df = chunk_df[quarter_mask | date_mask].copy()
-    target_df = target_df.drop(columns=["publish_date_dt"], errors="ignore")
-
-    if target_df.empty:
-        raise RuntimeError(
-            "No target chunks found in chunk_index.csv. "
-            "Check TARGET_QUARTERS or publish_date format."
-        )
-
+    target_df = chunk_df.copy()
     target_df["chunk_uid"] = target_df["chunk_uid"].astype(str)
+    target_df["doc_id"] = target_df["doc_id"].astype(str)
 
-    print("Target chunks after quarter/date filter:", len(target_df))
+    if MAX_DOCS is not None:
+        keep_doc_ids = (
+            target_df["doc_id"]
+            .drop_duplicates()
+            .head(MAX_DOCS)
+            .tolist()
+        )
+        target_df = target_df[target_df["doc_id"].isin(keep_doc_ids)].copy()
+
+    print("Full-data mode:", PROCESS_FULL_DATA)
+    print("Target chunks to load:", len(target_df))
     print("Target documents:", target_df["doc_id"].nunique())
 
-    print("\nQuarter distribution:")
-    print(target_df["quarter"].value_counts(dropna=False).sort_index())
+    if "quarter" in target_df.columns:
+        print("\nQuarter distribution from chunk_index:")
+        print(target_df["quarter"].value_counts(dropna=False).sort_index())
 
-    # ========================================================
-    # Use chunk_uid directly as ChromaDB ids
-    # ========================================================
+    target_ids = target_df["chunk_uid"].astype(str).tolist()
 
-    target_ids = target_df["chunk_uid"].tolist()
-
-    print("Target Chroma IDs to load:", len(target_ids))
+    print("\nTarget Chroma IDs to load:", len(target_ids))
     print("Example chunk_uid:")
     print(target_ids[:5])
 
     records = []
     embeddings = []
 
-    batch_size = CHROMA_READ_BATCH_SIZE
+    total_requested = 0
+    total_returned = 0
 
     for start in tqdm(
-        range(0, len(target_ids), batch_size),
-        desc="Reading target embeddings from ChromaDB by chunk_uid"
+        range(0, len(target_ids), CHROMA_READ_BATCH_SIZE),
+        desc="Reading full embeddings from ChromaDB by chunk_uid"
     ):
-        batch_ids = target_ids[start:start + batch_size]
+        batch_ids = target_ids[start:start + CHROMA_READ_BATCH_SIZE]
+        total_requested += len(batch_ids)
 
         batch = collection.get(
             ids=batch_ids,
@@ -347,6 +303,8 @@ def load_target_chunks_from_chroma(collection):
         docs = batch.get("documents", [])
         metas = batch.get("metadatas", [])
         embs = batch.get("embeddings", [])
+
+        total_returned += len(ids)
 
         for chroma_id, text, meta, emb in zip(ids, docs, metas, embs):
             if emb is None:
@@ -372,24 +330,41 @@ def load_target_chunks_from_chroma(collection):
                 "metadata": meta
             })
 
+    print("\nChroma read check:")
+    print("Requested ids:", total_requested)
+    print("Returned ids:", total_returned)
+
+    if total_returned != total_requested:
+        print(
+            "WARNING: Returned ids != requested ids. "
+            "This usually means chroma_db and chunk_index.csv are not from the same build run."
+        )
+
     if not records:
         raise RuntimeError(
             "No embeddings loaded from ChromaDB by chunk_uid. "
             "This means chunk_index.csv['chunk_uid'] does not match ChromaDB stored ids. "
-            "Check whether the ChromaDB folder and chunk_index.csv come from the same build run."
+            "Check whether chroma_db and chunk_index.csv come from the same build run."
         )
 
     meta_df = pd.DataFrame(records)
     emb_matrix = np.vstack(embeddings).astype(np.float32)
 
-    print("Loaded target chunks:", len(meta_df))
+    print("\nLoaded chunks:", len(meta_df))
     print("Embedding matrix shape:", emb_matrix.shape)
-    print("Loaded target documents:", meta_df["doc_id"].nunique())
+    print("Loaded documents:", meta_df["doc_id"].nunique())
 
-    print("\nLoaded quarter distribution:")
-    print(meta_df["quarter"].value_counts(dropna=False).sort_index())
+    if "quarter" in meta_df.columns:
+        print("\nLoaded quarter distribution:")
+        print(meta_df["quarter"].value_counts(dropna=False).sort_index())
 
     return meta_df, emb_matrix
+
+
+# ============================================================
+# DOC GROUPING
+# ============================================================
+
 def build_doc_groups(meta_df: pd.DataFrame):
     """
     Build mapping:
@@ -403,10 +378,15 @@ def build_doc_groups(meta_df: pd.DataFrame):
 
     doc_ids = list(doc_to_indices.keys())
 
-    if MAX_DOCS is not None:
-        doc_ids = doc_ids[:MAX_DOCS]
-
     print("Documents selected for retrieval:", len(doc_ids))
+    print("Average chunks per document:", len(meta_df) / max(1, len(doc_ids)))
+
+    print("\nChunks per document statistics:")
+    print(
+        meta_df.groupby("doc_id")
+        .size()
+        .describe()
+    )
 
     return doc_ids, doc_to_indices
 
@@ -414,8 +394,10 @@ def build_doc_groups(meta_df: pd.DataFrame):
 def build_doc_metadata(meta_df: pd.DataFrame, doc_ids: list[str]) -> dict:
     doc_meta = {}
 
+    grouped = meta_df.groupby("doc_id", sort=False)
+
     for doc_id in doc_ids:
-        rows = meta_df[meta_df["doc_id"].astype(str) == str(doc_id)]
+        rows = grouped.get_group(doc_id)
         first = rows.iloc[0]
 
         doc_meta[doc_id] = {
@@ -433,7 +415,7 @@ def build_doc_metadata(meta_df: pd.DataFrame, doc_ids: list[str]) -> dict:
 
 
 # ============================================================
-# GPU QUERY EMBEDDINGS
+# QUERY EMBEDDINGS
 # ============================================================
 
 def load_embedding_model():
@@ -508,7 +490,7 @@ def gpu_search_one_group_for_doc(
     - move them to GPU
     - compute query_embeddings @ chunk_embeddings.T
     - take max similarity over query variants
-    - top candidate chunks
+    - take candidate top-k chunks
     - rerank by hybrid score
     """
 
@@ -521,13 +503,8 @@ def gpu_search_one_group_for_doc(
         chunk_emb = torch.from_numpy(doc_emb_np).to(DEVICE)
         chunk_emb = F.normalize(chunk_emb.float(), p=2, dim=1)
 
-        # shape:
-        # query_embeddings: [num_queries, dim]
-        # chunk_emb.T:      [dim, num_chunks]
-        # scores:           [num_queries, num_chunks]
         scores = query_embeddings @ chunk_emb.T
 
-        # best similarity across all query variants
         best_scores, best_query_idx = torch.max(scores, dim=0)
 
         candidate_k = min(CANDIDATE_K, best_scores.numel())
@@ -540,7 +517,6 @@ def gpu_search_one_group_for_doc(
 
         top_scores = top_scores.detach().cpu().numpy()
         top_local_indices = top_local_indices.detach().cpu().numpy()
-        best_query_idx = best_query_idx.detach().cpu().numpy()
 
     ranked = []
 
@@ -555,10 +531,8 @@ def gpu_search_one_group_for_doc(
 
         keyword_boost = min(keyword_count, 10) / 10.0
 
-        # In this direct GPU version, matched_query_count is approximated
-        # by counting how many query variants exceed a relaxed threshold.
-        # This is computed only for candidate rows to avoid unnecessary work.
-        # For simplicity and speed, we use 1 here.
+        # This direct GPU version ranks by max similarity over query variants.
+        # matched_query_count is kept for schema compatibility.
         matched_query_count = 1
         query_hit_boost = min(matched_query_count, 5) / 5.0
 
@@ -649,6 +623,10 @@ def build_evidence_package_for_doc(
     return package
 
 
+# ============================================================
+# OUTPUT
+# ============================================================
+
 def flatten_packages(packages: list[dict]) -> pd.DataFrame:
     rows = []
 
@@ -692,19 +670,21 @@ def main():
     collection = get_chroma_collection()
     collection_count = collection.count()
 
-    meta_df, emb_matrix = load_target_chunks_from_chroma(collection)
+    print("Chroma collection count:", collection_count)
+
+    meta_df, emb_matrix = load_full_chunks_from_chroma(collection)
 
     doc_ids, doc_to_indices = build_doc_groups(meta_df)
     doc_meta = build_doc_metadata(meta_df, doc_ids)
 
-    print("Loading query embedding model...")
+    print("\nLoading query embedding model...")
     model = load_embedding_model()
 
     query_cache = precompute_query_embeddings(model)
 
     packages = []
 
-    for doc_id in tqdm(doc_ids, desc="GPU direct similarity retrieval"):
+    for doc_id in tqdm(doc_ids, desc="Full GPU direct similarity retrieval"):
         doc_indices = doc_to_indices[doc_id]
 
         pkg = build_evidence_package_for_doc(
@@ -718,7 +698,7 @@ def main():
 
         packages.append(pkg)
 
-    print("Writing outputs...")
+    print("\nWriting outputs...")
 
     with open(EVIDENCE_JSONL_PATH, "w", encoding="utf-8") as f:
         for pkg in packages:
@@ -732,16 +712,14 @@ def main():
             json.dump(packages[0], f, indent=2, ensure_ascii=False)
 
     summary = {
-        "mode": "gpu_direct_similarity_search_chromadb_storage_only",
+        "mode": "full_gpu_direct_similarity_search_chromadb_storage_only",
+        "process_full_data": bool(PROCESS_FULL_DATA),
         "collection_name": COLLECTION_NAME,
         "collection_count": int(collection_count),
         "target_chunks_loaded": int(len(meta_df)),
         "embedding_matrix_shape": list(emb_matrix.shape),
         "documents_retrieved": int(len(packages)),
         "flat_evidence_rows": int(len(flat_df)),
-        "target_quarters": sorted(TARGET_QUARTERS),
-        "target_date_start": TARGET_DATE_START,
-        "target_date_end": TARGET_DATE_END,
         "top_k_per_group": TOP_K_PER_GROUP,
         "candidate_k": CANDIDATE_K,
         "embedding_model": EMBEDDING_MODEL_NAME,
