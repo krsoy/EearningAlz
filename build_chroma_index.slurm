@@ -146,6 +146,9 @@ echo ""
 echo "FOUND chunk index:"
 ls -lh rag_chroma_output/chunk_index.csv
 
+
+
+
 echo ""
 echo "Chroma / chunk_index quick check:"
 uv run --no-sync python - <<'PY'

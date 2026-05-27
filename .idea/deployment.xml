@@ -10,6 +10,11 @@
           </mappings>
           <excludedPaths>
             <excludedPath local="true" path=".venv" />
+            <excludedPath path=".venv" />
+            <excludedPath path="venv" />
+            <excludedPath path=".cache" />
+            <excludedPath path=".*" />
+            <excludedPath local="true" path=".*" />
           </excludedPaths>
         </serverdata>
       </paths>
