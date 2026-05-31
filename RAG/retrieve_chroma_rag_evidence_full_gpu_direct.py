@@ -669,7 +669,6 @@ def main():
     print("Loading ChromaDB as embedding storage...")
     collection = get_chroma_collection()
     collection_count = collection.count()
-
     print("Chroma collection count:", collection_count)
 
     meta_df, emb_matrix = load_full_chunks_from_chroma(collection)
