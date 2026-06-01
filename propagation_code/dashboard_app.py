@@ -1,23 +1,31 @@
 import csv
+import os
 from collections import defaultdict
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List, Optional, Tuple
 
 import plotly.graph_objects as go
 import streamlit as st
 
 
-ROOT = Path("/tmp/workspace/krsoy/EearningAlz/propagation_results")
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(os.getenv("PROPAGATION_RESULTS_DIR", str(PROJECT_ROOT / "propagation_results")))
 NODE_FILE = ROOT / "propagation_nodes.csv"
 EDGE_FILE = ROOT / "propagation_edges.csv"
 
 
 def load_nodes() -> List[Dict[str, str]]:
+    if not NODE_FILE.exists():
+        st.error(f"Missing node file: {NODE_FILE}. Run transcript_propagation_pipeline.py first.")
+        st.stop()
     with NODE_FILE.open("r", encoding="utf-8") as f:
         return list(csv.DictReader(f))
 
 
 def load_edges() -> List[Dict[str, str]]:
+    if not EDGE_FILE.exists():
+        st.error(f"Missing edge file: {EDGE_FILE}. Run transcript_propagation_pipeline.py first.")
+        st.stop()
     with EDGE_FILE.open("r", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
     for row in rows:
@@ -26,9 +34,14 @@ def load_edges() -> List[Dict[str, str]]:
     return rows
 
 
-def quarter_to_index(quarter: str) -> int:
+def quarter_to_index(quarter: str) -> Optional[int]:
+    if "_" not in quarter or not quarter.startswith("Q"):
+        return None
     q, y = quarter.split("_")
-    return int(y) * 4 + int(q[1:])
+    try:
+        return int(y) * 4 + int(q[1:])
+    except Exception:
+        return None
 
 
 def index_to_quarter(idx: int) -> str:
@@ -40,7 +53,10 @@ def build_positions(node_ids: List[str]) -> Dict[str, Tuple[float, float]]:
     quarter_groups = defaultdict(list)
     for node in node_ids:
         _, quarter = node.split("|")
-        quarter_groups[quarter_to_index(quarter)].append(node)
+        q_idx = quarter_to_index(quarter)
+        if q_idx is None:
+            continue
+        quarter_groups[q_idx].append(node)
 
     positions = {}
     max_per_q = max((len(v) for v in quarter_groups.values()), default=1)
@@ -169,8 +185,9 @@ def main() -> None:
 
     tickers = sorted({n["ticker"] for n in nodes})
     domains = sorted({n["dominant_domain"] for n in nodes})
-    q_min = min(int(n["quarter_index"]) for n in nodes)
-    q_max = max(int(n["quarter_index"]) for n in nodes)
+    quarter_indices = [int(n["quarter_index"]) for n in nodes if str(n.get("quarter_index", "")).isdigit()]
+    q_min = min(quarter_indices)
+    q_max = max(quarter_indices)
 
     with st.sidebar:
         st.header("Filters")

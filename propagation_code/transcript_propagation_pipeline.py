@@ -1,7 +1,7 @@
 import argparse
 import csv
 import json
-import math
+import os
 import re
 from collections import Counter, defaultdict
 from dataclasses import dataclass
@@ -70,15 +70,22 @@ def parse_quarter(name: str) -> Tuple[str, int, int, int]:
 
 def iter_transcripts(data_dir: Path) -> List[TranscriptRecord]:
     records: List[TranscriptRecord] = []
+    if not data_dir.exists() or not data_dir.is_dir():
+        return records
     for ticker_dir in sorted(data_dir.iterdir()):
         if not ticker_dir.is_dir():
             continue
         ticker = ticker_dir.name.upper()
         for fp in sorted(ticker_dir.glob("*.txt")):
-            text = fp.read_text(encoding="utf-8", errors="ignore").strip()
+            try:
+                text = fp.read_text(encoding="utf-8", errors="ignore").strip()
+            except Exception:
+                continue
             if not text:
                 continue
             quarter, year, q_num, q_idx = parse_quarter(fp.name)
+            if quarter == "UNKNOWN":
+                continue
             domain_counts = score_domains(text)
             dominant_domain = max(domain_counts.items(), key=lambda kv: kv[1])[0]
             top_signals = extract_top_signals(text)
@@ -326,9 +333,10 @@ def write_report(summary: Dict[str, object], output: Path) -> None:
 
 
 def main() -> None:
+    project_root = Path(__file__).resolve().parents[1]
     parser = argparse.ArgumentParser(description="Build information propagation artifacts from earnings transcripts.")
-    parser.add_argument("--data-dir", default="/tmp/workspace/krsoy/EearningAlz/data")
-    parser.add_argument("--output-dir", default="/tmp/workspace/krsoy/EearningAlz/propagation_results")
+    parser.add_argument("--data-dir", default=os.getenv("DATA_DIR", str(project_root / "data")))
+    parser.add_argument("--output-dir", default=os.getenv("PROPAGATION_RESULTS_DIR", str(project_root / "propagation_results")))
     parser.add_argument("--edge-threshold", type=float, default=0.36)
     args = parser.parse_args()
 
