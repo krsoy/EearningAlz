@@ -2,50 +2,1141 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>EarningALZ Dynamic Information Flow</title>
+  <title>EarningALZ Dynamic Information Flow V6 - AAPL</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+
   <style>
-    :root{--bg:#050A12;--cyan:#00E5FF;--green:#00F5A0;--amber:#FFB703;--violet:#9D4EDD;--magenta:#FF4D9D;--red:#FF5A5F;--text:#E5F3FF;--muted:#9FB3C8;}
-    *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at top left,rgba(0,229,255,.13),transparent 25%),radial-gradient(circle at top right,rgba(157,78,221,.12),transparent 25%),linear-gradient(135deg,#050A12 0%,#08111F 52%,#020617 100%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow:hidden;}
-    #app{display:grid;grid-template-columns:320px 1fr 370px;grid-template-rows:74px 1fr 170px;height:100vh;width:100vw;}
-    header{grid-column:1/4;padding:16px 24px;border-bottom:1px solid rgba(0,229,255,.22);background:rgba(5,10,18,.82);backdrop-filter:blur(14px);display:flex;align-items:center;justify-content:space-between;box-shadow:0 0 32px rgba(0,229,255,.08)}
-    .title{font-size:22px;letter-spacing:.04em;font-weight:700;text-shadow:0 0 18px rgba(0,229,255,.45)} .subtitle{color:var(--muted);font-size:12px;margin-top:3px}.badge{border:1px solid rgba(0,229,255,.45);color:var(--cyan);padding:8px 12px;border-radius:999px;font-size:12px;background:rgba(0,229,255,.07);box-shadow:0 0 18px rgba(0,229,255,.12)}
-    aside.left{grid-column:1;grid-row:2/4;padding:16px;border-right:1px solid rgba(0,229,255,.18);background:rgba(3,7,18,.65);overflow:auto} main{grid-column:2;grid-row:2;position:relative;overflow:hidden} aside.right{grid-column:3;grid-row:2/4;padding:16px;border-left:1px solid rgba(0,229,255,.18);background:rgba(3,7,18,.65);overflow:auto} footer{grid-column:2;grid-row:3;border-top:1px solid rgba(0,229,255,.18);background:rgba(5,10,18,.65);padding:12px 16px}
-    .panel{background:linear-gradient(180deg,rgba(15,23,42,.92),rgba(5,10,18,.82));border:1px solid rgba(0,229,255,.20);border-radius:16px;padding:14px;margin-bottom:14px;box-shadow:0 0 22px rgba(0,229,255,.06)}.panel h3{margin:0 0 12px 0;font-size:14px;color:var(--cyan);letter-spacing:.06em;text-transform:uppercase}label{display:block;font-size:12px;color:var(--muted);margin:10px 0 5px}select,button,input[type="range"]{width:100%}select,button{background:rgba(15,23,42,.95);color:var(--text);border:1px solid rgba(0,229,255,.25);border-radius:10px;padding:10px;outline:none}button{cursor:pointer;margin-top:10px;color:var(--cyan);font-weight:700;box-shadow:0 0 16px rgba(0,229,255,.08)}button:hover{background:rgba(0,229,255,.12)}
-    .metrics{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}.metric{background:rgba(15,23,42,.75);border:1px solid rgba(0,229,255,.18);border-radius:14px;padding:12px}.metric .label{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em}.metric .value{color:var(--cyan);font-size:22px;font-weight:800;margin-top:4px;text-shadow:0 0 12px rgba(0,229,255,.35)}
-    #network{width:100%;height:100%}.link{stroke-opacity:.42;fill:none}.node{cursor:pointer;stroke:rgba(229,243,255,.95);stroke-width:1.4px;filter:drop-shadow(0 0 8px rgba(0,229,255,.35))}.node.center{stroke:#fff;stroke-width:3px;filter:drop-shadow(0 0 20px rgba(0,229,255,.95))}.node-label{fill:#E5F3FF;font-size:11px;pointer-events:none;text-shadow:0 0 6px #020617}.pulse{filter:drop-shadow(0 0 10px rgba(0,229,255,.95))}
-    #tooltip{position:fixed;pointer-events:none;background:rgba(3,7,18,.94);border:1px solid rgba(0,229,255,.38);border-radius:12px;padding:10px 12px;color:var(--text);font-size:12px;max-width:340px;opacity:0;z-index:100;box-shadow:0 0 24px rgba(0,229,255,.18)}.table{width:100%;border-collapse:collapse;font-size:12px}.table th,.table td{border-bottom:1px solid rgba(148,163,184,.18);padding:7px 4px;text-align:left}.table th{color:var(--cyan);font-weight:700}.small{color:var(--muted);font-size:12px;line-height:1.5}.timeline-svg{width:100%;height:145px}
+    :root {
+      --bg: #050A12;
+      --panel: rgba(10, 18, 32, 0.88);
+      --panel2: rgba(15, 23, 42, 0.92);
+      --cyan: #00E5FF;
+      --green: #00F5A0;
+      --amber: #FFB703;
+      --violet: #9D4EDD;
+      --magenta: #FF4D9D;
+      --red: #FF5A5F;
+      --text: #E5F3FF;
+      --muted: #9FB3C8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(0, 229, 255, 0.13), transparent 25%),
+        radial-gradient(circle at top right, rgba(157, 78, 221, 0.12), transparent 25%),
+        linear-gradient(135deg, #050A12 0%, #08111F 52%, #020617 100%);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      overflow: hidden;
+    }
+
+    #app {
+      display: grid;
+      grid-template-columns: 335px 1fr 400px;
+      grid-template-rows: 74px 1fr 170px;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    header {
+      grid-column: 1 / 4;
+      padding: 16px 24px;
+      border-bottom: 1px solid rgba(0, 229, 255, 0.22);
+      background: rgba(5, 10, 18, 0.82);
+      backdrop-filter: blur(14px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 0 32px rgba(0, 229, 255, 0.08);
+    }
+
+    .title {
+      font-size: 22px;
+      letter-spacing: 0.04em;
+      font-weight: 700;
+      text-shadow: 0 0 18px rgba(0, 229, 255, 0.45);
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 3px;
+    }
+
+    .badge {
+      border: 1px solid rgba(0, 229, 255, 0.45);
+      color: var(--cyan);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      background: rgba(0, 229, 255, 0.07);
+      box-shadow: 0 0 18px rgba(0, 229, 255, 0.12);
+    }
+
+    aside.left {
+      grid-column: 1;
+      grid-row: 2 / 4;
+      padding: 16px;
+      border-right: 1px solid rgba(0, 229, 255, 0.18);
+      background: rgba(3, 7, 18, 0.65);
+      overflow: auto;
+    }
+
+    main {
+      grid-column: 2;
+      grid-row: 2;
+      position: relative;
+      overflow: hidden;
+    }
+
+    aside.right {
+      grid-column: 3;
+      grid-row: 2 / 4;
+      padding: 16px;
+      border-left: 1px solid rgba(0, 229, 255, 0.18);
+      background: rgba(3, 7, 18, 0.65);
+      overflow: auto;
+    }
+
+    footer {
+      grid-column: 2;
+      grid-row: 3;
+      border-top: 1px solid rgba(0, 229, 255, 0.18);
+      background: rgba(5, 10, 18, 0.65);
+      padding: 12px 16px;
+    }
+
+    .panel {
+      background: linear-gradient(180deg, rgba(15, 23, 42, 0.92), rgba(5, 10, 18, 0.82));
+      border: 1px solid rgba(0, 229, 255, 0.20);
+      border-radius: 16px;
+      padding: 14px;
+      margin-bottom: 14px;
+      box-shadow: 0 0 22px rgba(0, 229, 255, 0.06);
+    }
+
+    .panel h3 {
+      margin: 0 0 12px 0;
+      font-size: 14px;
+      color: var(--cyan);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    label {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+      margin: 10px 0 5px;
+    }
+
+    select, button, input[type="range"] {
+      width: 100%;
+    }
+
+    select, button {
+      background: rgba(15, 23, 42, 0.95);
+      color: var(--text);
+      border: 1px solid rgba(0, 229, 255, 0.25);
+      border-radius: 10px;
+      padding: 10px;
+      outline: none;
+    }
+
+    button {
+      cursor: pointer;
+      margin-top: 10px;
+      color: var(--cyan);
+      font-weight: 700;
+      box-shadow: 0 0 16px rgba(0, 229, 255, 0.08);
+    }
+
+    button:hover {
+      background: rgba(0, 229, 255, 0.12);
+    }
+
+    .btn-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .danger {
+      color: #FFB4B8;
+      border-color: rgba(255, 90, 95, 0.36);
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .metric {
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(0, 229, 255, 0.18);
+      border-radius: 14px;
+      padding: 12px;
+    }
+
+    .metric .label {
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .metric .value {
+      color: var(--cyan);
+      font-size: 22px;
+      font-weight: 800;
+      margin-top: 4px;
+      text-shadow: 0 0 12px rgba(0, 229, 255, 0.35);
+    }
+
+    #network {
+      width: 100%;
+      height: 100%;
+    }
+
+    .link {
+      stroke-opacity: 0.42;
+      fill: none;
+    }
+
+    .node {
+      cursor: pointer;
+      stroke: rgba(229, 243, 255, 0.95);
+      stroke-width: 1.4px;
+      filter: drop-shadow(0 0 8px rgba(0, 229, 255, 0.35));
+    }
+
+    .node.center {
+      stroke: #FFFFFF;
+      stroke-width: 3px;
+      filter: drop-shadow(0 0 20px rgba(0, 229, 255, 0.95));
+    }
+
+    .node-label {
+      fill: #E5F3FF;
+      font-size: 11px;
+      pointer-events: none;
+      text-shadow: 0 0 6px #020617;
+    }
+
+    .pulse {
+      filter: drop-shadow(0 0 14px rgba(0, 229, 255, 0.95));
+      cursor: pointer;
+      pointer-events: all;
+    }
+
+    .pulse-ring {
+      fill: none;
+      stroke: rgba(255,255,255,0.75);
+      stroke-width: 1.4px;
+      pointer-events: none;
+    }
+
+    .flow-progress {
+      stroke-linecap: round;
+      filter: drop-shadow(0 0 12px rgba(0, 229, 255, 0.95));
+    }
+
+    .active-flow {
+      stroke: #FFFFFF;
+      stroke-opacity: 0.96;
+      stroke-width: 3px;
+      filter: drop-shadow(0 0 12px rgba(0, 229, 255, 0.95));
+    }
+
+    #tooltip {
+      position: fixed;
+      pointer-events: none;
+      background: rgba(3, 7, 18, 0.94);
+      border: 1px solid rgba(0, 229, 255, 0.38);
+      border-radius: 12px;
+      padding: 10px 12px;
+      color: var(--text);
+      font-size: 12px;
+      max-width: 380px;
+      opacity: 0;
+      z-index: 100;
+      box-shadow: 0 0 24px rgba(0, 229, 255, 0.18);
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+
+    .table th, .table td {
+      border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+      padding: 7px 4px;
+      text-align: left;
+    }
+
+    .table th {
+      color: var(--cyan);
+      font-weight: 700;
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .flow-title {
+      color: var(--cyan);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      margin-bottom: 6px;
+    }
+
+    .flow-chip {
+      display: inline-block;
+      border: 1px solid rgba(0, 229, 255, 0.25);
+      color: #CFE9FF;
+      background: rgba(0, 229, 255, 0.06);
+      border-radius: 999px;
+      padding: 4px 8px;
+      margin: 3px 4px 3px 0;
+      font-size: 11px;
+    }
+
+    .warning-chip {
+      border-color: rgba(255,183,3,0.4);
+      color: #FFD166;
+      background: rgba(255,183,3,0.08);
+    }
+
+    .timeline-svg {
+      width: 100%;
+      height: 145px;
+    }
   </style>
 </head>
+
 <body>
 <div id="app">
-  <header><div><div class="title">EarningALZ Dynamic Information Flow</div><div class="subtitle">D3 animated network diffusion view · generated from Hugging Face Parquet data</div></div><div class="badge" id="headerBadge">Loading...</div></header>
-  <aside class="left"><div class="panel"><h3>Controls</h3><label>Signal flow</label><select id="signalSelect"></select><label>Direction</label><select id="directionSelect"><option value="All">All</option><option value="positive">positive</option><option value="negative">negative</option><option value="mixed">mixed</option><option value="neutral">neutral</option></select><label>Relation type</label><select id="relationSelect"></select><label>Quarter</label><select id="quarterSelect"></select><label>Animation speed</label><input type="range" id="speedRange" min="0.4" max="3.0" step="0.1" value="1.2"/><button id="playBtn">▶ Play diffusion</button><button id="resetBtn">↻ Reset view</button></div><div class="panel"><h3>Interpretation</h3><div class="small">Moving particles indicate candidate source → target information-flow paths. This is signal alignment visualization, not confirmed causal transmission.</div></div></aside>
-  <main><svg id="network"></svg><div id="tooltip"></div></main>
-  <aside class="right"><div class="metrics"><div class="metric"><div class="label">Nodes</div><div class="value" id="mNodes">-</div></div><div class="metric"><div class="label">Links</div><div class="value" id="mLinks">-</div></div><div class="metric"><div class="label">Events</div><div class="value" id="mEvents">-</div></div><div class="metric"><div class="label">Avg success</div><div class="value" id="mSuccess">-</div></div></div><div class="panel"><h3>Selected node / edge</h3><div id="detailBox" class="small">Hover or click a node/edge to inspect details.</div></div><div class="panel"><h3>Top flow paths</h3><table class="table" id="topLinksTable"></table></div></aside>
-  <footer><svg class="timeline-svg" id="timeline"></svg></footer>
+  <header>
+    <div>
+      <div class="title">EarningALZ Dynamic Information Flow</div>
+      <div class="subtitle">V6 · cross-quarter = quarter lead-lag · same-quarter = publish-date flow</div>
+    </div>
+    <div class="badge" id="headerBadge">Loading...</div>
+  </header>
+
+  <aside class="left">
+    <div class="panel">
+      <h3>Controls</h3>
+
+      <label>Signal flow</label>
+      <select id="signalSelect"></select>
+
+      <label>Direction</label>
+      <select id="directionSelect">
+        <option value="All">All</option>
+        <option value="positive">positive</option>
+        <option value="negative">negative</option>
+        <option value="mixed">mixed</option>
+        <option value="neutral">neutral</option>
+      </select>
+
+      <label>Relation type</label>
+      <select id="relationSelect"></select>
+
+      <label>Quarter</label>
+      <select id="quarterSelect"></select>
+
+      <label>Time interpretation</label>
+      <select id="timeMeaningSelect">
+        <option value="All">All</option>
+        <option value="quarter-level lead-lag flow">Cross-quarter lead-lag only</option>
+        <option value="date-level within-quarter flow">Same-quarter date-level only</option>
+      </select>
+
+      <label>Same-quarter order</label>
+      <select id="sameQuarterOrderSelect">
+        <option value="All">All</option>
+        <option value="source_before_target">Source before target only</option>
+      </select>
+
+      <label>Animation speed: <span id="speedLabel">0.80x</span></label>
+      <input type="range" id="speedRange" min="0.1" max="3.0" step="0.05" value="0.8" />
+
+      <label>Pulse interval: <span id="intervalLabel">650 ms</span></label>
+      <input type="range" id="intervalRange" min="100" max="2000" step="50" value="650" />
+
+      <div class="btn-row">
+        <button id="playBtn">▶ Play</button>
+        <button id="pauseBtn" class="danger">⏸ Pause</button>
+      </div>
+      <button id="stepBtn">→ Step one flow</button>
+      <button id="resetBtn">↻ Reset view</button>
+    </div>
+
+    <div class="panel">
+      <h3>Time rule</h3>
+      <div class="small">
+        Cross-quarter edges are quarter-level lead-lag flows. Publish-date gap is not used as diffusion speed there.
+        Same-quarter edges use publish dates; only source-before-target same-quarter flows are true within-quarter prediction candidates.
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <svg id="network"></svg>
+    <div id="tooltip"></div>
+  </main>
+
+  <aside class="right">
+    <div class="metrics">
+      <div class="metric"><div class="label">Nodes</div><div class="value" id="mNodes">-</div></div>
+      <div class="metric"><div class="label">Links</div><div class="value" id="mLinks">-</div></div>
+      <div class="metric"><div class="label">Events</div><div class="value" id="mEvents">-</div></div>
+      <div class="metric"><div class="label">Avg success</div><div class="value" id="mSuccess">-</div></div>
+    </div>
+
+    <div class="panel">
+      <h3>Current flow inspector</h3>
+      <div id="flowBox" class="small">
+        Press Play or Step one flow. Then click a pulse to inspect what is flowing.
+      </div>
+    </div>
+
+    <div class="panel">
+      <h3>Selected node / edge</h3>
+      <div id="detailBox" class="small">Hover or click a node/edge to inspect details.</div>
+    </div>
+
+    <div class="panel">
+      <h3>Top flow paths</h3>
+      <table class="table" id="topLinksTable"></table>
+    </div>
+  </aside>
+
+  <footer>
+    <svg class="timeline-svg" id="timeline"></svg>
+  </footer>
 </div>
+
 <script>
-const DATA_URL="data/aapl_network.json";
-const signalColors={demand_outlook:"#00E5FF",margin_outlook:"#00F5A0",supply_outlook:"#FFB703",inventory_outlook:"#9D4EDD",pricing_outlook:"#FF4D9D",capex_outlook:"#4CC9F0"};
-const relationColors={upstream:"#FFB703",downstream:"#00E5FF",partner:"#9D4EDD",parent:"#4CC9F0",subsidiary:"#00F5A0",competitor:"#FF4D9D",related:"#94A3B8",customer:"#38BDF8",customer_group:"#38BDF8",supplier_group:"#F59E0B"};
-let rawData=null,currentLinks=[],currentNodes=[],simulation=null,pulseTimer=null;const svg=d3.select("#network"),tooltip=d3.select("#tooltip"),detailBox=d3.select("#detailBox");
-function formatRate(x){return x==null||Number.isNaN(x)?"N/A":(100*x).toFixed(1)+"%"}function unique(v){return Array.from(new Set(v.filter(x=>x!=null&&String(x).length>0))).sort()}function quarterIndex(q){const m=String(q).match(/^(\d{4})Q([1-4])$/);return m?Number(m[1])*4+Number(m[2]):NaN}function linkColor(d){return signalColors[d.signal]||relationColors[d.relation_group]||"#00E5FF"}function nodeColor(d){if(d.is_center)return"#FFFFFF";return(d.leader_score||0)>(d.follower_score||0)?"#00E5FF":"#9D4EDD"}
-function fillControls(data){const signals=["All",...unique(data.links.map(d=>d.signal))],relations=["All",...unique(data.links.map(d=>d.relation_group))],quarters=["All",...unique(data.metadata.quarters||[])];d3.select("#signalSelect").selectAll("option").data(signals).join("option").attr("value",d=>d).text(d=>d);d3.select("#relationSelect").selectAll("option").data(relations).join("option").attr("value",d=>d).text(d=>d);d3.select("#quarterSelect").selectAll("option").data(quarters).join("option").attr("value",d=>d).text(d=>d);d3.select("#signalSelect").property("value",data.metadata.signal==="All"?"All":data.metadata.signal)}
-function applyFilters(){const signal=d3.select("#signalSelect").property("value"),direction=d3.select("#directionSelect").property("value"),relation=d3.select("#relationSelect").property("value"),quarter=d3.select("#quarterSelect").property("value");currentLinks=rawData.links.filter(d=>{if(signal!=="All"&&d.signal!==signal)return false;if(direction!=="All"&&d.source_direction!==direction)return false;if(relation!=="All"&&d.relation_group!==relation)return false;if(quarter!=="All"&&d.first_source_quarter!==quarter&&d.last_target_quarter!==quarter)return false;return true});const nodeIds=new Set();currentLinks.forEach(d=>{nodeIds.add(d.source);nodeIds.add(d.target)});currentNodes=rawData.nodes.filter(d=>nodeIds.has(d.id));updateMetrics();drawNetwork();drawTimeline();updateTopLinks()}
-function updateMetrics(){const avg=d3.mean(currentLinks,d=>d.success_rate||0),events=d3.sum(currentLinks,d=>d.event_count||0);d3.select("#mNodes").text(currentNodes.length.toLocaleString());d3.select("#mLinks").text(currentLinks.length.toLocaleString());d3.select("#mEvents").text(events.toLocaleString());d3.select("#mSuccess").text(formatRate(avg))}
-function drawNetwork(){const width=svg.node().clientWidth,height=svg.node().clientHeight;svg.selectAll("*").remove();const defs=svg.append("defs");defs.append("filter").attr("id","glow").html(`<feGaussianBlur stdDeviation="3.5" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>`);const zoomLayer=svg.append("g"),linkLayer=zoomLayer.append("g"),pulseLayer=zoomLayer.append("g"),nodeLayer=zoomLayer.append("g"),labelLayer=zoomLayer.append("g");const nodes=currentNodes.map(d=>({...d})),links=currentLinks.map(d=>({...d}));simulation=d3.forceSimulation(nodes).force("link",d3.forceLink(links).id(d=>d.id).distance(d=>90+35/Math.max(.1,d.success_rate||.1)).strength(.48)).force("charge",d3.forceManyBody().strength(-440)).force("center",d3.forceCenter(width/2,height/2)).force("collision",d3.forceCollide().radius(d=>16+Math.log1p(d.outgoing_exposures||0)*2.5));const link=linkLayer.selectAll("line").data(links).join("line").attr("class","link").attr("stroke",d=>linkColor(d)).attr("stroke-width",d=>1.2+Math.sqrt(d.event_count||1)*.22).on("mousemove",(e,d)=>showTooltip(e,edgeHtml(d))).on("mouseleave",hideTooltip).on("click",(e,d)=>detailBox.html(edgeHtml(d)));const node=nodeLayer.selectAll("circle").data(nodes).join("circle").attr("class",d=>d.is_center?"node center":"node").attr("r",d=>d.is_center?13:7+Math.log1p((d.outgoing_exposures||0)+(d.incoming_exposures||0))*1.3).attr("fill",d=>nodeColor(d)).attr("filter","url(#glow)").call(drag(simulation)).on("mousemove",(e,d)=>showTooltip(e,nodeHtml(d))).on("mouseleave",hideTooltip).on("click",(e,d)=>detailBox.html(nodeHtml(d)));const label=labelLayer.selectAll("text").data(nodes).join("text").attr("class","node-label").text(d=>d.label).attr("dy",-13).attr("text-anchor","middle");simulation.on("tick",()=>{link.attr("x1",d=>d.source.x).attr("y1",d=>d.source.y).attr("x2",d=>d.target.x).attr("y2",d=>d.target.y);node.attr("cx",d=>d.x).attr("cy",d=>d.y);label.attr("x",d=>d.x).attr("y",d=>d.y)});svg.call(d3.zoom().scaleExtent([.15,5]).on("zoom",e=>zoomLayer.attr("transform",e.transform)));window.currentPulseLayer=pulseLayer;window.currentLinksForPulse=links}
-function edgeHtml(d){return `<b>${d.source}</b> → <b>${d.target}</b><br/>signal: <span style="color:${linkColor(d)}">${d.signal}</span><br/>relation: ${d.relation_group}<br/>direction: ${d.source_direction}<br/>events: ${d.event_count}<br/>success rate: ${formatRate(d.success_rate)}<br/>avg gap days: ${d.avg_gap_days==null?"N/A":d.avg_gap_days.toFixed(1)}<br/>window: ${d.first_source_quarter} → ${d.last_target_quarter}`}
-function nodeHtml(d){return `<b>${d.label}</b><br/>node: ${d.id}<br/>leader score: ${(d.leader_score||0).toFixed(3)}<br/>follower score: ${(d.follower_score||0).toFixed(3)}<br/>outgoing exposures: ${d.outgoing_exposures||0}<br/>incoming exposures: ${d.incoming_exposures||0}`}
-function showTooltip(e,html){tooltip.style("opacity",1).style("left",(e.clientX+14)+"px").style("top",(e.clientY+14)+"px").html(html)}function hideTooltip(){tooltip.style("opacity",0)}
-function drag(sim){function started(e,d){if(!e.active)sim.alphaTarget(.25).restart();d.fx=d.x;d.fy=d.y}function dragged(e,d){d.fx=e.x;d.fy=e.y}function ended(e,d){if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null}return d3.drag().on("start",started).on("drag",dragged).on("end",ended)}
-function playPulses(){if(pulseTimer){clearInterval(pulseTimer);pulseTimer=null}const speed=Number(d3.select("#speedRange").property("value")),pulseLayer=window.currentPulseLayer,links=(window.currentLinksForPulse||[]).slice(0,100);if(!pulseLayer||links.length===0)return;pulseLayer.selectAll("*").remove();function spawn(d){if(!d.source||!d.target)return;const c=pulseLayer.append("circle").attr("class","pulse").attr("r",4+Math.sqrt(d.event_count||1)*.22).attr("fill",linkColor(d)).attr("opacity",.95);c.transition().duration(1800/speed).ease(d3.easeLinear).attrTween("cx",()=>t=>d.source.x+(d.target.x-d.source.x)*t).attrTween("cy",()=>t=>d.source.y+(d.target.y-d.source.y)*t).attr("opacity",.05).remove()}let i=0;pulseTimer=setInterval(()=>{for(let k=0;k<4;k++){spawn(links[i%links.length]);i++}},180/speed)}
-function drawTimeline(){const tsvg=d3.select("#timeline"),width=tsvg.node().clientWidth,height=tsvg.node().clientHeight;tsvg.selectAll("*").remove();const signal=d3.select("#signalSelect").property("value");let timeline=rawData.timeline;if(signal!=="All")timeline=timeline.filter(d=>d.signal===signal);if(!timeline.length)return;const quarters=unique(timeline.map(d=>d.quarter)).sort((a,b)=>quarterIndex(a)-quarterIndex(b)),x=d3.scalePoint().domain(quarters).range([45,width-28]),y=d3.scaleLinear().domain([0,d3.max(timeline,d=>d.success_rate||0)||1]).nice().range([height-35,18]),line=d3.line().x(d=>x(d.quarter)).y(d=>y(d.success_rate||0)).curve(d3.curveMonotoneX),bySignal=d3.group(timeline,d=>d.signal);tsvg.append("g").attr("transform",`translate(0,${height-35})`).call(d3.axisBottom(x).tickValues(quarters.filter((d,i)=>i%Math.ceil(quarters.length/10)===0))).selectAll("text").attr("fill","#9FB3C8");tsvg.append("g").attr("transform","translate(45,0)").call(d3.axisLeft(y).ticks(4)).selectAll("text").attr("fill","#9FB3C8");for(const[sig,values]of bySignal){tsvg.append("path").datum(values.sort((a,b)=>quarterIndex(a.quarter)-quarterIndex(b.quarter))).attr("fill","none").attr("stroke",signalColors[sig]||"#00E5FF").attr("stroke-width",2.2).attr("d",line)}}
-function updateTopLinks(){const table=d3.select("#topLinksTable"),rows=currentLinks.slice().sort((a,b)=>(b.success_count||0)-(a.success_count||0)).slice(0,12);table.html("");table.append("thead").append("tr").selectAll("th").data(["Path","Signal","Rate"]).join("th").text(d=>d);const tr=table.append("tbody").selectAll("tr").data(rows).join("tr").on("click",(e,d)=>detailBox.html(edgeHtml(d)));tr.append("td").text(d=>`${d.source.replace("COMPANY::","")} → ${d.target.replace("COMPANY::","")}`);tr.append("td").text(d=>d.signal);tr.append("td").text(d=>formatRate(d.success_rate))}
-function resetView(){if(simulation)simulation.alpha(.8).restart()}function setupEvents(){d3.select("#signalSelect").on("change",applyFilters);d3.select("#directionSelect").on("change",applyFilters);d3.select("#relationSelect").on("change",applyFilters);d3.select("#quarterSelect").on("change",applyFilters);d3.select("#playBtn").on("click",playPulses);d3.select("#resetBtn").on("click",resetView)}
-async function init(){rawData=await d3.json(DATA_URL);document.getElementById("headerBadge").textContent=`${rawData.metadata.ticker} · ${rawData.metadata.node_count} nodes · ${rawData.metadata.link_count} links`;fillControls(rawData);setupEvents();applyFilters();setTimeout(()=>playPulses(),900)}
-init().catch(err=>{console.error(err);document.body.innerHTML=`<pre style="color:#ff6b6b;padding:24px;">Failed to load data: ${err}</pre>`});
+const DATA_URL = "data/aapl_network.json";
+
+const signalColors = {
+  demand_outlook: "#00E5FF",
+  margin_outlook: "#00F5A0",
+  supply_outlook: "#FFB703",
+  inventory_outlook: "#9D4EDD",
+  pricing_outlook: "#FF4D9D",
+  capex_outlook: "#4CC9F0"
+};
+
+const relationColors = {
+  upstream: "#FFB703",
+  downstream: "#00E5FF",
+  partner: "#9D4EDD",
+  parent: "#4CC9F0",
+  subsidiary: "#00F5A0",
+  competitor: "#FF4D9D",
+  related: "#94A3B8",
+  customer: "#38BDF8",
+  customer_group: "#38BDF8",
+  supplier_group: "#F59E0B"
+};
+
+let rawData = null;
+let currentLinks = [];
+let currentNodes = [];
+let simulation = null;
+let animationFrameId = null;
+let lastSpawnTime = 0;
+let selectedQuarter = "All";
+let flowIndex = 0;
+let isPlaying = false;
+let highlightedEdgeId = null;
+let activePulses = [];
+let pulseIdCounter = 0;
+
+const svg = d3.select("#network");
+const tooltip = d3.select("#tooltip");
+const detailBox = d3.select("#detailBox");
+const flowBox = d3.select("#flowBox");
+
+function formatRate(x) {
+  if (x === null || x === undefined || Number.isNaN(x)) return "N/A";
+  return (100 * x).toFixed(1) + "%";
+}
+
+function formatGap(d) {
+  if (d.analysis_mode === "same_quarter") {
+    if (d.display_gap_days === null || d.display_gap_days === undefined || Number.isNaN(d.display_gap_days)) return "N/A";
+    return d.display_gap_days.toFixed(1) + " days";
+  }
+  return "not used for cross-quarter flow";
+}
+
+function unique(values) {
+  return Array.from(new Set(values.filter(v => v !== null && v !== undefined && String(v).length > 0))).sort();
+}
+
+function quarterIndex(q) {
+  const m = String(q).match(/^(\d{4})Q([1-4])$/);
+  if (!m) return NaN;
+  return Number(m[1]) * 4 + Number(m[2]);
+}
+
+function linkColor(d) {
+  return signalColors[d.signal] || relationColors[d.relation_group] || "#00E5FF";
+}
+
+function nodeColor(d) {
+  if (d.is_center) return "#FFFFFF";
+  if ((d.leader_score || 0) > (d.follower_score || 0)) return "#00E5FF";
+  return "#9D4EDD";
+}
+
+function fillControls(data) {
+  const signals = ["All", ...unique(data.links.map(d => d.signal))];
+  const relations = ["All", ...unique(data.links.map(d => d.relation_group))];
+  const quarters = ["All", ...unique(data.metadata.quarters || [])];
+
+  d3.select("#signalSelect")
+    .selectAll("option")
+    .data(signals)
+    .join("option")
+    .attr("value", d => d)
+    .text(d => d);
+
+  d3.select("#relationSelect")
+    .selectAll("option")
+    .data(relations)
+    .join("option")
+    .attr("value", d => d)
+    .text(d => d);
+
+  d3.select("#quarterSelect")
+    .selectAll("option")
+    .data(quarters)
+    .join("option")
+    .attr("value", d => d)
+    .text(d => d);
+
+  d3.select("#signalSelect").property("value", data.metadata.signal === "All" ? "All" : data.metadata.signal);
+}
+
+function applyFilters() {
+  stopPulses();
+  // Cancel the rAF loop — drawNetwork will re-set window.currentLinksForPulse
+  if (animationFrameId) {
+    cancelAnimationFrame(animationFrameId);
+    animationFrameId = null;
+  }
+
+  const signal = d3.select("#signalSelect").property("value");
+  const direction = d3.select("#directionSelect").property("value");
+  const relation = d3.select("#relationSelect").property("value");
+  const timeMeaning = d3.select("#timeMeaningSelect").property("value");
+  const sameOrder = d3.select("#sameQuarterOrderSelect").property("value");
+  selectedQuarter = d3.select("#quarterSelect").property("value");
+
+  currentLinks = rawData.links.filter(d => {
+    if (signal !== "All" && d.signal !== signal) return false;
+    if (direction !== "All" && d.source_direction !== direction) return false;
+    if (relation !== "All" && d.relation_group !== relation) return false;
+    if (timeMeaning !== "All" && d.time_interpretation !== timeMeaning) return false;
+    if (sameOrder === "source_before_target") {
+      if (d.analysis_mode !== "same_quarter") return false;
+      if (!((d.source_before_target_rate || 0) > 0)) return false;
+    }
+    if (selectedQuarter !== "All") {
+      if (d.source_quarter !== selectedQuarter && d.target_quarter !== selectedQuarter) return false;
+    }
+    return true;
+  });
+
+  const nodeIds = new Set();
+  currentLinks.forEach(d => {
+    nodeIds.add(d.source);
+    nodeIds.add(d.target);
+  });
+  currentNodes = rawData.nodes.filter(d => nodeIds.has(d.id));
+
+  flowIndex = 0;
+  highlightedEdgeId = null;
+  updateMetrics();
+  drawNetwork();
+  drawTimeline();
+  updateTopLinks();
+  updateFlowBox(null, "No active flow. Press Play or Step one flow.");
+  // Restart idle rAF so particles from spawnPulse calls still animate
+  ensureAnimationLoop();
+}
+
+function updateMetrics() {
+  const avgSuccess = d3.mean(currentLinks, d => d.success_rate || 0);
+  const eventCount = d3.sum(currentLinks, d => d.event_count || 0);
+
+  d3.select("#mNodes").text(currentNodes.length.toLocaleString());
+  d3.select("#mLinks").text(currentLinks.length.toLocaleString());
+  d3.select("#mEvents").text(eventCount.toLocaleString());
+  d3.select("#mSuccess").text(formatRate(avgSuccess));
+}
+
+function drawNetwork() {
+  const width = svg.node().clientWidth;
+  const height = svg.node().clientHeight;
+  svg.selectAll("*").remove();
+  activePulses.forEach(p => p.group && p.group.remove());
+  activePulses = [];
+
+  const defs = svg.append("defs");
+
+  defs.append("filter")
+    .attr("id", "glow")
+    .html(`
+      <feGaussianBlur stdDeviation="3.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    `);
+
+  const zoomLayer = svg.append("g").attr("class", "zoom-layer");
+  const linkLayer = zoomLayer.append("g").attr("class", "links");
+  const activeLinkLayer = zoomLayer.append("g").attr("class", "active-links");
+  const pulseLayer = zoomLayer.append("g").attr("class", "pulses");
+  const nodeLayer = zoomLayer.append("g").attr("class", "nodes");
+  const labelLayer = zoomLayer.append("g").attr("class", "labels");
+
+  const nodes = currentNodes.map(d => ({...d}));
+  const links = currentLinks.map(d => ({...d}));
+
+  const nodeById = new Map(nodes.map(d => [d.id, d]));
+
+  links.forEach(l => {
+    l.sourceObj = nodeById.get(l.source);
+    l.targetObj = nodeById.get(l.target);
+  });
+
+  simulation = d3.forceSimulation(nodes)
+    .force("link", d3.forceLink(links).id(d => d.id).distance(d => 95 + 35 / Math.max(0.1, d.success_rate || 0.1)).strength(0.48))
+    .force("charge", d3.forceManyBody().strength(-460))
+    .force("center", d3.forceCenter(width / 2, height / 2))
+    .force("collision", d3.forceCollide().radius(d => 16 + Math.log1p(d.outgoing_exposures || 0) * 2.5));
+
+  const link = linkLayer.selectAll("line")
+    .data(links, d => d.id)
+    .join("line")
+    .attr("class", "link")
+    .attr("stroke", d => linkColor(d))
+    .attr("stroke-width", d => 1.2 + Math.sqrt(d.event_count || 1) * 0.22)
+    .on("mousemove", (event, d) => showTooltip(event, edgeHtml(d)))
+    .on("mouseleave", hideTooltip)
+    .on("click", (event, d) => {
+      highlightedEdgeId = d.id;
+      updateFlowBox(d, "Selected flow edge");
+      detailBox.html(edgeHtml(d));
+      redrawHighlight();
+    });
+
+  const activeLink = activeLinkLayer.selectAll("line")
+    .data(links, d => d.id)
+    .join("line")
+    .attr("class", "active-flow")
+    .attr("stroke", d => linkColor(d))
+    .attr("opacity", d => d.id === highlightedEdgeId ? 1 : 0);
+
+  const node = nodeLayer.selectAll("circle")
+    .data(nodes)
+    .join("circle")
+    .attr("class", d => d.is_center ? "node center" : "node")
+    .attr("r", d => d.is_center ? 13 : 7 + Math.log1p((d.outgoing_exposures || 0) + (d.incoming_exposures || 0)) * 1.3)
+    .attr("fill", d => nodeColor(d))
+    .attr("filter", "url(#glow)")
+    .call(drag(simulation))
+    .on("mousemove", (event, d) => showTooltip(event, nodeHtml(d)))
+    .on("mouseleave", hideTooltip)
+    .on("click", (event, d) => detailBox.html(nodeHtml(d)));
+
+  const label = labelLayer.selectAll("text")
+    .data(nodes)
+    .join("text")
+    .attr("class", "node-label")
+    .text(d => d.label)
+    .attr("dy", -13)
+    .attr("text-anchor", "middle");
+
+  simulation.on("tick", () => {
+    link
+      .attr("x1", d => d.source.x)
+      .attr("y1", d => d.source.y)
+      .attr("x2", d => d.target.x)
+      .attr("y2", d => d.target.y);
+
+    activeLink
+      .attr("x1", d => d.source.x)
+      .attr("y1", d => d.source.y)
+      .attr("x2", d => d.target.x)
+      .attr("y2", d => d.target.y)
+      .attr("opacity", d => d.id === highlightedEdgeId ? 1 : 0);
+
+    node
+      .attr("cx", d => d.x)
+      .attr("cy", d => d.y);
+
+    label
+      .attr("x", d => d.x)
+      .attr("y", d => d.y);
+  });
+
+  svg.call(
+    d3.zoom()
+      .scaleExtent([0.15, 5])
+      .on("zoom", event => {
+        zoomLayer.attr("transform", event.transform);
+      })
+  );
+
+  window.currentPulseLayer = pulseLayer;
+  window.currentLinksForPulse = links;
+  window.currentActiveLink = activeLink;
+}
+
+function redrawHighlight() {
+  if (!window.currentActiveLink) return;
+  window.currentActiveLink.attr("opacity", d => d.id === highlightedEdgeId ? 1 : 0);
+}
+
+// Safe id extractor: works whether D3 has mutated source/target to objects or not
+function nodeId(val) {
+  if (!val) return "";
+  if (typeof val === "object") return val.id || "";
+  return String(val);
+}
+
+function nodeTicker(val) {
+  return nodeId(val).replace("COMPANY::", "");
+}
+
+function edgeHtml(d) {
+  return `
+    <b>${nodeId(d.source)}</b> → <b>${nodeId(d.target)}</b><br/>
+    mode: <span style="color:#FFD166">${d.time_interpretation}</span><br/>
+    signal: <span style="color:${linkColor(d)}">${d.signal}</span><br/>
+    relation: ${d.relation_group}<br/>
+    direction: ${d.source_direction}<br/>
+    events: ${d.event_count}<br/>
+    success rate: ${formatRate(d.success_rate)}<br/>
+    direction match: ${formatRate(d.direction_match_rate)}<br/>
+    target active: ${formatRate(d.target_active_rate)}<br/>
+    window: ${d.window}<br/>
+    source publish date: ${d.source_publish_date || "N/A"}<br/>
+    target publish date: ${d.target_publish_date || "N/A"}<br/>
+    ${d.analysis_mode === "same_quarter"
+      ? `same-quarter publish gap: ${formatGap(d)}<br/>source-before-target rate: ${formatRate(d.source_before_target_rate)}`
+      : `<span style="color:#FFD166">publish gap is not used for cross-quarter diffusion speed</span>`}
+  `;
+}
+
+function flowHtml(d, title = "Current flow") {
+  if (!d) return `<div class="small">No active flow.</div>`;
+  const timePart = d.analysis_mode === "same_quarter"
+    ? `
+      Same-quarter publish gap: <b>${formatGap(d)}</b><br/>
+      Source-before-target rate: <b>${formatRate(d.source_before_target_rate)}</b><br/>
+    `
+    : `
+      <span class="flow-chip warning-chip">quarter-level lead-lag</span><br/>
+      Publish-date gap is not used as diffusion speed for cross-quarter flow.<br/>
+    `;
+
+  return `
+    <div class="flow-title">${title}</div>
+    <div><b>${nodeTicker(d.source)}</b> → <b>${nodeTicker(d.target)}</b></div>
+    <div style="margin-top:8px;">
+      <span class="flow-chip">mode: ${d.analysis_mode}</span>
+      <span class="flow-chip">signal: ${d.signal}</span>
+      <span class="flow-chip">direction: ${d.source_direction}</span>
+      <span class="flow-chip">relation: ${d.relation_group}</span>
+    </div>
+    <div style="margin-top:8px;" class="small">
+      Event count: <b>${d.event_count}</b><br/>
+      Success count: <b>${d.success_count}</b><br/>
+      Success rate: <b>${formatRate(d.success_rate)}</b><br/>
+      Direction match rate: <b>${formatRate(d.direction_match_rate)}</b><br/>
+      Target active rate: <b>${formatRate(d.target_active_rate)}</b><br/>
+      Source publish date: <b>${d.source_publish_date || "N/A"}</b><br/>
+      Target publish date: <b>${d.target_publish_date || "N/A"}</b><br/>
+      Window: <b>${d.window}</b><br/>
+      ${timePart}
+    </div>
+  `;
+}
+
+function updateFlowBox(d, title = "Current flow") {
+  flowBox.html(d ? flowHtml(d, title) : `<div class="small">${title}</div>`);
+}
+
+function nodeHtml(d) {
+  return `
+    <b>${d.label}</b><br/>
+    node: ${d.id}<br/>
+    leader score: ${(d.leader_score || 0).toFixed(3)}<br/>
+    follower score: ${(d.follower_score || 0).toFixed(3)}<br/>
+    outgoing exposures: ${d.outgoing_exposures || 0}<br/>
+    incoming exposures: ${d.incoming_exposures || 0}
+  `;
+}
+
+function showTooltip(event, html) {
+  tooltip
+    .style("opacity", 1)
+    .style("left", (event.clientX + 14) + "px")
+    .style("top", (event.clientY + 14) + "px")
+    .html(html);
+}
+
+function hideTooltip() {
+  tooltip.style("opacity", 0);
+}
+
+function drag(simulation) {
+  function dragstarted(event, d) {
+    if (!event.active) simulation.alphaTarget(0.25).restart();
+    d.fx = d.x;
+    d.fy = d.y;
+  }
+  function dragged(event, d) {
+    d.fx = event.x;
+    d.fy = event.y;
+  }
+  function dragended(event, d) {
+    if (!event.active) simulation.alphaTarget(0);
+    d.fx = null;
+    d.fy = null;
+  }
+  return d3.drag().on("start", dragstarted).on("drag", dragged).on("end", dragended);
+}
+
+function getSpeed() {
+  return Number(d3.select("#speedRange").property("value"));
+}
+
+function getInterval() {
+  return Number(d3.select("#intervalRange").property("value"));
+}
+
+function updateSpeedLabels() {
+  d3.select("#speedLabel").text(getSpeed().toFixed(2) + "x");
+  d3.select("#intervalLabel").text(getInterval() + " ms");
+}
+
+function stopPulses() {
+  isPlaying = false;
+  lastSpawnTime = 0;
+  d3.select("#playBtn").text("▶ Play");
+}
+
+// After D3 forceLink runs, d.source / d.target become node objects with live x,y.
+// We always prefer that. d.sourceObj / d.targetObj are the pre-stored fallback for
+// edge objects that were never handed to a simulation (e.g. top-links table rows).
+function nodeRef(d, side) {
+  const live = d[side];
+  if (live && typeof live === "object" && live.x !== undefined) return live;
+  return side === "source" ? d.sourceObj : d.targetObj;
+}
+
+function ensureAnimationLoop() {
+  if (animationFrameId) return;
+  const tick = (timestamp) => {
+    updateActivePulses();
+    // Auto-spawn driven here — no setInterval needed
+    if (isPlaying) {
+      const interval = getInterval();
+      if (lastSpawnTime === 0 || timestamp - lastSpawnTime >= interval) {
+        lastSpawnTime = timestamp;
+        _spawnNext();
+      }
+    }
+    animationFrameId = requestAnimationFrame(tick);
+  };
+  animationFrameId = requestAnimationFrame(tick);
+}
+
+function clearDeadPulses() {
+  activePulses = activePulses.filter(p => !p.dead);
+}
+
+function spawnPulse(d) {
+  const pulseLayer = window.currentPulseLayer;
+  if (!pulseLayer || !d) return;
+
+  const s = nodeRef(d, "source");
+  const t = nodeRef(d, "target");
+  if (!s || !t) {
+    console.warn("Cannot spawn pulse because source/target node object is missing.", d);
+    return;
+  }
+
+  highlightedEdgeId = d.id;
+  redrawHighlight();
+  updateFlowBox(d, "Flow currently moving");
+
+  const speed = getSpeed();
+  const duration = Math.max(1600, 5200 / Math.max(0.1, speed));
+  const pid = "pulse_" + (++pulseIdCounter);
+
+  const group = pulseLayer.append("g")
+    .attr("class", "pulse-group")
+    .attr("data-pulse-id", pid)
+    .style("pointer-events", "all")
+    .on("mousemove", (event) => showTooltip(event, flowHtml(d, "Moving flow")))
+    .on("mouseleave", hideTooltip)
+    .on("click", () => {
+      updateFlowBox(d, "Clicked moving flow");
+      detailBox.html(edgeHtml(d));
+    });
+
+  const progressLine = group.append("line")
+    .attr("class", "flow-progress")
+    .attr("stroke", linkColor(d))
+    .attr("stroke-width", 3.5)
+    .attr("opacity", 0.85);
+
+  const ring = group.append("circle")
+    .attr("class", "pulse-ring")
+    .attr("r", 9 + Math.sqrt(d.event_count || 1) * 0.18);
+
+  const dot = group.append("circle")
+    .attr("class", "pulse")
+    .attr("r", 5 + Math.sqrt(d.event_count || 1) * 0.25)
+    .attr("fill", linkColor(d))
+    .attr("opacity", 0.98);
+
+  activePulses.push({
+    id: pid,
+    data: d,
+    group,
+    dot,
+    ring,
+    progressLine,
+    startTime: performance.now(),
+    duration,
+    dead: false
+  });
+
+  ensureAnimationLoop();
+}
+
+function updateActivePulses() {
+  if (!activePulses.length) return;
+
+  const now = performance.now();
+
+  activePulses.forEach(p => {
+    const d = p.data;
+    const s = nodeRef(d, "source");
+    const t = nodeRef(d, "target");
+    if (!s || !t) {
+      p.dead = true;
+      p.group.remove();
+      return;
+    }
+
+    let raw = (now - p.startTime) / p.duration;
+    if (raw >= 1) {
+      p.dead = true;
+      p.group.remove();
+      return;
+    }
+
+    const eased = d3.easeCubicInOut(raw);
+    const x = s.x + (t.x - s.x) * eased;
+    const y = s.y + (t.y - s.y) * eased;
+
+    p.dot.attr("cx", x).attr("cy", y).attr("opacity", 1 - raw * 0.25);
+    p.ring.attr("cx", x).attr("cy", y).attr("opacity", 0.80 - raw * 0.35);
+
+    p.progressLine
+      .attr("x1", s.x)
+      .attr("y1", s.y)
+      .attr("x2", x)
+      .attr("y2", y)
+      .attr("opacity", 0.85 - raw * 0.55);
+  });
+
+  clearDeadPulses();
+}
+
+function _spawnNext() {
+  const links = window.currentLinksForPulse || [];
+  if (!links.length) return;
+  const d = links[flowIndex % links.length];
+  flowIndex += 1;
+  spawnPulse(d);
+}
+
+function stepOneFlow() {
+  const links = window.currentLinksForPulse || [];
+  if (!links.length) {
+    updateFlowBox(null, "No links match the current filters.");
+    return;
+  }
+  _spawnNext();
+  ensureAnimationLoop();
+}
+
+function playPulses() {
+  if (isPlaying) return;
+  isPlaying = true;
+  lastSpawnTime = 0; // trigger immediate spawn on next rAF tick
+  d3.select("#playBtn").text("⏸ Playing");
+  ensureAnimationLoop();
+}
+
+function drawTimeline() {
+  const tsvg = d3.select("#timeline");
+  const width = tsvg.node().clientWidth;
+  const height = tsvg.node().clientHeight;
+  tsvg.selectAll("*").remove();
+
+  const signal = d3.select("#signalSelect").property("value");
+  let timeline = rawData.timeline;
+  if (signal !== "All") timeline = timeline.filter(d => d.signal === signal);
+
+  if (!timeline.length) return;
+
+  const quarters = unique(timeline.map(d => d.quarter)).sort((a, b) => quarterIndex(a) - quarterIndex(b));
+  const x = d3.scalePoint().domain(quarters).range([45, width - 28]);
+  const y = d3.scaleLinear().domain([0, d3.max(timeline, d => d.success_rate || 0) || 1]).nice().range([height - 35, 18]);
+
+  const line = d3.line()
+    .x(d => x(d.quarter))
+    .y(d => y(d.success_rate || 0))
+    .curve(d3.curveMonotoneX);
+
+  const bySignal = d3.group(timeline, d => d.signal);
+
+  tsvg.append("g")
+    .attr("transform", `translate(0,${height - 35})`)
+    .call(d3.axisBottom(x).tickValues(quarters.filter((d, i) => i % Math.ceil(quarters.length / 10) === 0)))
+    .selectAll("text")
+    .attr("fill", "#9FB3C8");
+
+  tsvg.append("g")
+    .attr("transform", "translate(45,0)")
+    .call(d3.axisLeft(y).ticks(4))
+    .selectAll("text")
+    .attr("fill", "#9FB3C8");
+
+  for (const [sig, values] of bySignal) {
+    tsvg.append("path")
+      .datum(values.sort((a, b) => quarterIndex(a.quarter) - quarterIndex(b.quarter)))
+      .attr("fill", "none")
+      .attr("stroke", signalColors[sig] || "#00E5FF")
+      .attr("stroke-width", 2.2)
+      .attr("d", line);
+  }
+
+  if (selectedQuarter !== "All" && quarters.includes(selectedQuarter)) {
+    tsvg.append("line")
+      .attr("x1", x(selectedQuarter))
+      .attr("x2", x(selectedQuarter))
+      .attr("y1", 12)
+      .attr("y2", height - 35)
+      .attr("stroke", "#FFFFFF")
+      .attr("stroke-width", 1.5)
+      .attr("stroke-dasharray", "4 5");
+  }
+}
+
+function updateTopLinks() {
+  const table = d3.select("#topLinksTable");
+  const rows = currentLinks.slice().sort((a, b) => (b.success_count || 0) - (a.success_count || 0)).slice(0, 12);
+
+  table.html("");
+  table.append("thead").append("tr")
+    .selectAll("th")
+    .data(["Path", "Mode", "Rate"])
+    .join("th")
+    .text(d => d);
+
+  const tbody = table.append("tbody");
+  const tr = tbody.selectAll("tr")
+    .data(rows)
+    .join("tr")
+    .on("click", (event, d) => {
+      highlightedEdgeId = d.id;
+      updateFlowBox(d, "Selected top flow");
+      detailBox.html(edgeHtml(d));
+      redrawHighlight();
+      spawnPulse(d);
+    });
+
+  tr.append("td").text(d => `${nodeTicker(d.source)} → ${nodeTicker(d.target)}`);
+  tr.append("td").text(d => d.analysis_mode === "same_quarter" ? "same-Q" : "cross-Q");
+  tr.append("td").text(d => formatRate(d.success_rate));
+}
+
+function resetView() {
+  stopPulses();
+  activePulses.forEach(p => p.group.remove());
+  activePulses = [];
+  highlightedEdgeId = null;
+  redrawHighlight();
+  updateFlowBox(null, "No active flow. Press Play or Step one flow.");
+  if (simulation) {
+    simulation.alpha(0.8).restart();
+  }
+}
+
+function setupEvents() {
+  d3.select("#signalSelect").on("change", applyFilters);
+  d3.select("#directionSelect").on("change", applyFilters);
+  d3.select("#relationSelect").on("change", applyFilters);
+  d3.select("#quarterSelect").on("change", applyFilters);
+  d3.select("#timeMeaningSelect").on("change", applyFilters);
+  d3.select("#sameQuarterOrderSelect").on("change", applyFilters);
+
+  d3.select("#playBtn").on("click", () => {
+    if (!isPlaying) playPulses();
+  });
+  d3.select("#pauseBtn").on("click", stopPulses);
+  d3.select("#stepBtn").on("click", stepOneFlow);
+  d3.select("#resetBtn").on("click", resetView);
+
+  d3.select("#speedRange").on("input", updateSpeedLabels);
+  d3.select("#intervalRange").on("input", () => {
+    updateSpeedLabels();
+    // rAF loop reads getInterval() live — no restart needed
+  });
+}
+
+async function init() {
+  rawData = await d3.json(DATA_URL);
+  document.getElementById("headerBadge").textContent =
+    `${rawData.metadata.ticker} · ${rawData.metadata.node_count} nodes · ${rawData.metadata.link_count} links`;
+
+  fillControls(rawData);
+  setupEvents();
+  updateSpeedLabels();
+  applyFilters();
+}
+
+init().catch(err => {
+  console.error(err);
+  document.body.innerHTML = `<pre style="color:#ff6b6b;padding:24px;">Failed to load data: ${err}</pre>`;
+});
 </script>
 </body>
 </html>

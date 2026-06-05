@@ -1,25 +1,47 @@
-# EarningALZ JavaScript Dynamic Information Flow Plot
+# EarningALZ JavaScript Dynamic Information Flow Plot V6
 
-This is a lightweight JavaScript/D3 version of the information-flow network view.
+V6 fixes the time-gap interpretation.
 
-It is faster and smoother than a Streamlit network plot because the browser directly animates SVG elements.
+## Key change
 
-## Files
+Cross-quarter and same-quarter flows are now treated differently.
+
+### Cross-quarter mode
 
 ```text
-build_stock_network_json.py
-aapl_dynamic_network.html
-requirements.txt
-data/
+source quarter t → target quarter t+1
 ```
 
-## Install
+This is a quarter-level lead-lag flow. The dashboard does **not** use publish-date gap as diffusion speed.
 
-```bash
-pip install -r requirements.txt
+It displays:
+
+```text
+time interpretation: quarter-level lead-lag flow
+window: 2024Q1 → 2024Q2
+source publish date
+target publish date
+publish gap: not used for cross-quarter flow
 ```
 
-## Build AAPL JSON from Hugging Face
+### Same-quarter mode
+
+```text
+source quarter t → target quarter t
+```
+
+This is a date-level within-quarter flow. Here publish-date gap is meaningful.
+
+It displays:
+
+```text
+same_quarter_publish_gap_days
+source_before_target_rate
+source_publish_date
+target_publish_date
+```
+
+## Build cross-quarter AAPL JSON
 
 ```bash
 python build_stock_network_json.py \
@@ -32,22 +54,23 @@ python build_stock_network_json.py \
   --out data/aapl_network.json
 ```
 
-For a specific signal:
+## Build same-quarter ordered AAPL JSON
+
+This is the most meaningful version for date-level information flow.
 
 ```bash
 python build_stock_network_json.py \
   --ticker AAPL \
-  --mode cross_quarter \
-  --signal demand_outlook \
+  --mode same_quarter \
+  --ordered-same-quarter-only \
+  --signal All \
   --hop-depth 2 \
   --max-nodes 120 \
   --max-links 260 \
   --out data/aapl_network.json
 ```
 
-## Run locally
-
-Do not open the HTML by double clicking, because browser security may block local JSON loading.
+## Run
 
 ```bash
 python -m http.server 8000
@@ -56,15 +79,5 @@ python -m http.server 8000
 Open:
 
 ```text
-http://localhost:8000/aapl_dynamic_network.html
+http://localhost:8000/aapl_dynamic_network_v6.html
 ```
-
-## Change stock
-
-Regenerate the JSON:
-
-```bash
-python build_stock_network_json.py --ticker NVDA --out data/aapl_network.json
-```
-
-The HTML will still load `data/aapl_network.json`, but the content will be centered on NVDA.
