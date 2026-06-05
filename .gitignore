@@ -99,3 +99,16 @@ coverage.xml
 poetry.lock
 *.bin
 *.pickle
+
+# chroma
+earning_chroma/
+*.sqlite3
+*.bin
+*.pickle
+
+# EarningALZ artifacts
+earningALZ_twopart/
+
+# Python cache
+__pycache__/
+*.pyc
