@@ -1,7 +1,0 @@
-target_business_node,target_signal,total_signal_weight,raw_signal_weight,source_company_count,evidence_count,impact_score
-Intel_Margin,margin_pressure,4595.6,3808,541,1251,2486219.6
-Intel_CCG_or_DCAI,supply_pressure,2731.8,2262,631,1481,1723765.8
-Intel_DCAI,cloud_capacity,3975.4,3255,229,805,910366.6
-Intel_Foundry,foundry_manufacturing,1177.2,802,97,425,114188.40000000001
-Intel_CCG,pc_demand,874.2,521,104,234,90916.8
-Intel_DCAI,server_cpu_demand,781.2,506,47,126,36716.4
