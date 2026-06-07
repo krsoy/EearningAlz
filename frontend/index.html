@@ -1,13 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>frontend</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EarningALZ Dynamic Network Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+<div id="app">
+  <header>
+    <div>
+      <div class="title">EarningALZ Dynamic Information Flow</div>
+      <div class="subtitle">Switchable generated network results · D3 dashboard · FastAPI-backed JSON artifacts</div>
+    </div>
+    <div class="header-actions">
+      <a class="navlink" href="prediction.html">Prediction</a>
+      <div class="badge" id="headerBadge">Loading...</div>
+    </div>
+  </header>
+
+  <aside class="left">
+    <div class="panel">
+      <h3>Data Source</h3>
+      <label>API base</label>
+      <input id="apiBaseInput" value="" placeholder="relative /api, or http://localhost:8000/api" />
+      <div class="hint">Default uses relative <code>/api</code>. Use full backend URL during local testing.</div>
+      <button id="saveApiBtn">Save API base</button>
+    </div>
+
+    <div class="panel">
+      <h3>Network Result</h3>
+      <label>Generated network</label>
+      <select id="networkSelect"></select>
+      <button id="reloadNetworksBtn">Reload network list</button>
+    </div>
+
+    <div class="panel">
+      <h3>Filters</h3>
+      <label>Signal flow</label>
+      <select id="signalSelect"></select>
+      <label>Direction</label>
+      <select id="directionSelect">
+        <option value="All">All</option>
+        <option value="positive">positive</option>
+        <option value="negative">negative</option>
+        <option value="mixed">mixed</option>
+        <option value="neutral">neutral</option>
+      </select>
+      <label>Relation type</label>
+      <select id="relationSelect"></select>
+      <label>Quarter</label>
+      <select id="quarterSelect"></select>
+      <label>Animation speed</label>
+      <input type="range" id="speedRange" min="0.4" max="3.0" step="0.1" value="1.2" />
+      <button id="playBtn">▶ Play flow</button>
+      <button id="resetBtn">↻ Reset view</button>
+    </div>
+
+    <div class="panel">
+      <h3>Interpretation</h3>
+      <div class="small">Moving particles indicate candidate source → target information-flow paths. This is signal-alignment visualization, not confirmed causal transmission.</div>
+    </div>
+  </aside>
+
+  <main>
+    <svg id="network"></svg>
+    <div id="tooltip"></div>
+    <div id="emptyState" class="empty-state hidden">No links match the current filters.</div>
+  </main>
+
+  <aside class="right">
+    <div class="metrics">
+      <div class="metric"><div class="label">Nodes</div><div class="value" id="mNodes">-</div></div>
+      <div class="metric"><div class="label">Links</div><div class="value" id="mLinks">-</div></div>
+      <div class="metric"><div class="label">Events</div><div class="value" id="mEvents">-</div></div>
+      <div class="metric"><div class="label">Avg success</div><div class="value" id="mSuccess">-</div></div>
+    </div>
+
+    <div class="panel">
+      <h3>Selected node / edge</h3>
+      <div id="detailBox" class="small">Hover or click a node/edge to inspect details.</div>
+    </div>
+
+    <div class="panel">
+      <h3>Network metadata</h3>
+      <div id="metadataBox" class="small">No network loaded.</div>
+    </div>
+
+    <div class="panel">
+      <h3>Top flow paths</h3>
+      <table class="table" id="topLinksTable"></table>
+    </div>
+  </aside>
+
+  <footer>
+    <svg class="timeline-svg" id="timeline"></svg>
+  </footer>
+</div>
+<script src="js/network_dashboard.js"></script>
+</body>
 </html>
