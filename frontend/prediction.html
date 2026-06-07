@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EarningALZ Pre-call Prediction</title>
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body class="prediction-body">
+  <header style="position: sticky; top: 0; z-index: 10; margin: -24px -24px 24px -24px;">
+    <div>
+      <div class="title">Pre-call Signal Direction Prediction</div>
+      <div class="subtitle">Input ticker · retrieve latest target firm-quarter-signal prediction</div>
+    </div>
+    <div class="header-actions">
+      <a class="navlink" href="index.html">Dynamic Network</a>
+      <div class="badge" id="statusBadge">Ready</div>
+    </div>
+  </header>
+
+  <div class="prediction-layout">
+    <aside>
+      <div class="panel">
+        <h3>API</h3>
+        <label>API base</label>
+        <input id="apiBaseInput" value="" placeholder="relative /api, or http://localhost:8000/api" />
+        <div class="hint">Default uses relative <code>/api</code>. Save full backend URL for local cross-origin testing.</div>
+        <button id="saveApiBtn">Save API base</button>
+      </div>
+
+      <div class="panel">
+        <h3>Prediction Input</h3>
+        <label>Ticker</label>
+        <input id="tickerInput" value="AAPL" placeholder="AAPL" />
+
+        <label>Quarter</label>
+        <input id="quarterInput" value="latest" placeholder="latest or 2024Q2" />
+
+        <label>Task</label>
+        <select id="taskSelect">
+          <option value="direction">direction</option>
+          <option value="active">active</option>
+        </select>
+
+        <label>Model specification</label>
+        <select id="specSelect">
+          <option value="history_only">history_only</option>
+          <option value="source_only">source_only</option>
+          <option value="source_plus_history">source_plus_history</option>
+          <option value="full_pre_call">full_pre_call</option>
+        </select>
+
+        <button id="predictBtn">Get prediction</button>
+      </div>
+
+      <div class="panel">
+        <h3>Model Files</h3>
+        <button id="loadModelsBtn">Load available models</button>
+        <div id="modelsBox" class="small">Model list not loaded.</div>
+      </div>
+    </aside>
+
+    <main>
+      <div class="panel">
+        <h3 id="resultTitle">Result</h3>
+        <div id="resultBox" class="small">Enter a ticker and run prediction.</div>
+      </div>
+    </main>
+  </div>
+
+<script>
+const DEFAULT_API_BASE = "/api";
+
+function getApiBase() {
+  return localStorage.getItem("earningalz_api_base") || DEFAULT_API_BASE;
+}
+function setApiBase(value) {
+  const clean = String(value || "").trim().replace(/\/$/, "");
+  localStorage.setItem("earningalz_api_base", clean || DEFAULT_API_BASE);
+}
+function apiUrl(path) {
+  return `${getApiBase()}${path}`;
+}
+async function fetchJson(url) {
+  const res = await fetch(url);
+  const text = await res.text();
+  if (!res.ok) throw new Error(text || `${res.status} ${res.statusText}`);
+  return text ? JSON.parse(text) : {};
+}
+function esc(x) {
+  return String(x ?? "").replace(/[&<>'"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;","\"":"&quot;"}[c]));
+}
+function probEntries(probs) {
+  if (!probs) return [];
+  return Object.entries(probs).sort((a, b) => Number(b[1]) - Number(a[1]));
+}
+function probHtml(probs) {
+  const entries = probEntries(probs);
+  if (!entries.length) return "";
+  return entries.map(([label, value]) => {
+    const pct = Number(value) * 100;
+    return `<div><b>${esc(label)}</b>: ${pct.toFixed(1)}%<div class="probbar-wrap"><div class="probbar" style="width:${Math.max(0, Math.min(100, pct))}%"></div></div></div>`;
+  }).join("");
+}
+
+async function loadModels() {
+  const box = document.getElementById("modelsBox");
+  box.innerHTML = "Loading...";
+  try {
+    const data = await fetchJson(apiUrl("/predictions/models"));
+    const models = data.models || [];
+    if (!models.length) {
+      box.innerHTML = "No models found.";
+      return;
+    }
+    box.innerHTML = `<ul>${models.map(m => `<li><code>${esc(m.id)}</code></li>`).join("")}</ul>`;
+  } catch (err) {
+    box.innerHTML = `<span class="error">${esc(err.message || err)}</span>`;
+  }
+}
+
+async function runPrediction() {
+  const ticker = document.getElementById("tickerInput").value.trim().toUpperCase();
+  const quarter = document.getElementById("quarterInput").value.trim() || "latest";
+  const task = document.getElementById("taskSelect").value;
+  const specification = document.getElementById("specSelect").value;
+
+  const badge = document.getElementById("statusBadge");
+  const box = document.getElementById("resultBox");
+  const title = document.getElementById("resultTitle");
+
+  badge.textContent = "Loading...";
+  box.innerHTML = "Loading prediction...";
+
+  const params = new URLSearchParams({ quarter, task, specification });
+
+  try {
+    const data = await fetchJson(apiUrl(`/predictions/company/${encodeURIComponent(ticker)}?${params.toString()}`));
+    badge.textContent = "Done";
+    title.textContent = `${data.ticker || ticker} · ${data.quarter || quarter} · ${data.specification || specification}`;
+
+    if (!data.found) {
+      box.innerHTML = `<span class="error">${esc(data.message || "No prediction rows found.")}</span>`;
+      return;
+    }
+
+    const rows = data.predictions || [];
+    box.innerHTML = `
+      <table class="prediction-table">
+        <thead>
+          <tr>
+            <th>Signal</th>
+            <th>Predicted label</th>
+            <th>Probabilities</th>
+            <th>Observed label</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rows.map(r => `
+            <tr>
+              <td>${esc(r.signal)}</td>
+              <td><b>${esc(r.predicted_label)}</b></td>
+              <td>${probHtml(r.probabilities)}</td>
+              <td>${esc(r.true_direction_label ?? r.true_active_label ?? "")}</td>
+            </tr>
+          `).join("")}
+        </tbody>
+      </table>
+    `;
+  } catch (err) {
+    badge.textContent = "Error";
+    box.innerHTML = `<span class="error">${esc(err.message || err)}</span>`;
+  }
+}
+
+function init() {
+  document.getElementById("apiBaseInput").value = getApiBase();
+  document.getElementById("saveApiBtn").addEventListener("click", () => {
+    setApiBase(document.getElementById("apiBaseInput").value);
+    document.getElementById("statusBadge").textContent = "API saved";
+  });
+  document.getElementById("predictBtn").addEventListener("click", runPrediction);
+  document.getElementById("loadModelsBtn").addEventListener("click", loadModels);
+  document.getElementById("tickerInput").addEventListener("keydown", e => { if (e.key === "Enter") runPrediction(); });
+}
+init();
+</script>
+</body>
+</html>

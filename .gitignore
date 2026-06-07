@@ -99,3 +99,30 @@ coverage.xml
 poetry.lock
 *.bin
 *.pickle
+
+# chroma
+earning_chroma/
+*.sqlite3
+*.bin
+*.pickle
+
+# EarningALZ artifacts
+earningALZ_twopart/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# React / Frontend
+node_modules/
+frontend/node_modules/
+
+dist/
+frontend/dist/
+
+vite.svg
+
+# npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
