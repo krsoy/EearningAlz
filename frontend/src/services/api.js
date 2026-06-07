@@ -3,7 +3,9 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:8000/earningalz",
+  baseURL:
+    import.meta.env.VITE_API_URL ||
+    "http://localhost:8000/earningalz",
 });
 
 export const getSummary = async () => {
@@ -26,16 +28,24 @@ export const getCompany = async (ticker) => {
   return response.data;
 };
 
-export const getRelationships = async (ticker, limit = 100) => {
+export const getRelationships = async (
+  ticker,
+  limit = 100
+) => {
   const response = await API.get(
     `/company/${ticker}/relationships?limit=${limit}`
   );
+
   return response.data;
 };
 
-export const getEvents = async (ticker, limit = 100) => {
+export const getEvents = async (
+  ticker,
+  limit = 100
+) => {
   const response = await API.get(
     `/company/${ticker}/events?limit=${limit}`
   );
+
   return response.data;
 };
